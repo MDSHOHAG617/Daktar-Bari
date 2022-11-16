@@ -1,13 +1,14 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../../images/logo.jpg";
 
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100 px-4 lg:px-20 mt-2">
+      <div className="navbar  px-4 lg:px-20 mt-2">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className="btn btn-ghost lg:hidden mt-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -28,53 +29,70 @@ const Navbar = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Consultation</a>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <a>Health Plans</a>
+                <NavLink to="/consultation">Consultation</NavLink>
               </li>
               <li>
-                <a>Order Medicine</a>
+                <NavLink to="/healthPlans">Health Plans</NavLink>
               </li>
               <li>
-                <a>Home Diagnostics</a>
+                <NavLink to="/orderMadicine">Order Medicine</NavLink>
               </li>
               <li>
-                <a>Enterprise</a>
+                <NavLink to="/diagnostics">Home Diagnostics</NavLink>
               </li>
               <li>
-                <a>For Doctors</a>
+                <NavLink to="/enterprise">Enterprise</NavLink>
+              </li>
+              <li>
+                <NavLink to="/forDoctors">For Doctors</NavLink>
               </li>
             </ul>
           </div>
-          <a className="">
+          <Link to="/" className="">
             <img className="w-32 lg:w-40" src={logo}></img>
-          </a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0 mt-2">
             <li>
-              <a>Consultation</a>
+              <NavLink className="rounded " to="/consultation">
+                Consultation
+              </NavLink>
             </li>
             <li>
-              <a>Health Plans</a>
+              <NavLink className="rounded " to="/healthPlans">
+                Health Plans
+              </NavLink>
             </li>
             <li>
-              <a>Order Medicine</a>
+              <NavLink className="rounded " to="/orderMadicine">
+                Order Medicine
+              </NavLink>
             </li>
             <li>
-              <a>Home Diagnostics</a>
+              <NavLink className="rounded " to="/diagnostics">
+                Home Diagnostics
+              </NavLink>
             </li>
             <li>
-              <a>Enterprise</a>
+              <NavLink className="rounded " to="/enterprise">
+                Enterprise
+              </NavLink>
             </li>
             <li>
-              <a>For Doctors</a>
+              <NavLink className="rounded " to="/forDoctors">
+                For Doctors
+              </NavLink>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Get started</a>
+          <Link to="/login" className="btn btn-primary rounded-full ">
+            <span className="px-2 "> Login</span>
+          </Link>
         </div>
       </div>
     </div>
