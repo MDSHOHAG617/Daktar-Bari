@@ -90,8 +90,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to="/login" className="btn btn-primary rounded-full ">
-            <span className="px-2 "> Login</span>
+          <Link to="/login" className="rounded-full bg-[#2D3571] p-2">
+            <span className="px-4 text-white "> Login</span>
           </Link>
         </div>
       </div>
