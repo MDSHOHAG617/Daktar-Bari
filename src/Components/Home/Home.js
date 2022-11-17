@@ -1,10 +1,12 @@
 import React from "react";
 import CompleteHealthSolutions from "./CompleteHealthSolutions";
+import DownloadApps from "./DownloadApps";
 
 const Home = () => {
   return (
     <div>
-      <CompleteHealthSolutions></CompleteHealthSolutions>
+      <CompleteHealthSolutions />
+      <DownloadApps />
     </div>
   );
 };
