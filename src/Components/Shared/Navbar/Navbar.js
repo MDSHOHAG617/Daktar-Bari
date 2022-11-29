@@ -52,7 +52,10 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/" className="">
-            <img className="w-32 lg:w-40" src={logo}></img>
+            <img
+              className=" w-20 lg:w-24 bg-transparant"
+              src="https://i.ibb.co/MZQtJJz/Daktar-Bari-1.png"
+            ></img>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -90,7 +93,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to="/login" className="rounded-full bg-[#2D3571] p-2">
+          <Link to="/login" className="rounded-full bg-primary p-2">
             <span className="px-4 text-white "> Login</span>
           </Link>
         </div>
