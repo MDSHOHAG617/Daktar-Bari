@@ -1,14 +1,18 @@
 import React from "react";
 import CompleteHealthSolutions from "./CompleteHealthSolutions";
 import DownloadApps from "./DownloadApps";
-import WhyUseDoctime from "./WhyUseDoctime";
+import GetMedicalHelp from "./GetMedicalHelp";
+import WhenTouseDaktarBari from "./WhenTouseDaktarBari";
+import WhyUseDaktarBari from "./WhyUseDaktarBari";
 
 const Home = () => {
   return (
     <div>
       <CompleteHealthSolutions />
       <DownloadApps />
-      <WhyUseDoctime></WhyUseDoctime>
+      <WhyUseDaktarBari></WhyUseDaktarBari>
+      <GetMedicalHelp></GetMedicalHelp>
+      <WhenTouseDaktarBari></WhenTouseDaktarBari>
     </div>
   );
 };

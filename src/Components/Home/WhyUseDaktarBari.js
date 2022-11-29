@@ -1,30 +1,28 @@
 import React from "react";
+import handLogo from "../../images/hand_mobile.png";
 
-const WhyUseDoctime = () => {
+const WhyUseDaktarBari = () => {
   return (
-    <div>
+    <div className="mt-32">
       <h1 className="text-black text-5xl text-left ml-20">
         Why use Daktar Bari
       </h1>
       {/* hero section */}
-      <div className="hero min-h-screen ">
+      <div className="hero flex justify-center items-center  ">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <img
-            src="https://placeimg.com/260/400/arch"
-            className="max-w-sm rounded-lg shadow-2xl"
-          />
-          <div>
+          <img src={handLogo} className=" rounded-lg w-10/12 " />
+          <div className="w-100 ">
             <ul className="steps steps-vertical">
-              <li className="step step-primary my-4  font-normal ">
+              <li className="step step-primary my-6  font-semibold text-md">
                 Access any GP or specialist doctor you need at anytime from
                 anywhere
               </li>
 
-              <li className="step step-primary  font-normal">
+              <li className="step step-primary font-semibold text-md font-normal">
                 Access to online prescriptions, medicine delivery, and tests and
                 diagnostics
               </li>
-              <li className="step step-primary  font-normal">
+              <li className="step step-primary font-semibold text-md font-normal">
                 Easy subscriptions to protect you and loved ones health and
                 wellbeing
               </li>
@@ -36,4 +34,4 @@ const WhyUseDoctime = () => {
   );
 };
 
-export default WhyUseDoctime;
+export default WhyUseDaktarBari;
