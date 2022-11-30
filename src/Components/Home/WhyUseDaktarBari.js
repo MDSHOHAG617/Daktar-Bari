@@ -1,5 +1,6 @@
 import React from "react";
 import handLogo from "../../images/hand_mobile.png";
+import medicine from "../../images/medicine_b-1-ol.svg";
 
 const WhyUseDaktarBari = () => {
   return (
@@ -10,8 +11,8 @@ const WhyUseDaktarBari = () => {
       {/* hero section */}
       <div className="hero flex justify-center items-center  ">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <img src={handLogo} className=" rounded-lg w-10/12 " />
-          <div className="w-100 ">
+          <img src={medicine} className="  w-7/12 p-8" />
+          <div className="w-100 p-8">
             <ul className="steps steps-vertical">
               <li className="step step-primary my-6  font-semibold text-md">
                 Access any GP or specialist doctor you need at anytime from

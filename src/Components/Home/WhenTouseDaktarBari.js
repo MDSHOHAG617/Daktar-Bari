@@ -1,4 +1,5 @@
 import React from "react";
+import medicalcare from "../../images/medical_care_movn.svg";
 
 const WhenTouseDaktarBari = () => {
   return (
@@ -9,10 +10,7 @@ const WhenTouseDaktarBari = () => {
       {/* grid */}
       <div className="main-grid grid grid-cols-1 lg:grid-cols-2 items-center">
         <div className="ml-20">
-          <img
-            className=""
-            src="https://doctime.com.bd/landing/home/head_pain.webp"
-          ></img>
+          <img className="" src={medicalcare}></img>
         </div>
         <div className="mx-10 mr-20">
           <div className="items mb-12 text-left">
