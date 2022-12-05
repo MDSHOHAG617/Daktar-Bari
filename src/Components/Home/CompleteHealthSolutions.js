@@ -1,5 +1,9 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
+import videoConsulting from "../../images/live_video_consulting.svg";
+import orderMedicin from "../../images/orderMedicin.svg";
+import diagnostic from "../../images/diagonosticAtHome.svg";
+import healthPackages from "../../images/healthPackages.svg";
 
 const CompleteHealthSolutions = () => {
   return (
@@ -16,10 +20,7 @@ const CompleteHealthSolutions = () => {
       <div className="grid  md:grid-cols-2 lg:grid-cols-4 gap-4 ">
         <div className="card w-72 h-52 bg-base-100 shadow-2xl mx-auto hover:border hover:opacity-75 ">
           <div className="card-body">
-            <img
-              className="w-12 mx-auto"
-              src="https://doctime.com.bd/landing/icons/service/Video.svg"
-            ></img>
+            <img className="w-10 mx-auto" src={videoConsulting}></img>
             <h2 className="card-title mx-auto">Live Video Consultation</h2>
             <p className="font-normal ">
               Instant video consultation or schedule a futre appoinment
@@ -33,10 +34,7 @@ const CompleteHealthSolutions = () => {
         </div>
         <div className="card w-72 h-52 bg-base-100 shadow-2xl mx-auto hover:border hover:opacity-75">
           <div className="card-body">
-            <img
-              className="w-8 mx-auto"
-              src="https://doctime.com.bd/landing/icons/service/Protection.svg"
-            ></img>
+            <img className="w-14 mx-auto" src={healthPackages}></img>
             <h2 className="card-title mx-auto">healthcare Packages</h2>
             <p className="font-normal ">
               Consultations, hospital care, insurance & more
@@ -50,10 +48,7 @@ const CompleteHealthSolutions = () => {
         </div>
         <div className="card w-72 h-52 bg-base-100 shadow-2xl mx-auto hover:border hover:opacity-75">
           <div className="card-body">
-            <img
-              className="w-12 mx-auto"
-              src="https://doctime.com.bd/landing/icons/service/Diagnostic.svg"
-            ></img>
+            <img className="w-14 mx-auto" src={diagnostic}></img>
             <h2 className="card-title mx-auto">Diagnostic at Home</h2>
             <p className="font-normal ">
               Get tested at home & get report within 24 hours
@@ -67,10 +62,7 @@ const CompleteHealthSolutions = () => {
         </div>
         <div className="card w-72 h-52 bg-base-100 shadow-2xl mx-auto hover:border hover:opacity-75 ">
           <div className="card-body">
-            <img
-              className="w-12 mx-auto"
-              src="https://doctime.com.bd/landing/icons/service/Medicine.svg"
-            ></img>
+            <img className="w-20 mx-auto" src={orderMedicin}></img>
             <h2 className="card-title mx-auto">Order Medicine Online</h2>
             <p className="font-normal ">
               Order easily and get the medicine in 1 hour
