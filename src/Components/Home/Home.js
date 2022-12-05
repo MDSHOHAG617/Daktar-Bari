@@ -1,4 +1,5 @@
 import React from "react";
+import CareAndProtectionPlant from "./CareAndProtectionPlant";
 import CompleteHealthSolutions from "./CompleteHealthSolutions";
 import DownloadApps from "./DownloadApps";
 import EasySteps from "./EasySteps";
@@ -17,6 +18,7 @@ const Home = () => {
       <WhenTouseDaktarBari></WhenTouseDaktarBari>
       <EasySteps></EasySteps>
       <HealthCare></HealthCare>
+      <CareAndProtectionPlant></CareAndProtectionPlant>
     </div>
   );
 };

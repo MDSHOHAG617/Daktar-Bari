@@ -4,7 +4,7 @@ const HealthCare = () => {
   return (
     <div>
       {/* heading */}
-      <div className="my-32">
+      <div className="my-20">
         <h1 className="text-black text-5xl text-center ">
           Daktar bari Health Care & Protection Plans
         </h1>
