@@ -5,7 +5,7 @@ import Navbar from "./Components/Shared/Navbar/Navbar";
 
 function App() {
   return (
-    <div className="App font-bold bg-slate-100">
+    <div className="App font-bold ">
       <Navbar></Navbar>
       <Home></Home>
       <Routes>

@@ -1,11 +1,12 @@
 import React from "react";
-import { TiTickOutline } from "react-icons/ti";
+import { TiTick } from "react-icons/ti";
 import { ImFire } from "react-icons/im";
+import care from "../../images/care.png";
 const CareAndProtectionPlant = () => {
   return (
     <div>
       <div className="plans grid gap-6 grid-cols-1 lg:grid-cols-3 mx-20 mb-10 ">
-        <div className="plan bg-white p-4 rounded-xl relative ">
+        <div className="plan bg-slate-100 p-4 rounded-xl relative ">
           <div class="flex justify-between  items-start  ">
             <div>
               <h1 className="text-left text-xl text-primary">
@@ -18,23 +19,20 @@ const CareAndProtectionPlant = () => {
               <p className="text-left font-normal mt-2 mb-6">For 1 adult </p>
             </div>
             <div>
-              <img
-                className="w-28 "
-                src="https://www.charteredbanker.com/static/afd96847-88b8-41ea-9098b574d1b3c3ec/table_of_content_image_706382d2f7f327d1e6e8c7edf17157eb/2025-website-tiles-Feb22.png"
-              ></img>
+              <img className="w-28 " src={care}></img>
             </div>
           </div>
           <div className=" text-left mb-16">
             <p className="flex items-start font-normal mb-3">
               <span className="">
-                <TiTickOutline />
+                <TiTick className=" mt-1 text-lg" />
               </span>
               Unlimited consultations with our experienced on duty General
               Physician & Gynaecology Doctors
             </p>
             <p className="flex items-start font-normal">
               <span className="">
-                <TiTickOutline />
+                <TiTick className=" mt-1 text-lg" />
               </span>
               Upto 40% discount on home diagnostic tests.
             </p>
@@ -43,7 +41,7 @@ const CareAndProtectionPlant = () => {
             Subscribe now
           </button>
         </div>
-        <div className="plan bg-white p-4 rounded-xl relative">
+        <div className="plan bg-slate-100 p-4 rounded-xl relative">
           <div class="flex justify-between  items-start  ">
             <div>
               <div className="relative ">
@@ -63,29 +61,26 @@ const CareAndProtectionPlant = () => {
               <p className="text-left font-normal mt-2 mb-6">For 1 adult </p>
             </div>
             <div>
-              <img
-                className="w-28 "
-                src="https://www.charteredbanker.com/static/afd96847-88b8-41ea-9098b574d1b3c3ec/table_of_content_image_706382d2f7f327d1e6e8c7edf17157eb/2025-website-tiles-Feb22.png"
-              ></img>
+              <img className="w-28 " src={care}></img>
             </div>
           </div>
           <div className=" text-left mb-16">
             <p className="flex items-start font-normal mb-3">
               <span className="">
-                <TiTickOutline />
+                <TiTick className=" mt-1 text-lg" />
               </span>
               Unlimited consultations with our experienced on duty General
               Physician & Gynaecology Doctors
             </p>
             <p className="flex items-start font-normal">
               <span className="">
-                <TiTickOutline />
+                <TiTick className=" mt-1 text-lg" />
               </span>
               Upto 40% discount on home diagnostic tests.
             </p>
             <p className="flex items-start font-normal">
               <span className="">
-                <TiTickOutline />
+                <TiTick className=" mt-1 text-lg" />
               </span>
               ৳ 40,000 cashback ons health & life insurance.
             </p>
@@ -94,7 +89,7 @@ const CareAndProtectionPlant = () => {
             Subscribe now
           </button>
         </div>
-        <div className="plan bg-white p-4 rounded-xl relative">
+        <div className="plan bg-slate-100 p-4 rounded-xl relative">
           <div class="flex justify-between  items-start  ">
             <div>
               <h1 className="text-left text-xl text-primary">
@@ -109,23 +104,20 @@ const CareAndProtectionPlant = () => {
               </p>
             </div>
             <div>
-              <img
-                className="w-28 "
-                src="https://www.charteredbanker.com/static/afd96847-88b8-41ea-9098b574d1b3c3ec/table_of_content_image_706382d2f7f327d1e6e8c7edf17157eb/2025-website-tiles-Feb22.png"
-              ></img>
+              <img className="w-28 " src={care}></img>
             </div>
           </div>
           <div className=" text-left mb-16">
             <p className="flex items-start font-normal mb-3">
               <span className="">
-                <TiTickOutline />
+                <TiTick className=" mt-1 text-lg" />
               </span>
               Unlimited consultations with our experienced on duty General
               Physician & Gynaecology Doctors
             </p>
             <p className="flex items-start font-normal">
               <span className="">
-                <TiTickOutline />
+                <TiTick className=" mt-1 text-lg" />
               </span>
               Upto 40% discount on home diagnostic tests.
             </p>
@@ -134,7 +126,7 @@ const CareAndProtectionPlant = () => {
             Subscribe now
           </button>
         </div>
-        <div className="plan bg-white p-4 rounded-xl relative">
+        <div className="plan bg-slate-100 p-4 rounded-xl relative">
           <div class="flex justify-between  items-start  ">
             <div>
               <h1 className="text-left text-xl text-primary">
@@ -147,23 +139,20 @@ const CareAndProtectionPlant = () => {
               <p className="text-left font-normal mt-2 mb-6">For 1 adult </p>
             </div>
             <div>
-              <img
-                className="w-28 "
-                src="https://www.charteredbanker.com/static/afd96847-88b8-41ea-9098b574d1b3c3ec/table_of_content_image_706382d2f7f327d1e6e8c7edf17157eb/2025-website-tiles-Feb22.png"
-              ></img>
+              <img className="w-28 " src={care}></img>
             </div>
           </div>
           <div className=" text-left mb-16">
             <p className="flex items-start font-normal mb-3">
               <span className="">
-                <TiTickOutline />
+                <TiTick className=" mt-1 text-lg" />
               </span>
               Unlimited consultations with our experienced on duty General
               Physician & Gynaecology Doctors
             </p>
             <p className="flex items-start font-normal">
               <span className="">
-                <TiTickOutline />
+                <TiTick className=" mt-1 text-lg" />
               </span>
               Free 4 consultations with specialists in a year
             </p>
@@ -172,7 +161,7 @@ const CareAndProtectionPlant = () => {
             Subscribe now
           </button>
         </div>
-        <div className="plan bg-white p-4 rounded-xl relative">
+        <div className="plan bg-slate-100 p-4 rounded-xl relative">
           <div class="flex justify-between  items-start  ">
             <div>
               <h1 className="text-left text-xl text-primary">
@@ -185,29 +174,26 @@ const CareAndProtectionPlant = () => {
               <p className="text-left font-normal mt-2 mb-6">For 1 adult </p>
             </div>
             <div>
-              <img
-                className="w-28 "
-                src="https://www.charteredbanker.com/static/afd96847-88b8-41ea-9098b574d1b3c3ec/table_of_content_image_706382d2f7f327d1e6e8c7edf17157eb/2025-website-tiles-Feb22.png"
-              ></img>
+              <img className="w-28 " src={care}></img>
             </div>
           </div>
           <div className=" text-left mb-16">
             <p className="flex items-start font-normal mb-3">
               <span className="">
-                <TiTickOutline />
+                <TiTick className=" mt-1 text-lg" />
               </span>
               Unlimited consultations with our experienced on duty General
               Physician & Gynaecology Doctors
             </p>
             <p className="flex items-start font-normal">
               <span className="">
-                <TiTickOutline />
+                <TiTick className=" mt-1 text-lg" />
               </span>
               Free 4 consultations with specialists in a year
             </p>
             <p className="flex items-start font-normal">
               <span className="">
-                <TiTickOutline />
+                <TiTick className=" mt-1 text-lg" />
               </span>
               ৳ 350,000 cashback on health & life insurance.
             </p>

@@ -1,10 +1,14 @@
 import React from "react";
+import AvailableSpecialties from "./AvailableSpecialties";
 import CareAndProtectionPlant from "./CareAndProtectionPlant";
+import CompareAllPackages from "./CompareAllPackages";
 import CompleteHealthSolutions from "./CompleteHealthSolutions";
 import DownloadApps from "./DownloadApps";
 import EasySteps from "./EasySteps";
 import GetMedicalHelp from "./GetMedicalHelp";
 import HealthCare from "./HealthCare";
+import MainServices from "./MainServices";
+import Services from "./Services";
 import WhenTouseDaktarBari from "./WhenTouseDaktarBari";
 import WhyUseDaktarBari from "./WhyUseDaktarBari";
 
@@ -19,6 +23,10 @@ const Home = () => {
       <EasySteps></EasySteps>
       <HealthCare></HealthCare>
       <CareAndProtectionPlant></CareAndProtectionPlant>
+      <CompareAllPackages></CompareAllPackages>
+      <MainServices></MainServices>
+      <Services></Services>
+      <AvailableSpecialties></AvailableSpecialties>
     </div>
   );
 };

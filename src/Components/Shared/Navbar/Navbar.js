@@ -4,8 +4,8 @@ import logo from "../../../images/logo.jpg";
 
 const Navbar = () => {
   return (
-    <div>
-      <div className="navbar  px-4 lg:px-20 mt-2">
+    <div className="fixed top-0 left-0 right-0 bg-base-100 z-50 ">
+      <div className="navbar  px-4 lg:px-20 ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden mt-2">
@@ -98,6 +98,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
+      <hr className="h-[.5px] bg-[#333333] "></hr>
     </div>
   );
 };
