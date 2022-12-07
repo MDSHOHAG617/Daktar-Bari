@@ -8,6 +8,7 @@ import EasySteps from "./EasySteps";
 import GetMedicalHelp from "./GetMedicalHelp";
 import HealthCare from "./HealthCare";
 import MainServices from "./MainServices";
+import Ratings from "./Ratings";
 import Services from "./Services";
 import WhenTouseDaktarBari from "./WhenTouseDaktarBari";
 import WhyUseDaktarBari from "./WhyUseDaktarBari";
@@ -27,6 +28,7 @@ const Home = () => {
       <MainServices></MainServices>
       <Services></Services>
       <AvailableSpecialties></AvailableSpecialties>
+      <Ratings></Ratings>
     </div>
   );
 };
