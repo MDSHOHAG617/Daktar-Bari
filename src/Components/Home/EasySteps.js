@@ -6,13 +6,13 @@ import { FaHandHoldingMedical } from "react-icons/fa";
 
 const EasySteps = () => {
   return (
-    <div className="mt-32">
+    <div className="lg:mt-32">
       {/* heading */}
-      <div className="mb-32">
-        <h1 className="text-black text-5xl text-center ">
+      <div className="lg:mb-32">
+        <h1 className="text-black text-2xl lg:text-5xl text-center mt-8 lg:mt-0">
           Easy Steps To Feel Better Rapidly
         </h1>
-        <p className="font-normal text-xl  my-12 mx-16 lg:mx-64">
+        <p className="font-normal lg:text-xl my-4 lg:my-12 mx-16 lg:mx-64 ">
           You do not have to wait in line for hours or go to the hospital to
           take healthcare services. Easily consult a doctor in just 10 minutes
           on your device at home or office.
@@ -22,11 +22,11 @@ const EasySteps = () => {
       <div className="main-sec grid grid-cols-1 lg:grid-cols-2 mx-20">
         {/* mobile  */}
         <div className="mockup-phone p-1 ">
-          <div className="camera"></div>
-          <div className="display">
-            <div className="artboard artboard-demo phone-1">
+          <div className="camera "></div>
+          <div className="display ">
+            <div className="artboard artboard-demo phone-1 ">
               <img
-                className=""
+                className="w-72 lg:w-full"
                 src="https://getconciergepad.com/wp-content/uploads/2020/03/Female-Doctor-Transparent-Background-PNG.png"
               />
             </div>
@@ -37,7 +37,7 @@ const EasySteps = () => {
           <ul className="steps lg:steps-vertical mt-6">
             <li className="step step-primary ">
               <div className="items-center flex items-center ">
-                <span className="text-4xl ml-8 mr-6 bg-base-200 rounded p-4 hover:bg-primary ">
+                <span className="text-2xl lg:text-4xl ml-8 mr-6 bg-base-200 rounded p-3 lg:p-4 hover:bg-primary mt-4 lg:mt-0">
                   {" "}
                   <MdOutlineScreenSearchDesktop />
                 </span>
@@ -59,7 +59,7 @@ const EasySteps = () => {
             </li>
             <li className="step step-primary ">
               <div className="items-center flex items-center ">
-                <span className="text-4xl ml-8 mr-6 bg-base-200 rounded p-4 hover:bg-primary ">
+                <span className="text-2xl lg:text-4xl ml-8 mr-6 bg-base-200 rounded p-3 lg:p-4 hover:bg-primary mt-4 lg:mt-0">
                   {" "}
                   <MdOutlineVideoCameraFront />
                 </span>
@@ -78,7 +78,7 @@ const EasySteps = () => {
             </li>
             <li className="step step-primary ">
               <div className="items-center flex items-center ">
-                <span className="text-4xl ml-8 mr-6 bg-base-200 rounded p-4 hover:bg-primary ">
+                <span className="text-2xl lg:text-4xl ml-8 mr-6 bg-base-200 rounded p-3 lg:p-4 hover:bg-primary mt-4 lg:mt-0">
                   {" "}
                   <FaHandHoldingMedical />
                 </span>

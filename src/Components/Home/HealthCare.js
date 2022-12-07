@@ -5,7 +5,7 @@ const HealthCare = () => {
     <div>
       {/* heading */}
       <div className="my-20">
-        <h1 className="text-black text-5xl text-center ">
+        <h1 className="text-black text-2xl m lg:text-5xl text-center ">
           Daktar bari Health Care & Protection Plans
         </h1>
         <p className="font-normal text-xl  my-12 mx-16 lg:mx-64">

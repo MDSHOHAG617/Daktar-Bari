@@ -9,8 +9,8 @@ const CompleteHealthSolutions = () => {
   return (
     <div className="px-20 ">
       <div className="mt-32 ">
-        <h1 className="text-6xl">Complete Health Solution</h1>
-        <p className="w-10/12 lg:w-11/12 mx-auto text-3xl font-normal mt-5 mb-14">
+        <h1 className="text-2xl lg:text-6xl">Complete Health Solution</h1>
+        <p className="w-10/12 lg:w-11/12 mx-auto lg:text-3xl font-normal mt-5 mb-14">
           Consulting a healthcare professional, buying medicine, ordering lab
           tests and improving your health and wellbeing, all can be done 24/7
           with DocTime!

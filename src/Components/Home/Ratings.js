@@ -7,16 +7,16 @@ const Ratings = () => {
   return (
     <div>
       {/* headings */}
-      <h1 className="text-black  text-2xl lg:text-5xl  mb-16 mx-24 lg:mx-96 mt-32 mb-32">
+      <h1 className="text-black  text-2xl lg:text-5xl  mx-10 lg:mx-24 lg:mx-96 mt-12 lg:mt-32 mb-12 lg:mb-32">
         More than <span className="text-primary">90%</span> of users give us a 5
         stars rating
       </h1>
 
-      <div className="ratings flex justify-evenly items-center ">
+      <div className="ratings lg:flex justify-evenly items-center ">
         <div className="left-ratings ">
           <span className="text-primary text-2xl lg:text-5xl ">4.5</span>
           <p className="text-2xl lg:text-3xl my-6">Out of 5 rating *</p>
-          <div className="rating rating-lg  rating-half bg-[#F5F5F5] p-4 rounded-full">
+          <div className="rating  lg:rating-lg  rating-half bg-[#F5F5F5] p-4 rounded-full">
             <input type="radio" name="rating-2" className="rating-hidden" />
             <input
               type="radio"
@@ -87,7 +87,7 @@ const Ratings = () => {
                 />
               </div>
               <progress
-                className="progress progress-primary w-96 h-3"
+                className="progress progress-primary w-64 lg:w-96  h-3"
                 value="95"
                 max="100"
               ></progress>
@@ -108,7 +108,7 @@ const Ratings = () => {
                 />
               </div>
               <progress
-                className="progress progress-primary w-96 h-3"
+                className="progress progress-primary w-64 lg:w-96 h-3"
                 value="15"
                 max="100"
               ></progress>
@@ -129,7 +129,7 @@ const Ratings = () => {
                 />
               </div>
               <progress
-                className="progress progress-primary w-96 h-3"
+                className="progress progress-primary w-64 lg:w-96 h-3"
                 value="10"
                 max="100"
               ></progress>
@@ -150,7 +150,7 @@ const Ratings = () => {
                 />
               </div>
               <progress
-                className="progress progress-primary w-96 h-3"
+                className="progress progress-primary w-64 lg:w-96 h-3"
                 value="5"
                 max="100"
               ></progress>
@@ -171,7 +171,7 @@ const Ratings = () => {
                 />
               </div>
               <progress
-                className="progress progress-primary w-96 h-3"
+                className="progress progress-primary w-64 lg:w-96 h-3"
                 value="3"
                 max="100"
               ></progress>
@@ -182,7 +182,7 @@ const Ratings = () => {
           </p>
         </div>
         <img
-          className="w-5/12  "
+          className="w-96 mt-8 lg:mt-0 lg:w-5/12 mx-auto lg:mx-0 "
           src="https://doctime.com.bd/landing/home/video__thumbnail__image.webp"
         />
       </div>
