@@ -3,6 +3,7 @@ import AvailableSpecialties from "./AvailableSpecialties";
 import CareAndProtectionPlant from "./CareAndProtectionPlant";
 import CompareAllPackages from "./CompareAllPackages";
 import CompleteHealthSolutions from "./CompleteHealthSolutions";
+import DownloadAndRegister from "./DownloadAndRegister";
 import DownloadApps from "./DownloadApps";
 import EasySteps from "./EasySteps";
 import GetMedicalHelp from "./GetMedicalHelp";
@@ -29,6 +30,7 @@ const Home = () => {
       <Services></Services>
       <AvailableSpecialties></AvailableSpecialties>
       <Ratings></Ratings>
+      <DownloadAndRegister></DownloadAndRegister>
     </div>
   );
 };
