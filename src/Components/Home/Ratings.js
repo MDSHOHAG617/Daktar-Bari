@@ -1,8 +1,7 @@
 import React from "react";
 import { RiStarFill } from "react-icons/ri";
 import { RiStarHalfFill } from "react-icons/ri";
-import youtubVideeo from "../../images/youtubeVideo.png";
-
+import { Link } from "react-router-dom";
 const Ratings = () => {
   return (
     <div>
@@ -181,10 +180,23 @@ const Ratings = () => {
             *Source: Google Play ratings collected during March 2021
           </p>
         </div>
-        <img
-          className="w-96 mt-8 lg:mt-0 lg:w-5/12 mx-auto lg:mx-0 "
-          src="https://doctime.com.bd/landing/home/video__thumbnail__image.webp"
-        />
+        {/* <Link
+          to=""
+          className="w-96 cursor-pointer mt-8 lg:mt-0 lg:w-5/12 mx-auto lg:mx-0 "
+        >
+          <img src="https://doctime.com.bd/landing/home/video__thumbnail__image.webp" />
+        </Link> */}
+
+        <iframe
+          className="rounded-xl"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/0grJjVjy5-0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
   );

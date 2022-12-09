@@ -1,12 +1,12 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../../images/logo.jpg";
+import giflogo from "../../../images/GIFLogo.png";
 
 const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 bg-base-100 z-50 ">
       <div className="navbar  px-4 lg:px-20 ">
-        <div className="navbar-start">
+        <div className="navbar-start items-center">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden mt-2">
               <svg
@@ -37,9 +37,9 @@ const Navbar = () => {
               <li>
                 <NavLink to="/healthPlans">Health Plans</NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to="/orderMadicine">Order Medicine</NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink to="/diagnostics">Home Diagnostics</NavLink>
               </li>
@@ -52,10 +52,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/" className="">
-            <img
-              className=" w-20 lg:w-24 bg-transparant"
-              src="https://i.ibb.co/MZQtJJz/Daktar-Bari-1.png"
-            ></img>
+            <img className="w-52" src={giflogo}></img>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -70,11 +67,11 @@ const Navbar = () => {
                 Health Plans
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink className="rounded " to="/orderMadicine">
                 Order Medicine
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink className="rounded " to="/diagnostics">
                 Home Diagnostics
