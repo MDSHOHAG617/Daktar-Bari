@@ -6,7 +6,7 @@ import { FaLaptopMedical } from "react-icons/fa";
 
 const DownloadAndRegister = () => {
   return (
-    <div className="mt-32  bg-slate-100 p-10 lg:p-20">
+    <div className="mt-32  bg-slate-100 p-10 lg:p-20 ">
       <div className="main-div lg:flex items-center justify-between">
         <div className="left-div lg:w-7/12">
           <h1 className=" text-xl lg:text-3xl text-left">
