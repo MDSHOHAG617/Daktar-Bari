@@ -176,7 +176,7 @@ const Ratings = () => {
               ></progress>
             </div>
           </div>
-          <p className="font-normal mt-4">
+          <p className="font-normal my-4 lg:mt-4  ">
             *Source: Google Play ratings collected during March 2021
           </p>
         </div>
@@ -187,16 +187,18 @@ const Ratings = () => {
           <img src="https://doctime.com.bd/landing/home/video__thumbnail__image.webp" />
         </Link> */}
 
-        <iframe
-          className="rounded-xl"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/0grJjVjy5-0"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <div className="">
+          <iframe
+            className="rounded-xl mx-auto"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/0grJjVjy5-0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </div>
   );

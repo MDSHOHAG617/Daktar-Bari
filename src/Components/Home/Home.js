@@ -7,6 +7,7 @@ import DownloadAndRegister from "./DownloadAndRegister";
 import DownloadApps from "./DownloadApps";
 import EasySteps from "./EasySteps";
 import GetMedicalHelp from "./GetMedicalHelp";
+import HaveAnyQuestions from "./HaveAnyQuestions";
 import HealthCare from "./HealthCare";
 import MainServices from "./MainServices";
 import Ratings from "./Ratings";
@@ -31,6 +32,7 @@ const Home = () => {
       <AvailableSpecialties></AvailableSpecialties>
       <Ratings></Ratings>
       <DownloadAndRegister></DownloadAndRegister>
+      <HaveAnyQuestions></HaveAnyQuestions>
     </div>
   );
 };

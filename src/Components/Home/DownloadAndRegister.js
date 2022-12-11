@@ -1,13 +1,17 @@
 import React from "react";
 import Qrcode from "../../images/QRCode.png";
+import downloadbgimg from "../../images/dowonloadappbg.jpg";
 import { FaGooglePlay } from "react-icons/fa";
 import { AiFillApple } from "react-icons/ai";
 import { FaLaptopMedical } from "react-icons/fa";
 
 const DownloadAndRegister = () => {
   return (
-    <div className="mt-32  bg-slate-100 p-10 lg:p-20 ">
-      <div className="main-div lg:flex items-center justify-between">
+    <div
+      style={{ backgroundImage: `url(${downloadbgimg})` }}
+      className="mt-32  bg-slate-100 p-10 lg:p-20  bg-cover  opacity-80"
+    >
+      <div className="main-div lg:flex items-center justify-between text-white">
         <div className="left-div lg:w-7/12">
           <h1 className=" text-xl lg:text-3xl text-left">
             Download and register on our App for free and feel safe for all your
