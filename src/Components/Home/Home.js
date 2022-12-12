@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../Shared/Navbar/Footer";
 import AvailableSpecialties from "./AvailableSpecialties";
 import CareAndProtectionPlant from "./CareAndProtectionPlant";
 import CompareAllPackages from "./CompareAllPackages";
@@ -6,6 +7,7 @@ import CompleteHealthSolutions from "./CompleteHealthSolutions";
 import DownloadAndRegister from "./DownloadAndRegister";
 import DownloadApps from "./DownloadApps";
 import EasySteps from "./EasySteps";
+import GetInTouch from "./GetInTouch";
 import GetMedicalHelp from "./GetMedicalHelp";
 import HaveAnyQuestions from "./HaveAnyQuestions";
 import HealthCare from "./HealthCare";
@@ -33,6 +35,8 @@ const Home = () => {
       <Ratings></Ratings>
       <DownloadAndRegister></DownloadAndRegister>
       <HaveAnyQuestions></HaveAnyQuestions>
+      <GetInTouch></GetInTouch>
+      <Footer></Footer>
     </div>
   );
 };
