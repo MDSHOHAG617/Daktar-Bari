@@ -184,7 +184,7 @@ const Ratings = () => {
           to=""
           className="w-96 cursor-pointer mt-8 lg:mt-0 lg:w-5/12 mx-auto lg:mx-0 "
         >
-          <img src="https://doctime.com.bd/landing/home/video__thumbnail__image.webp" />
+          <img src="https://Daktar bari.com.bd/landing/home/video__thumbnail__image.webp" />
         </Link> */}
 
         <div className="">

@@ -31,9 +31,9 @@ const WhenTouseDaktarBari = () => {
               Sometimes it’s helpful to see a specialist when you want. For
               gynaecology, child specialists, dermatology, cardiology,
               gastroenterology, nutrition,chronic diseases such as hypertension,
-              or other conditions, DocTime can help you to connect with the
+              or other conditions, Daktar bari can help you to connect with the
               right specialist doctor and to stay healthy. More than 20
-              different specialities are available on DocTime.
+              different specialities are available on Daktar bari.
             </p>
           </div>
           <div className="items mb-12 text-left">

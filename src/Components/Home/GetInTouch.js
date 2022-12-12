@@ -3,7 +3,7 @@ import getintouch from "../../images/getintouch.svg";
 
 const GetInTouch = () => {
   return (
-    <div>
+    <div className="mb-20">
       <h1 className="text-black mt-32 text-2xl lg:text-5xl ">
         Get in touch with us
       </h1>

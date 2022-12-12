@@ -28,7 +28,7 @@ const DownloadAndRegister = () => {
           <div className="links ">
             <div className="flex justify-btween items-center bg-primary p-1 w-48 rounded-xl lg:mx-3 mb-2 mt-8 lg:mt-0 mx-auto">
               <span>
-                <FaGooglePlay className="text-4xl mr-2 text-[#ffffff] w-12" />
+                <FaGooglePlay className="text-3xl mr-2 text-[#ffffff] w-12" />
               </span>
               <div>
                 <p className="text-sm font-normal text-white">
