@@ -1,6 +1,7 @@
 import React from "react";
 import Qrcode from "../../images/QRCode.png";
 import downloadbgimg from "../../images/dowonloadappbg.jpg";
+import svgbg from "../../images/mobile_app.svg";
 import { FaGooglePlay } from "react-icons/fa";
 import { AiFillApple } from "react-icons/ai";
 import { FaLaptopMedical } from "react-icons/fa";
@@ -9,15 +10,15 @@ const DownloadAndRegister = () => {
   return (
     <div
       style={{ backgroundImage: `url(${downloadbgimg})` }}
-      className="mt-32  bg-slate-100 p-10 lg:p-20  bg-cover  opacity-80"
+      className="mt-32  bg-slate-100 p-10 lg:p-20 lg:py-40 bg-cover  opacity-100 bg-fixed"
     >
-      <div className="main-div lg:flex items-center justify-between text-white">
-        <div className="left-div lg:w-7/12">
-          <h1 className=" text-xl lg:text-3xl text-left">
+      <div className="main-div lg:flex items-center justify-between text-white ">
+        <div className="left-div lg:w-6/12">
+          <h1 className=" text-xl lg:text-4xl text-left">
             Download and register on our App for free and feel safe for all your
             family
           </h1>
-          <p className="text-sm lg:text-lg text-left mt-4 lg:mt-12">
+          <p className="text-sm lg:text-lg lg:font-semibold text-left mt-4 lg:mt-12">
             To download the app on your mobile, go the Play Store or open your
             camera and point it towards the QR code
           </p>
