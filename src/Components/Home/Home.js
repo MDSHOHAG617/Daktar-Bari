@@ -36,7 +36,7 @@ const Home = () => {
       <DownloadAndRegister></DownloadAndRegister>
       <HaveAnyQuestions></HaveAnyQuestions>
       <GetInTouch></GetInTouch>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 };

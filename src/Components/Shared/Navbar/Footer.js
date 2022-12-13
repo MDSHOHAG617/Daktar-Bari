@@ -13,7 +13,7 @@ import { FaLaptopMedical } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="">
       <footer className="footer pl-20 py-12 bg-[#F2F2F2]  text-base-content ">
         <div>
           <img className="w-52 mb-4" src={logo} />
@@ -80,6 +80,13 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      <div className="bg-[#F2F2F2]">
+        <hr></hr>
+        <p className="pb-4 pt-8 font-normal  ">
+          Copyright © 2022 <span className="text-[#07C0BA]">Daktar</span>bari.
+          All rights reserved.
+        </p>
+      </div>
     </div>
   );
 };
