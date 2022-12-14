@@ -75,7 +75,7 @@
   {
     "id": 13,
     "heading": "Diabetes / Endocrinology",
-    "text": "Treatment of disease related to problem with hormone",
+    "text": "Treatment of disease related to problem with hormone.Diabetes & Endocrinology Department provides state of the art medical care to individuals with endocrine disorders.",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/11/icon/MCoFyZinQrhPzIP1KasUp93lGW6FrKLJylrxx2uj.png"
   },
   {
@@ -114,16 +114,11 @@
     "text": "Oncology is a bramch of medicine that deals with the prevention, diagnosis, and treatment of cancer",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/35/icon/WvhkTJOvM8B42SXlx6VksQwOZT28casr2kO4raCU.png"
   },
-  {
-    "id": 20,
-    "heading": "Kidney / Nephrology",
-    "text": "Diagnosis, treatment of kidney diisease.",
-    "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/13/icon/2HmUppfjFQDecwljnHb5w49C39qHlkacG7K6GhLH.png"
-  },
+
   {
     "id": 21,
     "heading": "Kidney / Nephrology",
-    "text": "Diagnosis, treatment of kidney diisease.",
+    "text": "Diagnosis, treatment of kidney disease. Nephrology concerns the diagnosis and treatment of kidney diseases, including ",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/13/icon/2HmUppfjFQDecwljnHb5w49C39qHlkacG7K6GhLH.png"
   },
   {
@@ -202,7 +197,7 @@
   {
     "id": 33,
     "heading": "Pediatric Neurology ",
-    "text": "Neurological disorders of children and adolescents ",
+    "text": "Neurological disorders of children and adolescents. Pediatric Neurology publishes timely peer-reviewed clinical and research articles covering all aspects of the developing nervous system. ",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/49/icon/nxZesw6jImEzImQO8e3LUvdrrSvwNhrPijxRJu5x.png"
   },
   {
@@ -221,7 +216,7 @@
   {
     "id": 36,
     "heading": "Eye / Optometry  ",
-    "text": "Diagnosis and manage various vision abnormalities.  ",
+    "text": "Optometry is a specialized health care profession that involves examining the eyes and related structures for defects or abnormalities.  ",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/25/icon/Lhfy151CNYlnhEv6LeaEDXNxQhJ6kmDsjjtKpWn2.png"
   },
   {

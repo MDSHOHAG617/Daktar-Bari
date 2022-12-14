@@ -14,7 +14,7 @@ const Consultations = () => {
         Please select a specialty
       </h1>
       {/* heading end */}
-      <div className="specialties grid lg:grid-cols-2 gap-8">
+      <div className="specialties grid lg:grid-cols-2 gap-7">
         {specialties.map((specialty) => (
           <Consultation key={specialty.id} specialty={specialty}></Consultation>
         ))}
