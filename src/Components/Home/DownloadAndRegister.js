@@ -26,7 +26,7 @@ const DownloadAndRegister = () => {
         <div className="right-div lg:flex items-center mt-8 lg:mt-0">
           <img className="lg:mr-3 h-32 mx-auto lg:mx-0 lg:h-40" src={Qrcode} />
           <div className="links ">
-            <div className="flex justify-btween items-center bg-primary p-1 w-48 rounded-xl lg:mx-3 mb-2 mt-8 lg:mt-0 mx-auto">
+            <div className="flex  items-center bg-primary p-1 w-48 rounded-xl  mb-2 mt-8 lg:mt-0 mx-auto">
               <span>
                 <FaGooglePlay className="text-3xl mr-2 text-[#ffffff] w-12" />
               </span>
@@ -37,7 +37,7 @@ const DownloadAndRegister = () => {
                 <h2 className="text-xl text-white">Google Play </h2>
               </div>
             </div>
-            <div className="flex justify-center items-center bg-primary p-1 w-48 rounded-xl lg:mx-3 mb-2  lg:mt-0 mx-auto">
+            <div className="flex justify-center items-center bg-primary p-1 w-48 rounded-xl  mb-2  lg:mt-0 mx-auto">
               <span>
                 <AiFillApple className="text-4xl mr-2 text-[#ffffff] " />
               </span>
@@ -48,7 +48,7 @@ const DownloadAndRegister = () => {
                 <h2 className="text-xl text-white">App Store </h2>
               </div>
             </div>
-            <div className="flex justify-center items-center bg-primary p-1 w-48 rounded-xl lg:mx-3 mb-2  lg:mt-0 mx-auto">
+            <div className="flex justify-center items-center bg-primary p-1 w-48 rounded-xl  mb-2  lg:mt-0 mx-auto">
               <span>
                 <FaLaptopMedical className="text-4xl mr-2 text-[#ffffff]" />
               </span>
