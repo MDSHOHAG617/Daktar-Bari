@@ -4,7 +4,7 @@ import doctors from "../../images/doctors_re_8ou9.svg";
 
 const GetMedicalHelp = () => {
   return (
-    <div className="ml-10 lg:ml-20">
+    <div className="ml-10 lg:ml-16">
       {/* headings */}
       <div className="headings mb-10   lg:my-32">
         <h3 className=" text-md lg:text-2xl font-semibold text-left">
@@ -15,7 +15,7 @@ const GetMedicalHelp = () => {
         </h1>
       </div>
       {/* grid row */}
-      <div className="main-div grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-4 gap-4  mr-20 ">
+      <div className="main-div grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-4 gap-4  mr-16 ">
         <div className="grid-item  w-64 ">
           <h1 className="text-primary text-xl lg:text-2xl font-semibold text-left lg:mb-8">
             Easy to use

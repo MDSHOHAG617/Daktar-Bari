@@ -2,7 +2,7 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div className="mx-20 mt-32 services grid grid-cols-1 lg:grid-cols-3 gap-10">
+    <div className="mx-16 mt-32 services grid grid-cols-1 lg:grid-cols-3 gap-10">
       <div className="flex items-start service">
         <img
           className="w-16 mr-6"

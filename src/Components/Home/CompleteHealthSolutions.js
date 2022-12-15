@@ -7,7 +7,7 @@ import healthPackages from "../../images/healthPackages.svg";
 
 const CompleteHealthSolutions = () => {
   return (
-    <div className="px-20 ">
+    <div className="px-16">
       <div className="mt-32 ">
         <h1 className="text-2xl lg:text-6xl">Complete Health Solution</h1>
         <p className="w-10/12 lg:w-11/12 mx-auto lg:text-3xl font-normal mt-5 mb-14">

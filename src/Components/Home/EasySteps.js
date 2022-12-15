@@ -19,7 +19,7 @@ const EasySteps = () => {
         </p>
       </div>
       {/* main section */}
-      <div className="main-sec grid grid-cols-1 lg:grid-cols-2 mx-20">
+      <div className="main-sec grid grid-cols-1 lg:grid-cols-2 mx-16">
         {/* mobile  */}
         <div className="mockup-phone p-1 ">
           <div className="camera "></div>
@@ -47,7 +47,7 @@ const EasySteps = () => {
                   <h1 className="text-left font-semibold text-xl ">
                     Search your Doctor and Consult live on Video Call
                   </h1>
-                  <p className="text-left text-md font-normal mt-2">
+                  <p className="text-left text-md font-normal mt-2 text-justify">
                     Search your doctor by specialty or doctor profile, rating &
                     experience name, or depending on your symptoms. Once you pay
                     the required doctor fee or if you have a subscription, you
@@ -68,7 +68,7 @@ const EasySteps = () => {
                   <h1 className="text-left font-semibold text-xl ">
                     Instant Prescription
                   </h1>
-                  <p className="text-left text-mds font-normal mt-2">
+                  <p className="text-left text-mds font-normal mt-2 text-justify">
                     Once the video consultation is complete, the doctor will
                     upload the prescription. You can download and use the
                     prescription immediately or later.
@@ -87,7 +87,7 @@ const EasySteps = () => {
                   <h1 className="text-left font-semibold text-xl ">
                     Order medicine online and order diagnostic tests
                   </h1>
-                  <p className="text-left text-md font-normal mt-2">
+                  <p className="text-left text-md font-normal mt-2 text-justify">
                     Medicine will be delivered quickly to your home within 2/3
                     hours of placing any order. You can also get tested in a few
                     hours at home & get report in the App.

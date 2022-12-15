@@ -3,7 +3,7 @@ import services from "../../images/mainServices.svg";
 
 const MainServices = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 items-center mx-20 mt-32">
+    <div className="grid grid-cols-1 lg:grid-cols-2 items-center mx-16 mt-32">
       <div className="left-sec lg:text-left text-center mr-16">
         {" "}
         <h1 className="text-black text-xl lg:text-5xl  mb-16">

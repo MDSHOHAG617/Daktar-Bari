@@ -5,7 +5,7 @@ import care from "../../images/care.png";
 const CareAndProtectionPlant = () => {
   return (
     <div>
-      <div className="plans grid gap-6 grid-cols-1 lg:grid-cols-3 mx-20 mb-10 ">
+      <div className="plans grid gap-6 grid-cols-1 lg:grid-cols-3 mx-16 mb-10 ">
         <div className="plan card-body hover: hover:opacity-80 p-4 rounded-xl relative card shadow-2xl">
           <div class="flex justify-between  items-start  ">
             <div>

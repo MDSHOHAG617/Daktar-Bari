@@ -9,7 +9,7 @@ const Consultations = () => {
       .then((data) => setSpecialties(data));
   }, []);
   return (
-    <div className="m-20">
+    <div className="m-16">
       <h1 className="text-black mt-32 text-2xl lg:text-4xl lg:text-left mb-10">
         Please select a specialty
       </h1>

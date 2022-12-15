@@ -3,7 +3,7 @@ import { TiTick } from "react-icons/ti";
 
 const AvailableSpecialties = () => {
   return (
-    <div className="mx-20 mt-32 ">
+    <div className="mx-16 mt-32 ">
       <h1 className="text-black text-left text-2xl lg:text-5xl  mb-16">
         Available specialties
       </h1>

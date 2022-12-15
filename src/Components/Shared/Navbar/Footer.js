@@ -14,9 +14,9 @@ import { FaLaptopMedical } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="">
-      <footer className="footer pl-20 py-12 bg-[#F2F2F2]  text-base-content ">
+      <footer className="footer p-16 py-12 bg-[#F2F2F2]  text-base-content ">
         <div>
-          <img className="w-52 mb-4" src={logo} />
+          <img className="w-64 mb-4" src={logo} />
           <p className="flex items-center font-semibold ">
             <MdAddCall className="text-2xl"></MdAddCall>
             <span className="ml-4 text-xl">09612345678</span>

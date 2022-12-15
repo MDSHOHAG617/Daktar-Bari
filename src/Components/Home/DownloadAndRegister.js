@@ -10,7 +10,7 @@ const DownloadAndRegister = () => {
   return (
     <div
       style={{ backgroundImage: `url(${downloadbgimg})` }}
-      className="mt-32  bg-slate-100 p-10 lg:p-20 lg:py-40 bg-cover lg:bg-cover bg-fixed"
+      className="mt-32  bg-slate-100 p-10 lg:p-16 lg:py-40 bg-cover lg:bg-cover bg-fixed"
     >
       <div className="main-div lg:flex items-center justify-between text-white ">
         <div className="left-div lg:w-6/12">
