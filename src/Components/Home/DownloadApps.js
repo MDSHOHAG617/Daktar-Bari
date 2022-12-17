@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGooglePlay } from "react-icons/fa";
 import { AiFillApple } from "react-icons/ai";
+import { Link } from "react-router-dom";
 const DownloadApps = () => {
   return (
     <div>
@@ -10,7 +11,10 @@ const DownloadApps = () => {
       </p>
       {/* Google Play */}
       <div className="lg:flex  justify-center items-center mt-8 mb-20">
-        <div className="flex justify-btween items-center bg-primary p-2 w-48 rounded-xl  mx-auto lg:mx-3 mb-2 lg:mb-0">
+        <Link
+          to="/orderMadicine"
+          className="flex justify-btween items-center bg-primary p-2 w-48 rounded-xl  mx-auto lg:mx-3 mb-2 lg:mb-0"
+        >
           <span>
             <FaGooglePlay className="text-4xl mr-2 text-[#ffffff]" />
           </span>
@@ -18,8 +22,12 @@ const DownloadApps = () => {
             <p className="text-sm font-normal text-white">Download on the </p>
             <h2 className="text-xl text-white">Google Play </h2>
           </div>
-        </div>
-        <div className="flex justify-center items-center bg-primary p-2 w-48 rounded-xl mx-auto lg:mx-3 mb-2 lg:mb-0">
+        </Link>
+        {/* App store  */}
+        <Link
+          to="/orderMadicine"
+          className="flex justify-center items-center bg-primary p-2 w-48 rounded-xl mx-auto lg:mx-3 mb-2 lg:mb-0"
+        >
           <span>
             <AiFillApple className="text-4xl mr-2 text-[#ffffff]" />
           </span>
@@ -27,7 +35,7 @@ const DownloadApps = () => {
             <p className="text-sm font-normal text-white">Download on the </p>
             <h2 className="text-xl text-white">App Store </h2>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

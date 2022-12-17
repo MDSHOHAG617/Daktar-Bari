@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Consultations from "./Components/Consultations/Consultations";
 import Consultation from "./Components/Consultations/Consultations";
+import Enterprise from "./Components/Enterprise/Enterprise";
 import HealthPlans from "./Components/HealthPlans/HealthPlans";
 import Home from "./Components/Home/Home";
 import OrderMedicine from "./Components/OrderMedicine/OrderMedicine";
@@ -17,6 +18,7 @@ function App() {
         <Route path="consultation" element={<Consultations />} />
         <Route path="healthPlans" element={<HealthPlans />} />
         <Route path="orderMadicine" element={<OrderMedicine />} />
+        <Route path="enterprise" element={<Enterprise />} />
       </Routes>
       <Footer></Footer>
     </div>

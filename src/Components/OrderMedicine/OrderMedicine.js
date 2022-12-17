@@ -8,7 +8,7 @@ const OrderMedicine = () => {
   return (
     <div className="relative">
       <div className="absolute left-0 right-0 top-20  bottom-0  z-10 ">
-        <div className="bg-[#EEEfff]  lg:mx-96 p-8  lg:rounded-xl lg:shadow-xl">
+        <div className="mx-16 bg-[#EEEfff]  lg:mx-96 p-8  lg:rounded-xl lg:shadow-xl">
           {" "}
           <img
             className="mx-auto w-72   block lg:hidden"
