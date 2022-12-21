@@ -11,7 +11,7 @@ import Navbar from "./Components/Shared/Navbar/Navbar";
 
 function App() {
   return (
-    <div className="App font-bold ">
+    <div className="App font-bold  ">
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />

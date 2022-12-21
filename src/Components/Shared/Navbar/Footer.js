@@ -14,7 +14,8 @@ import { FaLaptopMedical } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="">
-      <footer className="footer p-16 py-12 bg-[#F2F2F2]  text-base-content ">
+      <hr />
+      <footer className="footer p-16 py-12   text-base-content ">
         <div>
           <img className="w-64 mb-4" src={logo} />
           <p className="flex items-center font-semibold ">
@@ -80,10 +81,10 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="bg-[#F2F2F2]">
+      <div className="">
         <hr></hr>
         <p className="pb-4 pt-8 font-normal  ">
-          Copyright © 2022 <span className="text-[#07C0BA]">Daktar</span>bari.
+          Copyright © 2022 <span className="text-[#07C0BA]">Daktar bari.</span>
           All rights reserved.
         </p>
       </div>

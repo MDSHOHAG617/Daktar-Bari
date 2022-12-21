@@ -9,7 +9,7 @@ const EasySteps = () => {
     <div className="lg:mt-32">
       {/* heading */}
       <div className="lg:mb-32">
-        <h1 className="text-black text-2xl lg:text-5xl text-center mt-8 lg:mt-0">
+        <h1 className=" text-2xl lg:text-5xl text-center mt-8 lg:mt-0">
           Easy Steps To Feel Better Rapidly
         </h1>
         <p className="font-normal lg:text-xl my-4 lg:my-12 mx-16 lg:mx-64 ">
@@ -21,7 +21,7 @@ const EasySteps = () => {
       {/* main section */}
       <div className="main-sec grid grid-cols-1 lg:grid-cols-2 mx-16">
         {/* mobile  */}
-        <div className="mockup-phone p-1 ">
+        <div data-aos="fade-right" className="mockup-phone p-1 ">
           <div className="camera "></div>
           <div className="display ">
             <div className="artboard artboard-demo phone-1 ">
@@ -33,7 +33,7 @@ const EasySteps = () => {
           </div>
         </div>
         {/* text sec */}
-        <div>
+        <div data-aos="fade-left">
           <ul className="steps lg:steps-vertical mt-6">
             <li className="step step-primary ">
               <div className="items-center flex items-center ">

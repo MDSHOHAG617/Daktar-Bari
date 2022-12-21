@@ -4,15 +4,18 @@ import medicalcare from "../../images/medical_care_movn.svg";
 const WhenTouseDaktarBari = () => {
   return (
     <div className="mt-12 lg:mt-32">
-      <h1 className="text-black text-2xl lg:text-5xl lg:text-right  lg:mr-20 mb-20">
+      <h1 className=" text-2xl lg:text-5xl lg:text-right  lg:mr-20 mb-20">
         When to use Daktar Bari
       </h1>
       {/* grid */}
       <div className="main-grid grid grid-cols-1 lg:grid-cols-2 items-center">
-        <div className="lg:ml-16  mx-auto lg:mx-0 mb-4 lg:mb-0">
+        <div
+          data-aos="fade-right"
+          className="lg:ml-16  mx-auto lg:mx-0 mb-4 lg:mb-0"
+        >
           <img className="w-96 lg:w-full" src={medicalcare}></img>
         </div>
-        <div className="mx-10 mr-16">
+        <div data-aos="fade-left" className="mx-10 mr-16">
           <div className="items mb-4 lg:mb-12 text-left">
             <h1 className="text-2xl font-semibold mb-1 lg:mb-5">
               Common health issue

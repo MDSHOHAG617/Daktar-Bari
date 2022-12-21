@@ -1,5 +1,4 @@
 import React from "react";
-import nilima from "../../images/nilima.png";
 import doctors from "../../images/doctors_re_8ou9.svg";
 
 const GetMedicalHelp = () => {
@@ -10,13 +9,11 @@ const GetMedicalHelp = () => {
         <h3 className=" text-md lg:text-2xl font-semibold text-left">
           Get medical help
         </h3>
-        <h1 className="text-black text-2xl lg:text-5xl text-left ">
-          Just in few taps!
-        </h1>
+        <h1 className=" text-2xl lg:text-5xl text-left ">Just in few taps!</h1>
       </div>
       {/* grid row */}
       <div className="main-div grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-4 gap-4  mr-16 ">
-        <div className="grid-item  w-64 ">
+        <div data-aos="fade-right" className="grid-item  w-64 ">
           <h1 className="text-primary text-xl lg:text-2xl font-semibold text-left lg:mb-8">
             Easy to use
           </h1>
@@ -30,7 +27,7 @@ const GetMedicalHelp = () => {
             office.
           </p>
         </div>
-        <div className="grid-item w-64">
+        <div data-aos="fade-up" className="grid-item w-64">
           <h1 className="text-primary text-xl lg:text-2xl font-semibold text-left lg:mb-8">
             AnyTime
           </h1>
@@ -44,7 +41,7 @@ const GetMedicalHelp = () => {
             and view online prescriptions.
           </p>
         </div>
-        <div className="grid-item w-64">
+        <div data-aos="fade-down" className="grid-item w-64">
           <h1 className="text-primary text-xl lg:text-2xl font-semibold text-left lg:mb-8">
             Trusted
           </h1>
@@ -56,7 +53,7 @@ const GetMedicalHelp = () => {
             secure the video consultation.
           </p>
         </div>
-        <div className="grid-item  hidden lg:block ">
+        <div data-aos="fade-left" className="grid-item  hidden lg:block ">
           <img className="" src={doctors}></img>
         </div>
       </div>

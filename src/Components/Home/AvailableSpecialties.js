@@ -4,10 +4,10 @@ import { TiTick } from "react-icons/ti";
 const AvailableSpecialties = () => {
   return (
     <div className="mx-16 mt-32 ">
-      <h1 className="text-black text-left text-2xl lg:text-5xl  mb-16">
+      <h1 className=" text-left text-2xl lg:text-5xl  mb-16">
         Available specialties
       </h1>
-      <div className="grid grid-cols-1 lg:grid-cols-4">
+      <div data-aos="fade-in" className="grid grid-cols-1 lg:grid-cols-4">
         <div>
           <div className="flex items-center mb-4 ">
             <TiTick className="text-primary mr-4 text-xl " />

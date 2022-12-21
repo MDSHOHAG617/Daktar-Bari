@@ -7,7 +7,10 @@ import underConstructionSvg from "../../images/under_construction.svg";
 const OrderMedicine = () => {
   return (
     <div className="relative">
-      <div className="absolute left-0 right-0 top-20  bottom-0  z-10 ">
+      <div
+        data-aos="fade-up"
+        className="absolute left-0 right-0 top-20  bottom-0  z-10 "
+      >
         <div className="mx-16 bg-[#EEEfff]  lg:mx-96 p-8  rounded-xl lg:shadow-xl">
           {" "}
           <img
@@ -26,7 +29,7 @@ const OrderMedicine = () => {
       <div className=" mx-16 my-32 text-left  lg:flex items-center opacity-30   ">
         <div>
           {" "}
-          <h1 className="text-black text-2xl  lg:text-4xl mb-4 lg:mb-10">
+          <h1 className=" text-2xl  lg:text-4xl mb-4 lg:mb-10">
             Please download Daktar bari app to order medicine online
           </h1>
           <p className="text-xl font-semibold">

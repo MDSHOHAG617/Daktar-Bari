@@ -6,13 +6,13 @@ const Ratings = () => {
   return (
     <div>
       {/* headings */}
-      <h1 className="text-black  text-2xl lg:text-5xl  mx-10 lg:mx-24 lg:mx-96 mt-12 lg:mt-32 mb-12 lg:mb-32">
+      <h1 className=" text-2xl lg:text-5xl  mx-10 lg:mx-24 lg:mx-96 mt-12 lg:mt-32 mb-12 lg:mb-32">
         More than <span className="text-primary">90%</span> of users give us a 5
         stars rating
       </h1>
 
       <div className="ratings lg:flex justify-evenly items-center ">
-        <div className="left-ratings ">
+        <div data-aos="fade-right" className="left-ratings ">
           <span className="text-primary text-2xl lg:text-5xl ">4.5</span>
           <p className="text-2xl lg:text-3xl my-6">Out of 5 rating *</p>
           <div className="rating  lg:rating-lg  rating-half bg-[#F5F5F5] p-4 rounded-full">
@@ -187,7 +187,7 @@ const Ratings = () => {
           <img src="https://Daktar bari.com.bd/landing/home/video__thumbnail__image.webp" />
         </Link> */}
 
-        <div className="">
+        <div data-aos="fade-left" className="">
           <iframe
             className="rounded-xl mx-auto"
             width="560"
