@@ -120,13 +120,12 @@ const Navbar = () => {
           {/* <button data-toggle-theme="dark,light" data-act-class="ACTIVECLASS">
             Theme
           </button> */}
-        </div>
-        <div>
+          <span className="w-4"></span>
           <label className="swap swap-rotate ">
             <input data-toggle-theme="dark,light" type="checkbox" />
 
             <svg
-              className="swap-on fill-current w-10 h-10 "
+              className="swap-on fill-current w-8 h-8 "
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
@@ -134,7 +133,7 @@ const Navbar = () => {
             </svg>
 
             <svg
-              className="swap-off fill-current w-10 h-10"
+              className="swap-off fill-current w-8 h-8"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
