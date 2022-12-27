@@ -11,12 +11,8 @@ const WhyUseDaktarBari = () => {
       {/* hero section */}
       <div className="hero flex justify-center items-center  ">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <img
-            data-aos="fade-left"
-            src={medicine}
-            className="  w-7/12 lg:p-10 mt-4 lg:mt-0"
-          />
-          <div data-aos="fade-right" className="w-100 p-8">
+          <img src={medicine} className="  w-7/12 lg:p-10 mt-4 lg:mt-0" />
+          <div className="w-100 p-8">
             <ul className="steps steps-vertical">
               <li className="step step-primary font-semibold my-2 lg:my-6  font-normal text-md">
                 Access any GP or specialist doctor you need at anytime from

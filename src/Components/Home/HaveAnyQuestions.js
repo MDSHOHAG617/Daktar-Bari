@@ -21,7 +21,7 @@ const HaveAnyQuestions = () => {
         </p>
       </div>
       {/* heading */}
-      <div data-aos="fade-in" className="">
+      <div className="">
         <Accordion className="mx-auto w-9/12 border  ">
           <AccordionItem>
             <AccordionItemHeading>

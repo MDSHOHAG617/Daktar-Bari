@@ -3,10 +3,7 @@ import { FaBalanceScale } from "react-icons/fa";
 
 const CompareAllPackages = () => {
   return (
-    <div
-      data-aos="fade-left"
-      className="grid lg:flex  items-center justify-center bg-base-300 mx-16 rounded-xl py-3 "
-    >
+    <div className="grid lg:flex  items-center justify-center bg-base-300 mx-16 rounded-xl py-3 ">
       <p className="text-md font-normal">
         Confused about what package to pick?
       </p>

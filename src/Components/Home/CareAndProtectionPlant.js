@@ -6,10 +6,7 @@ const CareAndProtectionPlant = () => {
   return (
     <div>
       <div className="plans grid gap-6 grid-cols-1 lg:grid-cols-3 mx-16 mb-10 ">
-        <div
-          data-aos="fade-right"
-          className="plan card-body hover: hover:opacity-80 p-4 rounded-xl relative card shadow-2xl"
-        >
+        <div className="plan card-body hover: hover:opacity-80 p-4 rounded-xl relative card shadow-2xl">
           <div class="flex justify-between  items-start  ">
             <div>
               <h1 className="text-left text-xl text-primary">
@@ -44,10 +41,7 @@ const CareAndProtectionPlant = () => {
             Subscribe now
           </button>
         </div>
-        <div
-          data-aos="fade-up"
-          className="plan card-body hover: hover:opacity-80 p-4 rounded-xl relative card shadow-2xl"
-        >
+        <div className="plan card-body hover: hover:opacity-80 p-4 rounded-xl relative card shadow-2xl">
           <div class="flex justify-between  items-start  ">
             <div>
               <div className="relative ">
@@ -95,10 +89,7 @@ const CareAndProtectionPlant = () => {
             Subscribe now
           </button>
         </div>
-        <div
-          data-aos="fade-left"
-          className="plan card-body hover: hover:opacity-80 p-4 rounded-xl relative card shadow-2xl"
-        >
+        <div className="plan card-body hover: hover:opacity-80 p-4 rounded-xl relative card shadow-2xl">
           <div class="flex justify-between  items-start  ">
             <div>
               <h1 className="text-left text-xl text-primary">
@@ -135,10 +126,7 @@ const CareAndProtectionPlant = () => {
             Subscribe now
           </button>
         </div>
-        <div
-          data-aos="fade-right"
-          className="plan card-body hover: hover:opacity-80 p-4 rounded-xl relative card shadow-2xl"
-        >
+        <div className="plan card-body hover: hover:opacity-80 p-4 rounded-xl relative card shadow-2xl">
           <div class="flex justify-between  items-start  ">
             <div>
               <h1 className="text-left text-xl text-primary">
@@ -173,10 +161,7 @@ const CareAndProtectionPlant = () => {
             Subscribe now
           </button>
         </div>
-        <div
-          data-aos="fade-up"
-          className="plan card-body hover: hover:opacity-80 p-4 rounded-xl relative card shadow-2xl"
-        >
+        <div className="plan card-body hover: hover:opacity-80 p-4 rounded-xl relative card shadow-2xl">
           <div class="flex justify-between  items-start  ">
             <div>
               <h1 className="text-left text-xl text-primary">

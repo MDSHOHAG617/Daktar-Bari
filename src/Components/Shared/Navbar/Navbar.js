@@ -10,10 +10,7 @@ const Navbar = () => {
     // 👆 false parameter is required for react project
   }, []);
   return (
-    <div
-      data-aos="slide-down"
-      className="fixed top-0 left-0 right-0 bg-base-100 z-50 "
-    >
+    <div className="fixed top-0 left-0 right-0 bg-base-100 z-50 ">
       <div className="navbar  px-4 lg:px-16 lg:py-4 ">
         <div className="navbar-start items-center">
           <div className="dropdown">

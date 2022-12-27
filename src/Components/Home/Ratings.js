@@ -12,7 +12,7 @@ const Ratings = () => {
       </h1>
 
       <div className="ratings lg:flex justify-evenly items-center ">
-        <div data-aos="fade-right" className="left-ratings ">
+        <div className="left-ratings ">
           <span className="text-primary text-2xl lg:text-5xl ">4.5</span>
           <p className="text-2xl lg:text-3xl my-6">Out of 5 rating *</p>
           <div className="rating  lg:rating-lg  rating-half bg-[#F5F5F5] p-4 rounded-full">
@@ -187,11 +187,9 @@ const Ratings = () => {
           <img src="https://Daktar bari.com.bd/landing/home/video__thumbnail__image.webp" />
         </Link> */}
 
-        <div data-aos="fade-left" className="">
+        <div>
           <iframe
-            className="rounded-xl mx-auto"
-            width="560"
-            height="315"
+            className="rounded-xl mx-auto w-10/12 "
             src="https://www.youtube.com/embed/0grJjVjy5-0"
             title="YouTube video player"
             frameborder="0"

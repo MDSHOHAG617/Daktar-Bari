@@ -7,10 +7,7 @@ import underConstructionSvg from "../../images/under_construction.svg";
 const OrderMedicine = () => {
   return (
     <div className="relative">
-      <div
-        data-aos="fade-up"
-        className="absolute left-0 right-0 top-20  bottom-0  z-10 "
-      >
+      <div className="absolute left-0 right-0 top-20  bottom-0  z-10 ">
         <div className="mx-16 bg-[#EEEfff]  lg:mx-96 p-8  rounded-xl lg:shadow-xl">
           {" "}
           <img

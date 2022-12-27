@@ -3,7 +3,7 @@ import getintouch from "../../images/getintouch.svg";
 
 const GetInTouch = () => {
   return (
-    <div className="mb-20">
+    <div className="mb-20 ">
       <h1 className=" mt-32 text-2xl lg:text-5xl ">Get in touch with us</h1>
       <p className="py-6 text-lg font-semibold w-8/12 mx-auto">
         We're here to help. Send your query or question below and provide us
@@ -11,11 +11,8 @@ const GetInTouch = () => {
         possible. We aim to reply to your query within 24 hours.
       </p>
       <div className="hero min-h-screen ">
-        <div className="hero-content flex-col lg:flex-row mx-20">
-          <div
-            data-aos="fade-right"
-            className="text-center lg:text-left lg:w-6/12 lg:mr-20"
-          >
+        <div className="hero-content flex-col lg:flex-row lg:mx-20">
+          <div className="text-center lg:text-left lg:w-6/12 lg:mr-20">
             {/* <h1 className="text-5xl font-bold">Get in touch with us</h1> */}
 
             {/* gettouch img */}
@@ -23,10 +20,7 @@ const GetInTouch = () => {
             <img className=" mx-auto" src={getintouch} />
           </div>
 
-          <div
-            data-aos="fade-left"
-            className="card flex-shrink-0 w-full max-w-md shadow-2xl bg-base-100"
-          >
+          <div className="card flex-shrink-0 w-full max-w-md shadow-2xl bg-base-100">
             <div className="card-body">
               <div className="form-control">
                 <label className="label">

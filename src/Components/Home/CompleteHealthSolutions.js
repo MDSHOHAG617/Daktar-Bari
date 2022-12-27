@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const CompleteHealthSolutions = () => {
   return (
     <div className="px-16">
-      <div data-aos="fade-up" className="mt-32 ">
+      <div className="mt-32 ">
         <h1 className="text-2xl lg:text-6xl">Complete Health Solution</h1>
         <p className="w-10/12 lg:w-11/12 mx-auto lg:text-3xl font-normal mt-5 mb-14">
           Consulting a healthcare professional, buying medicine, ordering lab
@@ -20,7 +20,6 @@ const CompleteHealthSolutions = () => {
       {/* cards */}
       <div className="grid  md:grid-cols-2 lg:grid-cols-4 gap-4 ">
         <Link
-          data-aos="fade-right"
           to="/consultation"
           className="card w-72 h-52 bg-base-100 shadow-2xl mx-auto hover:border hover:opacity-75 "
         >
@@ -38,7 +37,6 @@ const CompleteHealthSolutions = () => {
           </div>
         </Link>
         <Link
-          data-aos="fade-right"
           to="/healthPlans"
           className="card w-72 h-52 bg-base-100 shadow-2xl mx-auto hover:border hover:opacity-75"
         >
@@ -56,7 +54,6 @@ const CompleteHealthSolutions = () => {
           </div>
         </Link>
         <Link
-          data-aos="fade-left"
           to="/diagnostics"
           className="card w-72 h-52 bg-base-100 shadow-2xl mx-auto hover:border hover:opacity-75"
         >
@@ -74,7 +71,6 @@ const CompleteHealthSolutions = () => {
           </div>
         </Link>
         <Link
-          data-aos="fade-left"
           to="orderMadicine"
           className="card w-72 h-52 bg-base-100 shadow-2xl mx-auto hover:border hover:opacity-75 "
         >

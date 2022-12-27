@@ -12,7 +12,6 @@ const DownloadApps = () => {
       {/* Google Play */}
       <div className="lg:flex  justify-center items-center mt-8 mb-20">
         <Link
-          data-aos="fade-up"
           to="/orderMadicine"
           className="flex justify-btween items-center bg-primary p-2 w-48 rounded-xl  mx-auto lg:mx-3 mb-2 lg:mb-0"
         >
@@ -26,7 +25,6 @@ const DownloadApps = () => {
         </Link>
         {/* App store  */}
         <Link
-          data-aos="fade-down"
           to="/orderMadicine"
           className="flex justify-center items-center bg-primary p-2 w-48 rounded-xl mx-auto lg:mx-3 mb-2 lg:mb-0"
         >
