@@ -22,20 +22,20 @@ const Home = () => {
     <div>
       <CompleteHealthSolutions />
       <DownloadApps />
-      <WhyUseDaktarBari></WhyUseDaktarBari>
-      <GetMedicalHelp></GetMedicalHelp>
-      <WhenTouseDaktarBari></WhenTouseDaktarBari>
-      <EasySteps></EasySteps>
-      <HealthCare></HealthCare>
-      <CareAndProtectionPlant></CareAndProtectionPlant>
-      <CompareAllPackages></CompareAllPackages>
-      <MainServices></MainServices>
-      <Services></Services>
-      <AvailableSpecialties></AvailableSpecialties>
-      <Ratings></Ratings>
-      <DownloadAndRegister></DownloadAndRegister>
-      <HaveAnyQuestions></HaveAnyQuestions>
-      <GetInTouch></GetInTouch>
+      <WhyUseDaktarBari />
+      <GetMedicalHelp />
+      <WhenTouseDaktarBari />
+      <EasySteps />
+      <HealthCare />
+      <CareAndProtectionPlant />
+      <CompareAllPackages />
+      <MainServices />
+      <Services />
+      <AvailableSpecialties />
+      <Ratings />
+      <DownloadAndRegister />
+      <HaveAnyQuestions />
+      <GetInTouch />
       {/* <Footer></Footer> */}
     </div>
   );

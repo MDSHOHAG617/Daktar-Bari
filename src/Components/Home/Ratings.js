@@ -189,7 +189,7 @@ const Ratings = () => {
 
         <div>
           <iframe
-            className="rounded-xl mx-auto w-10/12 "
+            className="rounded-xl mx-auto w-10/12 h-[200px] lg:w-[550px] lg:h-[300px] "
             src="https://www.youtube.com/embed/0grJjVjy5-0"
             title="YouTube video player"
             frameborder="0"
