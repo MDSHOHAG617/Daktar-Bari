@@ -1,10 +1,21 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, Navigate, NavLink, useNavigate } from "react-router-dom";
 import giflogo from "../../../images/GIFLogo.png";
 import { useEffect } from "react";
 import { themeChange } from "theme-change";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../../firebase.init";
+import { signOut } from "firebase/auth";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const [user, loading, error] = useAuthState(auth);
+  //signOut
+  const logout = () => {
+    signOut(auth);
+    navigate("/");
+    // localStorage.removeItem("accessToken");
+  };
   useEffect(() => {
     themeChange(false);
     // 👆 false parameter is required for react project
@@ -99,9 +110,18 @@ const Navbar = () => {
         </div>
         <div className="navbar-end ">
           <div>
-            <Link to="/login" className="rounded-full bg-primary p-1 lg:p-2">
-              <span className=" px-2 lg:px-4 text-white "> Login</span>
-            </Link>
+            {user ? (
+              <button
+                onClick={logout}
+                className="rounded-full bg-primary p-1 lg:p-2"
+              >
+                <span className=" px-2 lg:px-4 text-white "> Logout</span>
+              </button>
+            ) : (
+              <Link to="/login" className="rounded-full bg-primary p-1 lg:p-2">
+                <span className=" px-2 lg:px-4 text-white "> Login</span>
+              </Link>
+            )}
           </div>
           {/* <select data-choose-theme className="outline-none bg-transparent">
             <option className="" value="">
