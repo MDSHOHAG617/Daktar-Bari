@@ -6,8 +6,10 @@ import Enterprise from "./Components/Enterprise/Enterprise";
 import HealthPlans from "./Components/HealthPlans/HealthPlans";
 import Home from "./Components/Home/Home";
 import OrderMedicine from "./Components/OrderMedicine/OrderMedicine";
+import Login from "./Components/Shared/Login/Login";
 import Footer from "./Components/Shared/Navbar/Footer";
 import Navbar from "./Components/Shared/Navbar/Navbar";
+import SignUp from "./Components/Shared/SignUp/SignUp";
 
 function App() {
   return (
@@ -17,8 +19,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="consultation" element={<Consultations />} />
         <Route path="healthPlans" element={<HealthPlans />} />
-        <Route path="orderMadicine" element={<OrderMedicine />} />
+        <Route path="orderMedicine" element={<OrderMedicine />} />
         <Route path="enterprise" element={<Enterprise />} />
+        <Route path="signUp" element={<SignUp />} />
+        <Route path="login" element={<Login />} />
       </Routes>
       <Footer></Footer>
     </div>

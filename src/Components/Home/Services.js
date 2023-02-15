@@ -6,7 +6,7 @@ const Services = () => {
       <div className="flex items-start service">
         <img
           className="w-16 mr-6"
-          src="https://Daktar bari.com.bd/images/feature/verified__doctors.svg"
+          src="https://doctime.com.bd/images/feature/verified__doctors.svg"
         />
         <div className="text-left ">
           <h1 className="text-xl mb-3">Verified doctors</h1>
@@ -19,7 +19,7 @@ const Services = () => {
       <div className="flex items-start service">
         <img
           className="w-16 mr-6 "
-          src="https://Daktar bari.com.bd/images/feature/instant__video__consultation.svg"
+          src="https://doctime.com.bd/images/feature/instant__video__consultation.svg"
         />
         <div className="text-left ">
           <h1 className="text-xl mb-3">Instant video consultation</h1>
@@ -32,7 +32,7 @@ const Services = () => {
       <div className="flex items-start service">
         <img
           className="w-16  mr-6"
-          src="https://Daktar bari.com.bd/images/feature/Instant_electronics_prescription.svg"
+          src="https://doctime.com.bd/images/feature/Instant_electronics_prescription.svg"
         />
         <div className="text-left ">
           <h1 className="text-xl mb-3">Instant electronics prescription</h1>
@@ -46,7 +46,7 @@ const Services = () => {
       <div className="flex items-start service">
         <img
           className="w-16  mr-6"
-          src="https://Daktar bari.com.bd/images/feature/easy__payment.svg"
+          src="https://doctime.com.bd/images/feature/easy__payment.svg"
         />
         <div className="text-left ">
           <h1 className="text-xl mb-3">Easy payment options</h1>
@@ -60,7 +60,7 @@ const Services = () => {
       <div className="flex items-start service">
         <img
           className="w-16 mr-6 "
-          src="https://Daktar bari.com.bd/images/feature/better__consultation__quality.svg"
+          src="https://doctime.com.bd/images/feature/better__consultation__quality.svg"
         />
         <div className="text-left">
           <h1 className="text-xl mb-3">Better consultation quality</h1>
@@ -74,7 +74,7 @@ const Services = () => {
       <div className="flex items-start service">
         <img
           className="w-16 mr-6 "
-          src="https://Daktar bari.com.bd/images/feature/health__history.svg"
+          src="https://doctime.com.bd/images/feature/health__history.svg"
         />
         <div className="text-left">
           <h1 className="text-xl mb-3">Health history</h1>
@@ -87,7 +87,7 @@ const Services = () => {
       <div className="flex items-start service">
         <img
           className="w-16 mr-6 "
-          src="https://Daktar bari.com.bd/images/feature/super__fast__support.svg"
+          src="https://doctime.com.bd/images/feature/super__fast__support.svg"
         />
         <div className="text-left">
           <h1 className="text-xl mb-3">Super fast support</h1>
@@ -100,7 +100,7 @@ const Services = () => {
       <div className="flex items-start service">
         <img
           className="w-16 mr-6 "
-          src="https://Daktar bari.com.bd/images/feature/medicine__delivered.svg"
+          src="https://doctime.com.bd/images/feature/medicine__delivered.svg"
         />
         <div className="text-left">
           <h1 className="text-xl mb-3">Medicine delivered to your doorstep</h1>
@@ -113,7 +113,7 @@ const Services = () => {
       <div className="flex items-start service">
         <img
           className="w-16 mr-6 "
-          src="https://Daktar bari.com.bd/images/feature/mobile__reminder.svg"
+          src="https://doctime.com.bd/images/feature/mobile__reminder.svg"
         />
         <div className="text-left">
           <h1 className="text-xl mb-3">Medicine reminder</h1>
