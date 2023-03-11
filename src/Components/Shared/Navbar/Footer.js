@@ -12,6 +12,8 @@ import { AiFillApple } from "react-icons/ai";
 import { FaLaptopMedical } from "react-icons/fa";
 
 const Footer = () => {
+  const today = new Date();
+  const year = today.getFullYear();
   return (
     <div className="">
       <hr />
@@ -84,7 +86,8 @@ const Footer = () => {
       <div className="">
         <hr></hr>
         <p className="pb-4 pt-8 font-normal  ">
-          Copyright © 2022 <span className="text-[#07C0BA]">Daktar bari.</span>
+          Copyright © {year}
+          <span className="text-[#07C0BA]"> Daktar bari </span>
           All rights reserved.
         </p>
       </div>
