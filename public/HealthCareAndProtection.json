@@ -1,0 +1,18 @@
+[
+  {
+    "id": 0,
+    "name": "Daktar bari Care",
+    "price": "৳ 114",
+    "perMonth": "/month",
+    "for": "For 1 adult",
+    "img": "https://cdn-icons-png.flaticon.com/512/214/214700.png",
+
+    "services": [
+      {
+        "service": " Unlimited consultations with our experienced on duty General Physician & Gynaecology Doctors"
+      },
+      { "service": " Up-to 40% discount on home diagnostic tests." }
+    ],
+    "button": "Subscribe now"
+  }
+]
