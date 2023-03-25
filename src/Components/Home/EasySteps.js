@@ -6,20 +6,20 @@ import { FaHandHoldingMedical } from "react-icons/fa";
 
 const EasySteps = () => {
   return (
-    <div className="lg:mt-32">
+    <div className="lg:mt-32 ">
       {/* heading */}
       <div className="lg:mb-32">
         <h1 className=" text-2xl lg:text-5xl text-center mt-8 lg:mt-0">
           Easy Steps To Feel Better Rapidly
         </h1>
-        <p className="font-normal lg:text-xl my-4 lg:my-12 mx-4 lg:mx-64 text-justify">
+        <p className="font-normal lg:text-xl my-4 lg:my-12 mx-4 lg:mx-64  text-center">
           You do not have to wait in line for hours or go to the hospital to
           take healthcare services. Easily consult a doctor in just 10 minutes
           on your device at home or office.
         </p>
       </div>
       {/* main section */}
-      <div className="main-sec grid grid-cols-1 lg:grid-cols-2 lg:mx-16">
+      <div className=" grid grid-cols-1 lg:grid-cols-2 lg:mr-32 items-center ">
         {/* mobile  */}
         <div className="mockup-phone p-1 ">
           <div className="camera "></div>
@@ -33,7 +33,7 @@ const EasySteps = () => {
           </div>
         </div>
         {/* text sec */}
-        <div className="hidden lg:block">
+        <div className="hidden lg:block ">
           <ul className="  steps lg:steps-vertical mt-6">
             <li className="step step-primary ">
               <div className="items-center flex items-center ">

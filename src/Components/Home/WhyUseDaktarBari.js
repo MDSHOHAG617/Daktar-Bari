@@ -4,17 +4,19 @@ import medicine from "../../images/medicine_b-1-ol.svg";
 
 const WhyUseDaktarBari = () => {
   return (
-    <div className=" lg:mt-32">
-      <h1 className=" text-2xl lg:text-5xl lg:text-left text-center  lg:ml-16 ">
+    <div className=" lg:mt-32 mx-16">
+      <h1 className=" text-2xl lg:text-5xl lg:text-left text-center   ">
         Why use Daktar Bari
       </h1>
-      {/* hero section */}
-      <div className="hero flex justify-center items-center  ">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <img src={medicine} className="  w-7/12 lg:p-10 mt-4 lg:mt-0" />
-          <div className="w-100 p-8">
+      <div className="hero  ">
+        <div className="hero-content flex-col lg:flex-row-reverse ">
+          <div className="">
+            <img src={medicine} className="w-10/12 float-right " />
+          </div>
+
+          <div className="">
             <ul className="steps steps-vertical">
-              <li className="step step-primary font-semibold my-2 lg:my-6  font-normal text-md">
+              <li className="step step-primary font-semibold my-2 lg:my-4  font-normal text-md">
                 Access any GP or specialist doctor you need at anytime from
                 anywhere
               </li>
