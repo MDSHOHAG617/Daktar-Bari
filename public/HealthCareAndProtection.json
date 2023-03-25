@@ -14,5 +14,71 @@
       { "service": " Up-to 40% discount on home diagnostic tests." }
     ],
     "button": "Subscribe now"
+  },
+  {
+    "id": 1,
+    "name": "Daktar bari Care Plus",
+    "price": "৳ 200",
+    "perMonth": "/month",
+    "for": "For 1 adult",
+    "img": "https://cdn-icons-png.flaticon.com/512/214/214700.png",
+
+    "services": [
+      {
+        "service": " Unlimited consultations with our experienced on duty General Physician & Gynaecology Doctors"
+      },
+      { "service": " Up-to 40% discount on home diagnostic tests." },
+      { "service": " ৳ 40,000 cashback ons health & life insurance." }
+    ],
+    "button": "Subscribe now"
+  },
+  {
+    "id": 2,
+    "name": "Daktar bari Family Care",
+    "price": "৳ 309",
+    "perMonth": "/month",
+    "for": "For 3 family members",
+    "img": "https://cdn-icons-png.flaticon.com/512/214/214700.png",
+
+    "services": [
+      {
+        "service": " Unlimited consultations with our experienced on duty General Physician & Gynaecology Doctors"
+      },
+      { "service": " Up-to 40% discount on home diagnostic tests." }
+    ],
+    "button": "Subscribe now"
+  },
+  {
+    "id": 3,
+    "name": "Daktar bari Special Care",
+    "price": "৳ 451",
+    "perMonth": "/month",
+    "for": "For 1 adult",
+    "img": "https://cdn-icons-png.flaticon.com/512/214/214700.png",
+
+    "services": [
+      {
+        "service": " Unlimited consultations with our experienced on duty General Physician & Gynaecology Doctors"
+      },
+      { "service": "Free 4 consultations with specialists in a year" }
+    ],
+    "button": "Subscribe now"
+  },
+  {
+    "id": 4,
+    "name": "Daktar bari Premium Care",
+    "price": "৳ 570",
+    "perMonth": "/month",
+    "for": "For 1 adult",
+    "img": "https://cdn-icons-png.flaticon.com/512/214/214700.png",
+
+    "services": [
+      {
+        "service": " Unlimited consultations with our experienced on duty General Physician & Gynaecology Doctors"
+      },
+      { "service": "Free 4 consultations with specialists in a year" },
+      { "service": "৳ 350,000 cashback on health & life insurance." }
+    ],
+    "button": "Subscribe now"
   }
 ]
