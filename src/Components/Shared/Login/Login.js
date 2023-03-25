@@ -42,7 +42,7 @@ const Login = () => {
   //   if (loading || gLoading) {
   //     // return <Loading></Loading>;
   //   }
-  if (user) {
+  if (user || gUser) {
     navigate("/");
   }
 

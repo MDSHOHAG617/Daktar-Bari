@@ -49,7 +49,7 @@ const SignUp = () => {
   //   navigate("/");
   // }
 
-  if (user) {
+  if (user || gUser) {
     navigate("/");
   }
 
