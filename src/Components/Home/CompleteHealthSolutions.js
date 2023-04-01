@@ -21,7 +21,7 @@ const CompleteHealthSolutions = () => {
       <div className="grid  md:grid-cols-2 lg:grid-cols-4 gap-4 ">
         <Link
           to="/consultation"
-          className="card bg-base-100 shadow-2xl mx-auto hover:border hover:opacity-75 h-full w-full transition ease-in-out delay-100  hover:-translate-y-5 hover:scale-100  duration-100 "
+          className="card  shadow-2xl mx-auto hover:border hover:opacity-75 h-full w-full transition ease-in-out delay-100  hover:-translate-y-5 hover:scale-100  duration-100 "
         >
           <div className="card-body">
             <img className="w-10 mx-auto" src={videoConsulting}></img>
@@ -38,7 +38,7 @@ const CompleteHealthSolutions = () => {
         </Link>
         <Link
           to="/healthPlans"
-          className="card  bg-base-100 shadow-2xl mx-auto hover:border hover:opacity-75 h-full w-full transition ease-in-out delay-100  hover:-translate-y-5 hover:scale-100  duration-100 "
+          className="card  shadow-2xl mx-auto hover:border hover:opacity-75 h-full w-full transition ease-in-out delay-100  hover:-translate-y-5 hover:scale-100  duration-100 "
         >
           <div className="card-body">
             <img className="w-14 mx-auto" src={healthPackages}></img>
@@ -55,7 +55,7 @@ const CompleteHealthSolutions = () => {
         </Link>
         <Link
           to="/diagnostics"
-          className="card  bg-base-100 shadow-2xl mx-auto hover:border hover:opacity-75 h-full w-full transition ease-in-out delay-100  hover:-translate-y-5 hover:scale-100  duration-100 "
+          className="card shadow-2xl mx-auto hover:border hover:opacity-75 h-full w-full transition ease-in-out delay-100  hover:-translate-y-5 hover:scale-100  duration-100 "
         >
           <div className="card-body">
             <img className="w-14 mx-auto" src={diagnostic}></img>
@@ -72,7 +72,7 @@ const CompleteHealthSolutions = () => {
         </Link>
         <Link
           to="orderMadicine"
-          className="card   shadow-2xl mx-auto hover:border hover:opacity-60 h-full w-full transition ease-in-out delay-100  hover:-translate-y-5 hover:scale-100  duration-100  "
+          className="card shadow-2xl mx-auto hover:border hover:opacity-60 h-full w-full transition ease-in-out delay-100  hover:-translate-y-5 hover:scale-100  duration-100  "
         >
           <div className="card-body">
             <img className="w-20 mx-auto" src={orderMedicin}></img>

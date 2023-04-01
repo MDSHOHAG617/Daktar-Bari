@@ -62,7 +62,7 @@ const SignUp = () => {
     <div className="hero min-h-screen my-10">
       <div className="hero-content flex-col lg:flex-row">
         <div className="">
-          <img src={mobilelogin} className="w-10/12" />
+          <img src={mobilelogin} className="w-10/12 " />
         </div>
 
         <div className="card w-96  shadow- ">
