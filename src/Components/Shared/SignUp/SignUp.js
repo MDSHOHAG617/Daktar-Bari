@@ -9,9 +9,9 @@ import { useForm } from "react-hook-form";
 // import Loading from "../Shared/Loading";
 import { Link, useNavigate } from "react-router-dom";
 // import useToken from "../../hooks/useToken";
-import login from "../../../images/login.svg";
-import signUp from "../../../images/secureLogin.svg";
 import mobilelogin from "../../../images/mobilelogin.svg";
+import useToken from "../../../hooks/useToken";
+import Loading from "../../Loading/Loading";
 
 const SignUp = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -25,14 +25,14 @@ const SignUp = () => {
 
   const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
-  // const [token] = useToken(user || gUser);
+  const [token] = useToken(user || gUser);
 
   const navigate = useNavigate();
 
   let signInError;
 
   if (loading || gLoading || updating) {
-    // return <Loading></Loading>;
+    return <Loading />;
   }
 
   if (error || gError || updateError) {
@@ -45,11 +45,7 @@ const SignUp = () => {
     );
   }
 
-  // if (token) {
-  //   navigate("/");
-  // }
-
-  if (user || gUser) {
+  if (token) {
     navigate("/");
   }
 
