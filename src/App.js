@@ -11,6 +11,10 @@ import Login from "./Components/Shared/Login/Login";
 import Footer from "./Components/Shared/Navbar/Footer";
 import Navbar from "./Components/Shared/Navbar/Navbar";
 import SignUp from "./Components/Shared/SignUp/SignUp";
+import RequireAuth from "./Components/Shared/Auth/RequireAuth";
+import DashBoard from "./Components/Dashboard/DashBoard";
+import RequireAdmin from "./Components/Shared/Auth/RequireAdmin";
+import AddMedicine from "./Components/Dashboard/AddMedicine";
 
 function App() {
   return (
@@ -25,6 +29,43 @@ function App() {
         <Route path="forDoctors" element={<ForDoctors />} />
         <Route path="signUp" element={<SignUp />} />
         <Route path="login" element={<Login />} />
+
+        {/* dashboard */}
+        <Route
+          path="/dashboard"
+          element={
+            <RequireAuth>
+              <DashBoard />
+            </RequireAuth>
+          }
+        >
+          {/* <Route index element={<MyOrders></MyOrders>}></Route> */}
+          {/* <Route path="payment/:id" element={<Payment></Payment>}></Route> */}
+          <Route
+            path="addMedicine"
+            element={
+              <RequireAdmin>
+                <AddMedicine />
+              </RequireAdmin>
+            }
+          ></Route>
+          {/* <Route
+            path="manageProducts"
+            element={
+              <RequireAdmin>
+                <ManageProducts></ManageProducts>
+              </RequireAdmin>
+            }
+          ></Route> */}
+          {/* <Route
+            path="allCustomers"
+            element={
+              <RequireAdmin>
+                <AllCustomers></AllCustomers>
+              </RequireAdmin>
+            }
+          ></Route> */}
+        </Route>
       </Routes>
       <Footer></Footer>
     </div>
