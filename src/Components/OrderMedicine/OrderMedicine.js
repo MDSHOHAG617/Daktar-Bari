@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaGooglePlay } from "react-icons/fa";
 import QrCode from "../../images/QRCode.png";
 import underConstruction from "../../images/underConstruction.png";
 import underConstructionSvg from "../../images/under_construction.svg";
+import OrderMedicines from "./OrderMedicines";
 
 const OrderMedicine = () => {
+  const [medicines, setMedicine] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:5000/medicine")
+      .then((res) => res.json())
+      .then((data) => setMedicine(data));
+  }, []);
   return (
-    <div className="relative">
-      <div className="absolute left-0 right-0 top-20  bottom-0  z-10 ">
+    <div className=" mt-32  ">
+      {/* <div className="absolute left-0 right-0 top-20  bottom-0  z-10 ">
         <div className="mx-16 bg-[#EEEfff]  lg:mx-96 p-8  rounded-xl lg:shadow-xl">
           {" "}
           <img
@@ -22,8 +29,8 @@ const OrderMedicine = () => {
             Our App is under Construction!
           </h1>
         </div>
-      </div>
-      <div className=" mx-16 my-32 text-left  lg:flex items-center opacity-30   ">
+      </div> */}
+      {/* <div className=" mx-16 my-32 text-left  lg:flex items-center opacity-30   ">
         <div>
           {" "}
           <h1 className=" text-2xl  lg:text-4xl mb-4 lg:mb-10">
@@ -50,6 +57,15 @@ const OrderMedicine = () => {
             src="https://doctime.com.bd/images/medicine_online.webp"
           />
         </div>
+      </div> */}
+
+      <div className="grid lg:grid-cols-3 gap-5 ">
+        {medicines.map((medicine) => (
+          <OrderMedicines
+            key={medicine.id}
+            medicine={medicine}
+          ></OrderMedicines>
+        ))}
       </div>
     </div>
   );

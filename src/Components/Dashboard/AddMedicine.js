@@ -37,7 +37,7 @@ const AddMedicine = () => {
       });
   };
   return (
-    <div className="mb-20">
+    <div className="my-16">
       <form onSubmit={handleAddItems}>
         <div class="card flex-shrink-0 w-full max-w-sm lg:max-w-md  shadow-2xl  mx-auto">
           <div class="card-body">
