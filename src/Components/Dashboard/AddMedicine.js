@@ -12,6 +12,7 @@ const AddMedicine = () => {
     const available_quantity = event.target.supplier.value;
     const desc = event.target.description.value;
     console.log(img, name, price, min_order_quantity, available_quantity, desc);
+
     const Items = {
       img,
       name,
@@ -36,7 +37,7 @@ const AddMedicine = () => {
       });
   };
   return (
-    <div className="my-24">
+    <div className="mb-20">
       <form onSubmit={handleAddItems}>
         <div class="card flex-shrink-0 w-full max-w-sm lg:max-w-md  shadow-2xl  mx-auto">
           <div class="card-body">
