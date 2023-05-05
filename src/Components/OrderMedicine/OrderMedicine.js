@@ -1,19 +1,29 @@
 import React, { useEffect, useState } from "react";
-import { FaGooglePlay } from "react-icons/fa";
-import QrCode from "../../images/QRCode.png";
-import underConstruction from "../../images/underConstruction.png";
-import underConstructionSvg from "../../images/under_construction.svg";
+// import { FaGooglePlay } from "react-icons/fa";
+// import QrCode from "../../images/QRCode.png";
+// import underConstruction from "../../images/underConstruction.png";
+// import underConstructionSvg from "../../images/under_construction.svg";
 import OrderMedicines from "./OrderMedicines";
+import Loading from "../Loading/Loading";
+import auth from "../../firebase.init";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 const OrderMedicine = () => {
+  const [user, loading] = useAuthState(auth);
+
   const [medicines, setMedicine] = useState([]);
   useEffect(() => {
     fetch("http://localhost:5000/medicine")
       .then((res) => res.json())
       .then((data) => setMedicine(data));
   }, []);
+
+  if (loading) {
+    return <Loading />;
+  }
+
   return (
-    <div className=" mt-32  ">
+    <div className=" my-32  ">
       {/* <div className="absolute left-0 right-0 top-20  bottom-0  z-10 ">
         <div className="mx-16 bg-[#EEEfff]  lg:mx-96 p-8  rounded-xl lg:shadow-xl">
           {" "}
