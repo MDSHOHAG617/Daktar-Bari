@@ -3,12 +3,12 @@ import React, { useEffect, useState } from "react";
 // import QrCode from "../../images/QRCode.png";
 // import underConstruction from "../../images/underConstruction.png";
 // import underConstructionSvg from "../../images/under_construction.svg";
-import OrderMedicines from "./OrderMedicines";
 import Loading from "../Loading/Loading";
 import auth from "../../firebase.init";
 import { useAuthState } from "react-firebase-hooks/auth";
+import Medicines from "./Medicines";
 
-const OrderMedicine = () => {
+const Medicine = () => {
   const [user, loading] = useAuthState(auth);
 
   const [medicines, setMedicine] = useState([]);
@@ -71,14 +71,11 @@ const OrderMedicine = () => {
 
       <div className="grid lg:grid-cols-3 gap-5 ">
         {medicines.map((medicine) => (
-          <OrderMedicines
-            key={medicine.id}
-            medicine={medicine}
-          ></OrderMedicines>
+          <Medicines key={medicine.id} medicine={medicine}></Medicines>
         ))}
       </div>
     </div>
   );
 };
 
-export default OrderMedicine;
+export default Medicine;

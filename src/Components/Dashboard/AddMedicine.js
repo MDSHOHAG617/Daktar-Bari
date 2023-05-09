@@ -11,7 +11,7 @@ const AddMedicine = () => {
     const min_order_quantity = event.target.Quantity.value;
     const available_quantity = event.target.supplier.value;
     const desc = event.target.description.value;
-    console.log(img, name, price, min_order_quantity, available_quantity, desc);
+    // console.log(img, name, price, min_order_quantity, available_quantity, desc);
 
     const Items = {
       img,
