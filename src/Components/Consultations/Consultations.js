@@ -4,8 +4,8 @@ import Consultation from "./Consultation";
 const Consultations = () => {
   const [specialties, setSpecialties] = useState([]);
   useEffect(() => {
-    // fetch("http://localhost:5000/specialty")
-    fetch("Specialty.json")
+    fetch("http://localhost:5000/specialty")
+      // fetch("Specialty.json")
       .then((res) => res.json())
       .then((data) => setSpecialties(data));
   }, []);

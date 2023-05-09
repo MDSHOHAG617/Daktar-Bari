@@ -7,7 +7,7 @@ import auth from "../../firebase.init";
 const Purchase = () => {
   const [user, loading, error] = useAuthState(auth);
   const { id } = useParams();
-  const [tools, setTools] = useState({});
+  const [medicine, setMedicine] = useState({});
   const {
     name,
     img,
@@ -16,7 +16,8 @@ const Purchase = () => {
     available_quantity,
     price,
     _id,
-  } = tools;
+  } = medicine;
+  console.log(medicine);
 
   const handleOrder = (event) => {
     event.preventDefault();
@@ -50,7 +51,7 @@ const Purchase = () => {
   useEffect(() => {
     fetch(`http://localhost:5000/medicine/${id}`)
       .then((res) => res.json())
-      .then((data) => setTools(data));
+      .then((data) => setMedicine(data));
   }, [id]);
   return (
     <div>
