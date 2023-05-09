@@ -69,7 +69,7 @@ const Medicine = () => {
         </div>
       </div> */}
 
-      <div className="grid lg:grid-cols-3 gap-5 ">
+      <div className="grid lg:grid-cols-4 gap-5 ">
         {medicines.map((medicine) => (
           <Medicines key={medicine.id} medicine={medicine}></Medicines>
         ))}
