@@ -6,7 +6,6 @@ import Enterprise from "./Components/Enterprise/Enterprise";
 import HealthPlans from "./Components/HealthPlans/HealthPlans";
 import ForDoctors from "./Components/Home/ForDoctors";
 import Home from "./Components/Home/Home";
-import Medicine from "./Components/Medicines/Medicine";
 import Login from "./Components/Shared/Login/Login";
 import Footer from "./Components/Shared/Navbar/Footer";
 import Navbar from "./Components/Shared/Navbar/Navbar";
@@ -16,6 +15,8 @@ import DashBoard from "./Components/Dashboard/DashBoard";
 import RequireAdmin from "./Components/Shared/Auth/RequireAdmin";
 import AddMedicine from "./Components/Dashboard/AddMedicine";
 import Purchase from "./Components/Purchase/Purchase";
+import Medicine from "./Components/Medicines/Medicine";
+import MyOrders from "./Components/Dashboard/MyOrders";
 
 function App() {
   return (
@@ -50,7 +51,7 @@ function App() {
             </RequireAuth>
           }
         >
-          {/* <Route index element={<MyOrders></MyOrders>}></Route> */}
+          <Route index element={<MyOrders />}></Route>
           {/* <Route path="payment/:id" element={<Payment></Payment>}></Route> */}
           <Route
             path="addMedicine"

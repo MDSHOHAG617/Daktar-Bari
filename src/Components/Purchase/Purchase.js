@@ -55,11 +55,11 @@ const Purchase = () => {
   }, [id]);
   return (
     <div>
-      <div class="  ">
+      <div class=" my-28 ">
         <div class=" grid  lg:grid-cols-2   ">
           <div className="card flex-shrink-0 w-full max-w-sm  mx-auto">
             <figure className=" ">
-              <img src={img} className="rounded-xl" alt="" />
+              <img src={img} className="rounded-xl w-52" alt="" />
             </figure>
             <div className="card-body items-center text-center">
               <h2 className="card-title">{name}</h2>

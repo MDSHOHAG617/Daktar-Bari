@@ -57,12 +57,21 @@ const Navbar = () => {
               <li>
                 <NavLink to="/OrderMedicine">Order Medicine</NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to="/diagnostics">Home Diagnostics</NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink to="/enterprise">Enterprise</NavLink>
               </li>
+              {user ? (
+                <li>
+                  <NavLink className="rounded font-semibold" to="/dashboard">
+                    Dashboard
+                  </NavLink>
+                </li>
+              ) : (
+                <></>
+              )}
               <li>
                 <NavLink to="/forDoctors">For Doctors</NavLink>
               </li>
@@ -91,16 +100,26 @@ const Navbar = () => {
                 Order Medicine
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink className="rounded font-semibold" to="/diagnostics">
                 Home Diagnostics
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink className="rounded font-semibold" to="/enterprise">
                 Enterprise
               </NavLink>
             </li>
+            {user ? (
+              <li>
+                <NavLink className="rounded font-semibold" to="/dashboard">
+                  Dashboard
+                </NavLink>
+              </li>
+            ) : (
+              <></>
+            )}
+
             <li>
               <NavLink className="rounded font-semibold" to="/forDoctors">
                 For Doctors

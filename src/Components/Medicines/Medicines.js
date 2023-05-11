@@ -14,7 +14,7 @@ const Medicines = ({ medicine }) => {
   } = medicine;
   return (
     <Link to={`/purchase/${_id}`} className="mx-auto">
-      <div className=" flex items-center bg-base-100 shadow-md">
+      <div className=" flex items-center bg-base-100 shadow-md h-full ">
         <figure>
           <img className="w-28 p-2" src={img} />
         </figure>
