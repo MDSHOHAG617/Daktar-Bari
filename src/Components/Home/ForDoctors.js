@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ForDoctors = () => {
   return (
@@ -22,9 +23,12 @@ const ForDoctors = () => {
             <p className="mt-8 font-normal text-lg font-semibold lg:text-left">
               Enroll yourself just in minutes!
             </p>
-            <button className="btn rounded-full bg-[#07C0BA] border-none  text-white px-8 btn-md my-8 ">
+            <Link
+              to="/doctorsRegistration"
+              className="btn rounded-full bg-[#07C0BA] border-none  text-white px-8 btn-md my-8 "
+            >
               Sign up Now
-            </button>
+            </Link>
           </div>
         </div>
         <div className="banner-right">

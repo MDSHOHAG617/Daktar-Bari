@@ -17,6 +17,7 @@ import AddMedicine from "./Components/Dashboard/AddMedicine";
 import Purchase from "./Components/Purchase/Purchase";
 import Medicine from "./Components/Medicines/Medicine";
 import MyOrders from "./Components/Dashboard/MyOrders";
+import DoctorsRegistration from "./Components/Home/DoctorsRegistration";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="orderMedicine" element={<Medicine />} />
         <Route path="enterprise" element={<Enterprise />} />
         <Route path="forDoctors" element={<ForDoctors />} />
+        <Route path="/doctorsRegistration" element={<DoctorsRegistration />} />
         <Route path="signUp" element={<SignUp />} />
         <Route path="login" element={<Login />} />
 
