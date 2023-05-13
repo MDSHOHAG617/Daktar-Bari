@@ -13,8 +13,8 @@ const Medicines = ({ medicine }) => {
     price,
   } = medicine;
   return (
-    <Link to={`/purchase/${_id}`} className="mx-auto">
-      <div className=" flex items-center bg-base-100 shadow-md h-full ">
+    <Link to={`/purchase/${_id}`} className="mx-auto ">
+      <div className=" flex items-center bg-base-100 shadow-md h-full w-96 lg:w-72 rounded-lg">
         <figure>
           <img className="w-28 p-2" src={img} />
         </figure>
