@@ -51,60 +51,85 @@ const DoctorsRegistration = () => {
     console.log("update done");
   };
   return (
-    <div className="my-32 px-16">
+    <div className=" my-48  px-16">
       <div className="flex h-screen justify-center items-center">
-        <div className="card w-full">
+        <div className="card w-full shadow-xl">
           <div className="card-body w-full">
             {/* <h2 className="text-center text-2xl font-bold">Sign Up</h2> */}
-            <h2 className="text-center text-2xl font-bold">
+            <h2 className="text-center text-2xl font-bold mb-6">
               {" "}
               Doctor Registration
             </h2>
             <form onSubmit={handleSubmit(onSubmit)}>
-              <div className="form-control w-full ">
-                {/* try start */}
-                <label className="label">
-                  <span className="label-text">Title</span>
-                </label>
+              {/*title start*/}
+              {/* <div className="form-control w-full ">
                 <input
                   type="text"
                   placeholder="Enter your title"
-                  className="input input-bordered w-full "
-                  {...register("name", {
+                  className="input input-bordered w-full font-normal text-xs"
+                  {...register("title", {
                     required: {
                       value: true,
-                      message: "Name is Required",
+                      message: "Title is required",
                     },
                   })}
                 />
-
-                <div className="flex mt-4  ">
-                  {" "}
+                <label className="label">
+                  {errors.title?.type === "required" && (
+                    <span className="label-text-alt text-red-500">
+                      {errors.title.message}
+                    </span>
+                  )}
+                </label>
+              </div> */}
+              {/*  title end*/}
+              {/* name start */}
+              {/* <div className="flex mt-2 "> */} {/* first name */}
+              {/* <div className="form-control w-full mr-4">
                   <input
                     type="text"
-                    placeholder="Enter Your First Name"
-                    className="input input-bordered w-1/2 mr-6"
-                    {...register("name", {
+                    placeholder="First name"
+                    className="input input-bordered w-full font-normal text-xs"
+                    {...register("firstName", {
                       required: {
                         value: true,
-                        message: "Name is Required",
+                        message: "First name is required",
                       },
                     })}
                   />
+                  <label className="label">
+                    {errors.firstName?.type === "required" && (
+                      <span className="label-text-alt text-red-500">
+                        {errors.firstName.message}
+                      </span>
+                    )}
+                  </label>
+                </div> */}
+              {/* Last name */}
+              {/* <div className="form-control w-full ">
                   <input
                     type="text"
-                    placeholder="Your Name"
-                    className="input input-bordered w-1/2"
-                    {...register("name", {
+                    placeholder="Last name"
+                    className="input input-bordered w-full font-normal text-xs"
+                    {...register("lastName", {
                       required: {
                         value: true,
-                        message: "Name is Required",
+                        message: "Last name is required",
                       },
                     })}
                   />
+                  <label className="label">
+                    {errors.lastName?.type === "required" && (
+                      <span className="label-text-alt text-red-500">
+                        {errors.lastName.message}
+                      </span>
+                    )}
+                  </label>
                 </div>
-                {/* try end */}
-                {/* name  start*/}
+              </div> */}
+              {/* name end */}
+              {/* name  start*/}
+              <div className="form-control w-full ">
                 <label className="label">
                   <span className="label-text">Name</span>
                 </label>
@@ -119,7 +144,6 @@ const DoctorsRegistration = () => {
                     },
                   })}
                 />
-                {/* name end */}
                 <label className="label">
                   {errors.name?.type === "required" && (
                     <span className="label-text-alt text-red-500">
@@ -128,7 +152,7 @@ const DoctorsRegistration = () => {
                   )}
                 </label>
               </div>
-
+              {/* name end */}
               <div className="form-control w-full max-w-xs">
                 <label className="label">
                   <span className="label-text">Email</span>
@@ -193,7 +217,6 @@ const DoctorsRegistration = () => {
                   )}
                 </label>
               </div>
-
               {signInError}
               <input
                 className="btn w-full max-w-xs text-white"
