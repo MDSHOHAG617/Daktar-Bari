@@ -41,7 +41,7 @@ const DoctorsRegistration = () => {
     );
   }
 
-  if (token) {
+  if (token || user || gUser) {
     navigate("/");
   }
 
