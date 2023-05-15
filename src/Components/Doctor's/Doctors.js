@@ -1,36 +1,59 @@
 import React, { useEffect, useState } from "react";
-import { useAuthState, useSignInWithGoogle } from "react-firebase-hooks/auth";
+import {
+  useAuthState,
+  useCreateUserWithEmailAndPassword,
+  useSignInWithGoogle,
+} from "react-firebase-hooks/auth";
 import { Link, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import auth from "../../firebase.init";
 
 const Doctors = () => {
-  const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
-  const [user, loading, error] = useAuthState(auth);
-  // const { id } = useParams();
-  // const [medicine, setMedicine] = useState({});
-  // const {
-  //   name,
-  //   img,
-  //   desc,
-  //   min_order_quantity,
-  //   available_quantity,
-  //   price,
-  //   _id,
-  // } = medicine;
-  // console.log(medicine);
+  const [createUserWithEmailAndPassword, user, loading, error] =
+    useCreateUserWithEmailAndPassword(auth);
 
-  const handleOrder = (event) => {
-    event.preventDefault();
+  const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
+
+  const handleDoctors = (event) => {
+    const title = event.target.title.value;
+    const firstName = event.target.firstName.value;
+    const lastName = event.target.lastName.value;
+    const dateOfBirth = event.target.dateOfBirth.value;
+    const gender = event.target.gender.value;
+    const about = event.target.about.value;
+    const availability = event.target.availability.value;
+    const specialty = event.target.specialty.value;
+    const experience = event.target.experience.value;
+    const consultationFee = event.target.consultationFee.value;
+    const workingIn = event.target.workingIn.value;
     const phone = event.target.phone.value;
-    const userAddress = event.target.address.value;
-    console.log(phone, userAddress);
+    const image = event.target.image.value;
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+
+    createUserWithEmailAndPassword(email, password);
     const doctor = {
-      customerName: user.displayName,
-      customerEmail: user.email,
-      userAddress,
+      // customerName: user.displayName,
+      // customerEmail: user.email,
+      // userAddress,
+      title,
+      firstName,
+      lastName,
+      dateOfBirth,
+      gender,
+      about,
+      availability,
+      specialty,
+      experience,
+      consultationFee,
+      workingIn,
       phone,
+      image,
+      email,
+      password,
     };
+
+    console.log(doctor);
 
     fetch("http://localhost:5000/doctor", {
       method: "POST",
@@ -64,7 +87,7 @@ const Doctors = () => {
         </div>
         <div class="">
           <h2 className="mt-8 text-2xl">Doctor Registration</h2>
-          <form onSubmit={handleOrder}>
+          <form onSubmit={handleDoctors}>
             <div class="p-4 lg:mr-40 flex-shrink-0 w-full  mx-auto  ">
               <div class=" ">
                 {/* title */}
@@ -82,7 +105,7 @@ const Doctors = () => {
                   <div class="form-control mb-3 w-full">
                     <input
                       placeholder="First name"
-                      name="FirstName"
+                      name="firstName"
                       type="text"
                       // value={user.displayName || ""}
                       // disabled
@@ -162,7 +185,7 @@ const Doctors = () => {
                   <div class="form-control mb-3 w-full">
                     <input
                       placeholder="Experience: 4 Yr"
-                      name="lastName"
+                      name="experience"
                       type="number"
                       // value={user.displayName || ""}
 
@@ -193,6 +216,31 @@ const Doctors = () => {
                     class="input font-normal input-sm input-bordered text-xs"
                   />
                 </div>
+                {/* image */}
+                <div class="form-control mb-3">
+                  <input
+                    type="url"
+                    name="image"
+                    required
+                    placeholder="Enter your image url"
+                    // value={user.email || ""}
+                    // disabled
+                    class="input font-normal input-sm input-bordered text-xs"
+                  />
+                </div>
+                {/* Mobile Number */}
+                <div class="form-control mb-3">
+                  <input
+                    type="phone"
+                    name="phone"
+                    placeholder="Phone"
+                    required
+                    // value={user.email || ""}
+                    // disabled
+                    class="input font-normal input-sm input-bordered text-xs"
+                  />
+                </div>
+
                 {/* email */}
                 <div class="form-control mb-3">
                   <input
