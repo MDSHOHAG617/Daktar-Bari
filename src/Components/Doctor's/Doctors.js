@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { useAuthState } from "react-firebase-hooks/auth";
+import { useAuthState, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { Link, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import auth from "../../firebase.init";
 
 const Doctors = () => {
+  const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
   const [user, loading, error] = useAuthState(auth);
   // const { id } = useParams();
   // const [medicine, setMedicine] = useState({});
@@ -64,7 +65,7 @@ const Doctors = () => {
         <div class="">
           <h2 className="mt-8 text-2xl">Doctor Registration</h2>
           <form onSubmit={handleOrder}>
-            <div class="p-4 lg:mr-32 flex-shrink-0 w-full  mx-auto  ">
+            <div class="p-4 lg:mr-40 flex-shrink-0 w-full  mx-auto  ">
               <div class=" ">
                 {/* title */}
                 <div class="form-control mb-3">
@@ -73,7 +74,7 @@ const Doctors = () => {
                     name="title"
                     type="text"
                     required
-                    class="input input-sm input-bordered w-full text-xs"
+                    class="input font-normal input-sm input-bordered w-full text-xs"
                   />
                 </div>
                 {/* name */}
@@ -86,7 +87,7 @@ const Doctors = () => {
                       // value={user.displayName || ""}
                       // disabled
                       required
-                      class="input input-sm input-bordered text-xs"
+                      class="input font-normal input-sm input-bordered text-xs"
                     />
                   </div>
                   <div class="form-control mb-3 w-full">
@@ -97,7 +98,7 @@ const Doctors = () => {
                       // value={user.displayName || ""}
 
                       required
-                      class="input input-sm input-bordered  text-xs"
+                      class="input font-normal input-sm input-bordered  text-xs"
                     />
                   </div>
                 </div>
@@ -109,7 +110,7 @@ const Doctors = () => {
                     // value={user.displayName || ""}
                     // disabled
                     required
-                    class="input input-sm input-bordered  text-xs"
+                    class="input font-normal input-sm input-bordered  text-xs"
                   />
                 </div>
                 {/* gender */}
@@ -121,28 +122,17 @@ const Doctors = () => {
                     // value={user.displayName || ""}
                     // disabled
                     required
-                    class="input input-sm input-bordered  text-xs"
+                    class="input font-normal input-sm input-bordered  text-xs"
                   />
                 </div>
 
-                <div class="form-control mb-3">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    required
-                    // value={user.email || ""}
-                    // disabled
-                    class="input input-sm input-bordered text-xs"
-                  />
-                </div>
                 {/* about  */}
                 <div class="form-control mb-3">
                   <textarea
                     required
                     type="text"
                     name="about"
-                    class="textarea text-xs textarea-bordered "
+                    class="textarea font-normal text-xs textarea-bordered "
                     placeholder="Write detail about your degree and experience "
                   ></textarea>
                 </div>
@@ -153,7 +143,7 @@ const Doctors = () => {
                     name="availability"
                     type="text"
                     placeholder="Availability: Sat-Fri (11:55 AM - 11:55 PM) "
-                    class="input text-xs input-sm input-bordered"
+                    class="input font-normal text-xs input-sm input-bordered"
                   />
                 </div>
                 {/* specialty and experience */}
@@ -166,7 +156,7 @@ const Doctors = () => {
                       // value={user.displayName || ""}
                       // disabled
                       required
-                      class="input input-sm input-bordered text-xs"
+                      class="input font-normal input-sm input-bordered text-xs"
                     />
                   </div>
                   <div class="form-control mb-3 w-full">
@@ -177,7 +167,7 @@ const Doctors = () => {
                       // value={user.displayName || ""}
 
                       required
-                      class="input input-sm input-bordered  text-xs"
+                      class="input font-normal input-sm input-bordered  text-xs"
                     />
                   </div>
                 </div>
@@ -188,15 +178,83 @@ const Doctors = () => {
                     name="workingIn"
                     type="text"
                     placeholder="Working in: Upazila Health Complex,Faridganj,Chandpur "
-                    class="input text-xs input-sm input-bordered"
+                    class="input font-normal text-xs input-sm input-bordered"
                   />
                 </div>
-                <div class="form-control  mt-6">
-                  <button class="btn text-white ">Dr. SignUp </button>
+                {/* Consultation fee  */}
+                <div class="form-control mb-3">
+                  <input
+                    type="number"
+                    name="consultationFee"
+                    placeholder="Consultation fee"
+                    required
+                    // value={user.email || ""}
+                    // disabled
+                    class="input font-normal input-sm input-bordered text-xs"
+                  />
+                </div>
+                {/* email */}
+                <div class="form-control mb-3">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                    // value={user.email || ""}
+                    // disabled
+                    class="input font-normal input-sm input-bordered text-xs"
+                  />
+                </div>
+                {/* password */}
+                <div class="form-control mb-3">
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="password"
+                    required
+                    // value={user.email || ""}
+                    // disabled
+                    class="input font-normal input-sm input-bordered text-xs"
+                  />
+                </div>
+                {/* terms and conditions */}
+                <h2 className="text-center lg:text-left mt-4 mb-3">
+                  Accepting Terms & conditions
+                </h2>
+                <div className="flex font-normal">
+                  <input type="checkbox" required></input>
+                  <p className="ml-4">
+                    I accept and agree{" "}
+                    <span className="text-[#07C0BA]">Terms conditions</span> and{" "}
+                    <span className="text-[#07C0BA]">Privacy Policy</span>
+                  </p>
+                </div>
+                <div class=" font-semibold mt-6 lg:flex justify-center  justify-evenly   items-center">
+                  <div className="form-control ">
+                    <button class="btn w-52 mx-auto lg:mx-0 text-white ">
+                      SignUp{" "}
+                    </button>
+                  </div>
+                  <div>Already have an account?</div>
+                  <div>
+                    {" "}
+                    <Link className="text-blue-500" to="/login">
+                      Please login
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
           </form>
+          <div className="divider px-4 lg:px-0">OR</div>
+          <div className="px-4 lg:px-0">
+            <button
+              onClick={() => signInWithGoogle()}
+              className="btn w-full  btn-outline"
+            >
+              Continue with Google
+            </button>
+          </div>
         </div>
       </div>
     </div>
