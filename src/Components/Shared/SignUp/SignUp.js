@@ -45,7 +45,7 @@ const SignUp = () => {
     );
   }
 
-  if (token) {
+  if (token || user || gUser) {
     navigate("/");
   }
 

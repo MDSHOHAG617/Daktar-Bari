@@ -17,8 +17,7 @@ import AddMedicine from "./Components/Dashboard/AddMedicine";
 import Purchase from "./Components/Purchase/Purchase";
 import Medicine from "./Components/Medicines/Medicine";
 import MyOrders from "./Components/Dashboard/MyOrders";
-import DoctorsRegistration from "./Components/Home/DoctorsRegistration";
-import Doctors from "./Components/Doctor's/Doctors";
+import DoctorRegistration from "./Components/DoctorsRegistration/DoctorsRegistration";
 
 function App() {
   return (
@@ -31,11 +30,11 @@ function App() {
         <Route path="orderMedicine" element={<Medicine />} />
         <Route path="enterprise" element={<Enterprise />} />
         <Route path="forDoctors" element={<ForDoctors />} />
-        <Route path="/doctorsRegistration" element={<DoctorsRegistration />} />
+        <Route path="/doctorsRegistration" element={<DoctorRegistration />} />
         <Route path="signUp" element={<SignUp />} />
         <Route path="login" element={<Login />} />
         {/* try */}
-        <Route path="doctor" element={<Doctors />} />
+        {/* <Route path="doctor" element={<Doctors />} /> */}
 
         {/* purchase */}
         <Route

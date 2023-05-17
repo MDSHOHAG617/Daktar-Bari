@@ -10,15 +10,15 @@ const DownloadAndRegister = () => {
   return (
     <div
       style={{ backgroundImage: `url(${downloadbgimg})` }}
-      className="mt-32  bg-slate-100 p-10 lg:p-16 lg:py-40 bg-cover lg:bg-cover bg-fixed"
+      className="mt-32  bg-slate-100 p-10 lg:p-16 lg:py-28 bg-cover lg:bg-cover bg-fixed"
     >
       <div className="main-div lg:flex items-center justify-between text-white ">
-        <div className="left-div lg:w-6/12">
+        <div className="left-div lg:w-7/12">
           <h1 className=" text-xl lg:text-4xl text-left">
             Download and register on our App for free and feel safe for all your
             family
           </h1>
-          <p className="text-sm lg:text-lg lg:font-semibold text-left mt-4 lg:mt-12">
+          <p className="text-sm lg:text-lg lg:font-semibold text-left mt-4 lg:mt-12 lg:w-6/12">
             To download the app on your mobile, go the Play Store or open your
             camera and point it towards the QR code
           </p>
