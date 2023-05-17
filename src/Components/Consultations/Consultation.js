@@ -1,9 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Consultation = ({ specialty }) => {
   return (
     <div>
-      <div className="specialty  rounded-xl shadow-xl hover:opacity-80 h-full">
+      <Link
+        to={`/doctors/${specialty._id}`}
+        className="specialty  rounded-xl shadow-xl hover:opacity-80 h-full"
+      >
         <div className="lg:flex  items-center ">
           {" "}
           <img
@@ -15,7 +19,7 @@ const Consultation = ({ specialty }) => {
             <p className="text-sm font-normal">{specialty.text}</p>
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };

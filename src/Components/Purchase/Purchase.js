@@ -17,13 +17,13 @@ const Purchase = () => {
     price,
     _id,
   } = medicine;
-  console.log(medicine);
+  // console.log(medicine);
 
   const handleOrder = (event) => {
     event.preventDefault();
     const phone = event.target.phone.value;
     const userAddress = event.target.address.value;
-    console.log(phone, userAddress);
+    // console.log(phone, userAddress);
     const order = {
       orderId: _id,
       medicine: name,
@@ -81,10 +81,9 @@ const Purchase = () => {
                   </label>
                   <input
                     name="name"
-                    type="text"
-                    value={user.displayName || ""}
-                    disabled
+                    type="name"
                     class="input input-bordered"
+                    required
                   />
                 </div>
                 <div class="form-control">
@@ -92,10 +91,9 @@ const Purchase = () => {
                     <span class="label-text">Email</span>
                   </label>
                   <input
-                    type="text"
+                    type="email"
                     name="email"
-                    value={user.email || ""}
-                    disabled
+                    required
                     class="input input-bordered"
                   />
                   <div class="form-control">

@@ -18,6 +18,10 @@ import Purchase from "./Components/Purchase/Purchase";
 import Medicine from "./Components/Medicines/Medicine";
 import MyOrders from "./Components/Dashboard/MyOrders";
 import DoctorRegistration from "./Components/DoctorsRegistration/DoctorsRegistration";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import GeneralPhysicians from "./Components/Consultations/GeneralPhysicians";
+import Doctors from "./Components/Consultations/Doctors";
 
 function App() {
   return (
@@ -26,6 +30,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="consultation" element={<Consultations />} />
+        <Route path="/generalPhysician" element={<GeneralPhysicians />} />
         <Route path="healthPlans" element={<HealthPlans />} />
         <Route path="orderMedicine" element={<Medicine />} />
         <Route path="enterprise" element={<Enterprise />} />
@@ -36,6 +41,8 @@ function App() {
         {/* try */}
         {/* <Route path="doctor" element={<Doctors />} /> */}
 
+        {/* Doctors */}
+        <Route path="/doctors/:id" element={<Doctors />} />
         {/* purchase */}
         <Route
           path="/purchase/:id"
@@ -84,6 +91,7 @@ function App() {
         </Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }

@@ -1,18 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   useCreateUserWithEmailAndPassword,
   useSignInWithGoogle,
   useUpdateProfile,
 } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
-// import Loading from "../Shared/Loading";
 import { Link, useNavigate } from "react-router-dom";
-// import useToken from "../../hooks/useToken";
-// import mobilelogin from "../../../images/mobilelogin.svg";
 import auth from "../../firebase.init";
 import useToken from "../../hooks/useToken";
 import Loading from "../Loading/Loading";
+import { toast } from "react-toastify";
 const Doctors = () => {
+  // specialties
+  const [specialties, setSpecialties] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:5000/specialty")
+      .then((res) => res.json())
+      .then((data) => setSpecialties(data));
+  }, []);
+  // google signIn
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
   const {
     register,
@@ -98,7 +104,7 @@ const Doctors = () => {
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);
-        // toast.success("Order Succeed");
+        toast.success("Doctor Registered success");
         console.log("post success", data);
       });
   };
@@ -119,9 +125,17 @@ const Doctors = () => {
           <form onSubmit={handleSubmit(onSubmit)}>
             {/* title */}
             <div className="form-control ">
-              <input
+              <select
+                {...register("title")}
+                className="select select-sm mb-4 select-bordered w-full "
+              >
+                {specialties.map((specialty) => (
+                  <option>{specialty.heading}</option>
+                ))}
+              </select>
+              {/* <input
                 type="text"
-                placeholder="Title"
+                placeholder="Title : Specialties"
                 className="input text-xs font-normal input-sm input-bordered w-full "
                 {...register("title", {
                   required: {
@@ -136,7 +150,7 @@ const Doctors = () => {
                     {errors.title.message}
                   </span>
                 )}
-              </label>
+              </label> */}
             </div>
             {/* Name (First & Last Name ) */}
             <div className="flex gap-x-4">
