@@ -21,7 +21,7 @@ import DoctorRegistration from "./Components/DoctorsRegistration/DoctorsRegistra
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import GeneralPhysicians from "./Components/Consultations/GeneralPhysicians";
-import Doctors from "./Components/Consultations/Doctors";
+import Doctors from "./Components/Doctors/Doctors";
 
 function App() {
   return (
@@ -42,7 +42,7 @@ function App() {
         {/* <Route path="doctor" element={<Doctors />} /> */}
 
         {/* Doctors */}
-        <Route path="/doctors/:id" element={<Doctors />} />
+        <Route path="doctors/Gynecology" element={<Doctors />} />
         {/* purchase */}
         <Route
           path="/purchase/:id"
