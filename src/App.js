@@ -42,7 +42,7 @@ function App() {
         {/* <Route path="doctor" element={<Doctors />} /> */}
 
         {/* Doctors */}
-        <Route path="doctors/Gynecology" element={<Doctors />} />
+        <Route path="doctors/category/:category" element={<Doctors />} />
         {/* purchase */}
         <Route
           path="/purchase/:id"

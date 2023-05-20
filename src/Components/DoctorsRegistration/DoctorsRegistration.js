@@ -69,6 +69,7 @@ const Doctors = () => {
     const availability = data.availability;
     const specialty = data.specialty;
     const experience = data.experience;
+    const category = data.category;
     const workAt = data.workAt;
     const consultationFee = data.consultationFee;
     const imageUrl = data.imageUrl;
@@ -86,6 +87,7 @@ const Doctors = () => {
       availability,
       specialty,
       experience,
+      category,
       workAt,
       consultationFee,
       imageUrl,
@@ -124,6 +126,7 @@ const Doctors = () => {
           </h2>
           <form onSubmit={handleSubmit(onSubmit)}>
             {/* title */}
+            <p className="text-xs font-normal text-left m-1">select title</p>
             <div className="form-control ">
               <select
                 {...register("title")}
@@ -133,24 +136,6 @@ const Doctors = () => {
                   <option>{specialty.heading}</option>
                 ))}
               </select>
-              {/* <input
-                type="text"
-                placeholder="Title : Specialties"
-                className="input text-xs font-normal input-sm input-bordered w-full "
-                {...register("title", {
-                  required: {
-                    value: true,
-                    message: "Title is required",
-                  },
-                })}
-              />
-              <label className="label">
-                {errors.title?.type === "required" && (
-                  <span className="label-text-alt text-red-500">
-                    {errors.title.message}
-                  </span>
-                )}
-              </label> */}
             </div>
             {/* Name (First & Last Name ) */}
             <div className="flex gap-x-4">
@@ -322,6 +307,19 @@ const Doctors = () => {
                   )}
                 </label>
               </div>
+            </div>
+
+            {/* Category specialty wise */}
+            <p className="text-xs font-normal text-left m-1">select category</p>
+            <div className="form-control ">
+              <select
+                {...register("category")}
+                className="select select-sm mb-4 select-bordered w-full "
+              >
+                {specialties.map((specialty) => (
+                  <option>{specialty.Specialty}</option>
+                ))}
+              </select>
             </div>
             {/* Work at */}
             <div className="form-control ">

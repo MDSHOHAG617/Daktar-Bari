@@ -5,7 +5,7 @@ const Consultation = ({ specialty }) => {
   return (
     <div>
       <Link
-        to={`/doctors/${specialty.heading}`}
+        to={`/doctors/category/${specialty.Specialty}`}
         className="specialty  rounded-xl shadow-xl hover:opacity-80 h-full"
       >
         <div className="lg:flex  items-center ">

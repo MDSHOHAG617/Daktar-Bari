@@ -2,30 +2,35 @@
   {
     "id": 1,
     "heading": "Medicine / General Physician",
+    "Specialty": "Medicine_General_Physician",
     "text": "Cold, flu, fever, vomiting, infections, headaches or any other general health issues.",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/1/icon/8894xx9oc6sjqHFHPEa61MkGML2skXaS6z13hYaX.png"
   },
   {
     "id": 2,
     "heading": "Gynecology",
+    "Specialty": "Gynecology",
     "text": "Any women's health related issues including pregnancy, menstruation, fertility issues, hormone disorders etc.",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/3/icon/oc8Fmu2LXYw5xbHAMBme69XXcSDK35ofP7k8AR6A.png"
   },
   {
     "id": 3,
     "heading": "Child Care / Pediatrics",
+    "Specialty": "Child_Care_Pediatrics",
     "text": "Any children's health related issues including physical, behavior and mental health.",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/2/icon/IpI7ISxiLvV0yhxK6hAo0X7UYnu7mK21KlROTDw5.png"
   },
   {
     "id": 4,
     "heading": "Skin / Dermatology",
+    "Specialty": "Skin_Dermatology",
     "text": "Treatment of diseases related to skin, hair and nails and some cosmetic problems.",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/30/icon/3erhehxvCFgnwzXRAezNEZscK8eXJLt4MTDIABZg.png"
   },
   {
     "id": 5,
     "heading": "Psychiatry",
+    "Specialty": "Psychiatry",
     "text": "Identify and diagnose mental, behavioral, and emotional disorders",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/21/icon/guwXBRxiRTNHvTyoNABp2ud2kRDGtd3svkInp4h9.png"
   },
@@ -33,84 +38,98 @@
   {
     "id": 6,
     "heading": "Counselor / Psychology",
+    "Specialty": "Counselor_Psychology",
     "text": "Identify and diagnose mental, behavioral, and emotional disorders",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/52/icon/eLuV2ffZLDNVIE39QG6i2adkyzCxuOwecXbLZHth.png"
   },
   {
     "id": 7,
     "heading": "Nutrition & Food Science",
+    "Specialty": "Nutrition_&_Food_Science",
     "text": "Weight management, Health &amp; wellness, Overall well being.",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/46/icon/C1xu7rtJlfKT46SuFy4uTnPPqgJmry7V19awYjmh.png"
   },
   {
     "id": 8,
     "heading": "Eye / Ophthalmology",
+    "Specialty": "Eye_Ophthalmology",
     "text": "Diagnosis, treatment of eye disorders, Eye / Ophthalmology special treatment",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/8/icon/qN4DozYOlzuQqsL7xctP0mRNE8XeYxnB3tmCFfU4.png"
   },
   {
     "id": 9,
     "heading": "Brain / Neurology",
+    "Specialty": "Brain_Neurology",
     "text": "Diagnosis, treatment for disease involving the central and peripheral nervous systems.",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/4/icon/rPpNy6gU0mNHwnU4HKfY5GKaJ6CZZaMxaWNAoYHp.png"
   },
   {
     "id": 10,
     "heading": "Orthopedics",
+    "Specialty": "Orthopedics",
     "text": "Orthopedics is a branch of medicine that focuses on the care of the musculoskeletal system. This system consists of muscles, bones, joints, ligaments, and tendons.",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/41/icon/cyaq2G46OesJZrE053KWBcgalkBuuVCaoDIN537B.png"
   },
   {
     "id": 11,
     "heading": "Internal Medicine",
+    "Specialty": "Internal_Medicine",
     "text": "Prevention, diagnosis, and treatment of adults across the spectrum from health to complex illness.",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/38/icon/nQOp4rJkjQy6uxDdK0eERFsvrFacpMUKQf2tFC8V.png"
   },
   {
     "id": 12,
     "heading": "Gastroenterology",
+    "Specialty": "Gastroenterology",
     "text": "Diseases affecting the gastrointestinal tract, which include the organs from mouth into anus, along the alimentary canal...",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/6/icon/TvYSJRvG4OdhogWClwAkpWeU7n7iPdnuFSjDkVvE.png"
   },
   {
     "id": 13,
     "heading": "Diabetes / Endocrinology",
+    "Specialty": "Diabetes_Endocrinology",
     "text": "Treatment of disease related to problem with hormone.Diabetes & Endocrinology Department provides state of the art medical care to individuals with endocrine disorders.",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/11/icon/MCoFyZinQrhPzIP1KasUp93lGW6FrKLJylrxx2uj.png"
   },
   {
     "id": 14,
     "heading": "Heart / cardiology",
+    "Specialty": "Heart_cardiology",
     "text": "Diagonosis, treatment of congenital heart defects, coronary artery diseas, heart failure, and valvular heart disease",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/7/icon/Pxm1aMmBwz5eKKhEvdpjXo2VrqhbolpLUtv6dagq.png"
   },
   {
     "id": 15,
     "heading": "Dental Care / Dentistry",
+    "Specialty": "Dental_Care_Dentistry",
     "text": "Diagnosis, management, and treatment of defects and injuries related to the teeth and gums.",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/9/icon/ADCDXMe5NjS2N3SrKh2VmDNPLEtPYpIuJfG6LiWr.png"
   },
   {
     "id": 16,
     "heading": "Ear, Nose and throat / ENT",
+    "Specialty": "Ear_Nose_and_throat_ENT",
     "text": "Diagnosis, evalution and treatment of diseases of the ear, nose and throat regions.",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/16/icon/wJQkUtD7IC6iuairyFKVQHR1fPYzwJ3xGrhkVBQz.png"
   },
   {
     "id": 17,
     "heading": "Urology",
+    "Specialty": "Urology",
     "text": "Diagnosis and treatment of diseases of the male and female urinary-tract system.",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/23/icon/F4XfZS9c3YFvEGEupDkRbogwPx627yFZmh7GGmeH.png"
   },
   {
     "id": 18,
     "heading": "Lungs / Pulmonology",
+    "Specialty": "Lungs_Pulmonology",
     "text": "Diagnosis, treatment and prevention of diseases affecting the lungs and respiratory tract ",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/5/icon/lL4UhmNx7fPrQhQT35yuEldWrjIEzkqllAxadTWo.png"
   },
   {
     "id": 19,
     "heading": "Cancer / Oncology",
+    "Specialty": "Cancer_Oncology",
     "text": "Oncology is a bramch of medicine that deals with the prevention, diagnosis, and treatment of cancer",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/35/icon/WvhkTJOvM8B42SXlx6VksQwOZT28casr2kO4raCU.png"
   },
@@ -118,72 +137,84 @@
   {
     "id": 21,
     "heading": "Kidney / Nephrology",
+    "Specialty": "Kidney_Nephrology",
     "text": "Diagnosis, treatment of kidney disease. Nephrology concerns the diagnosis and treatment of kidney diseases, including ",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/13/icon/2HmUppfjFQDecwljnHb5w49C39qHlkacG7K6GhLH.png"
   },
   {
     "id": 22,
     "heading": "Hematology",
+    "Specialty": "Hematology",
     "text": "Specialize in diseases of the blood and blood components. These include blood and bone marrow cells ",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/44/icon/0SNUXMpeespYvOZkdNJtF4LBILk0oxYFCTLtuuzV.png"
   },
   {
     "id": 23,
     "heading": "Physical Medicine & Rehabilitation",
+    "Specialty": "Physical_Medicine_&_Rehabilitation",
     "text": "Enhance and restore functional ability and quality of life to people with physical impairemts or disabilities. ",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/47/icon/LllPsGdHY9gCla1SJakQJxbAWiL4iPm83UlTL4Ss.png"
   },
   {
     "id": 24,
     "heading": "Rheumatology",
+    "Specialty": "Rheumatology",
     "text": "Diagnosis, and treatment of arthritis and other diseases of the joints, muscules and bones.",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/22/icon/nOH6JWcT96LkuQOKNbEAp5bCjGqSkCQSMODR7wBP.png"
   },
   {
     "id": 25,
     "heading": "General Surgery",
+    "Specialty": "General_Surgery",
     "text": "Focuses on abdominal contents including the esophagus, stomach, small intestine, large instestine, liver, pancreas, gillb...",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/43/icon/grHVFEmrFJ8EcAlYf4sr2pJzpF2MuuA1xHbBGcRk.png"
   },
   {
     "id": 26,
     "heading": " Neurosurgery",
+    "Specialty": "Neurosurgery",
     "text": "Prevention, diagnosis, surgical treatment and rehability of disorders which affect any portion of the nervous system... ",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/37/icon/8G53ldaPEK2SUqaaHc1VRuIDb5bBWnPUTtQ4DObn.png"
   },
   {
     "id": 27,
     "heading": "Vascular Surgery",
+    "Specialty": "Vascular_Surgery",
     "text": "Vascular Surgery is a surgical subspeciality in which diseases of the vascular system, or arteries, veins and lymphatic c...  ",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/36/icon/uyNhqtFzhjfNC3aJoI8yh52KR409JjHD3cvACK8N.png"
   },
   {
     "id": 27,
     "heading": "Plastic Surgery",
+    "Specialty": "Plastic_Surgery",
     "text": "A surgery specialty involving the restoration, reconstruction, or alteration of the human body Reconstructive surgery",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/39/icon/CglHJfKwksqzCN2xFBGojWen2LZBfedhliTdesx0.png"
   },
   {
     "id": 28,
     "heading": "Colorectal Surgery",
+    "Specialty": "Colorectal_Surgery",
     "text": "Diagnosis and treatment of diseases of the colon, rectum, and anus.",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/42/icon/2hWuJage6GEVMgrxZ2aOfW6i9wokheoDe3zFTO4R.png"
   },
   {
     "id": 29,
     "heading": "Pediatric Gastroenterology",
+    "Specialty": "Pediatric_Gastroenterology",
     "text": "Treating the gastrointestinal tract, liver and pancreas of children from infancy until age eighteen",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/51/icon/z409wda1PtBWpjS1OK2Hy8Nixx4ASug1sqolQC6T.png"
   },
   {
     "id": 30,
     "heading": "Obstetrics",
+    "Specialty": "Obstetrics",
     "text": "Treatment for the diseases related to pregnancy, childbirth and the postpartum period",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/15/icon/kEUQHdHxAD2syJ4sFMqcTff2PoGfWbu6RlLvPtD0.png"
   },
   {
     "id": 31,
     "heading": "Podiatry",
+    "Specialty": "Podiatry",
     "text": "Diagnosis, surgical treatment of disorders of the foot, ankle, and lower extremity ",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/20/icon/OOxiuT65JQDiagNOoS04x8XPym7dRxBpHC8McTmP.png"
   },
@@ -191,24 +222,28 @@
   {
     "id": 32,
     "heading": "Nuclear Medicine ",
+    "Specialty": "Nuclear_Medicine",
     "text": "Specialized area of radiology that uses very small amounts of radioactive materials, or radio pharmaceuticals, to examine...   ",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/48/icon/tKpEnU6FLwuHVmKWhq2svL2ARloMsx7yjgXj8T1V.png"
   },
   {
     "id": 33,
     "heading": "Pediatric Neurology ",
+    "Specialty": "Pediatric_Neurology",
     "text": "Neurological disorders of children and adolescents. Pediatric Neurology publishes timely peer-reviewed clinical and research articles covering all aspects of the developing nervous system. ",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/49/icon/nxZesw6jImEzImQO8e3LUvdrrSvwNhrPijxRJu5x.png"
   },
   {
     "id": 34,
     "heading": "Parasitology ",
+    "Specialty": "Parasitology",
     "text": "Diagnosis, treatment and prevention of diseases caused by parasites, clinical picture and the response produced by human...",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/17/icon/bGv0oNMqISBE2FIxwh4sfMYhOgPXRCHNpUAR7tC2.png"
   },
   {
     "id": 35,
     "heading": "Occupational therapy  ",
+    "Specialty": "Occupational_therapy",
     "text": "Treatment for diseases related to mental health problems, disabilities, injuries, or impairments. ",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/33/icon/Xku36u33qd2T9Rebeok1xf0aVontTH39JBViyjXt.png"
   },
@@ -216,24 +251,28 @@
   {
     "id": 36,
     "heading": "Eye / Optometry  ",
+    "Specialty": "Eye_Optometry",
     "text": "Optometry is a specialized health care profession that involves examining the eyes and related structures for defects or abnormalities.  ",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/25/icon/Lhfy151CNYlnhEv6LeaEDXNxQhJ6kmDsjjtKpWn2.png"
   },
   {
     "id": 37,
     "heading": "Herbal Medicine   ",
+    "Specialty": "Herbal_Medicine",
     "text": "Treatment for the diseases to stimulated innate healing power through the use of such interventions as herbals, diet, and I...  ",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/31/icon/A915K2dYakWoV8KiCX9OzoOg20uq059sROZpPNqP.png"
   },
   {
     "id": 38,
     "heading": "Neonatology   ",
+    "Specialty": "Neonatology",
     "text": "Medical care of newborn in facts, specially the ill or premature newborns.",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/54/icon/rwrbKRxc2DdDRt9yOPbm1U5hOMGRAbezUDM4bHsN.png"
   },
   {
     "id": 39,
-    "heading": "Chiropractic   ",
+    "heading": "Chiropractic ",
+    "Specialty": "Chiropractic",
     "text": "Diagnosis, treatment of mechanical disorders of the musculoskeletal system, especially the spine",
     "image": "https://doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/specialities/28/icon/He42LjLTJLfOtRUAHABUFfx4KZUvFFOBwTasrDgu.png"
   }
