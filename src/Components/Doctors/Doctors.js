@@ -22,7 +22,7 @@ const Doctors = () => {
       </p>
 
       {doctors.map((doctor) => (
-        <div className=" hover:shadow-xl py-12 rounded-md mb-4 border-[1px]">
+        <div className=" hover:shadow-xl p-4 lg:py-12 rounded-md mb-4 border-[1px]">
           <div className="lg:flex lg:justify-around  lg:items-center ">
             <img className="lg:w-32" src={doctor?.imageUrl} />
             <div className="text-left">
@@ -34,7 +34,7 @@ const Doctors = () => {
               <h2 className="font-semibold">{doctor.title}</h2>
             </div>
             <div className="text-left">
-              <div className="mb-4">
+              <div className="mb-4 mt-4 lg:mt-0">
                 <h2 className="font-normal ">Working in</h2>
                 {doctor.workAt}
               </div>
@@ -43,16 +43,16 @@ const Doctors = () => {
                 {doctor.experience} + Years
               </div>
             </div>
-            <div className="text-left">
+            <div className="text-left mt-4 lg:mt-0">
               <div className="text-[#07c0ba] ">
                 <span className="text-2xl font-extrabold">৳</span>{" "}
                 <span className="text-2xl">{doctor.consultationFee} </span>
               </div>
               <span className="font-normal ">(include. VAT)</span>
-              <h2 className="font-normal mt-4">Per Consultation</h2>
+              <h2 className="font-normal lg:mt-4">Per Consultation</h2>
             </div>
             <div>
-              <SlArrowRight className="text-4xl text-[#07c0ba]" />
+              <SlArrowRight className="text-4xl text-[#07c0ba] hidden lg:block" />
             </div>
           </div>
         </div>
