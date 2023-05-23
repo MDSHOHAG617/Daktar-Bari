@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { SlArrowRight } from "react-icons/sl";
 
 const Doctors = () => {
   const { category } = useParams();
-  console.log(category);
+  // console.log(category);
   const [doctors, setDoctors] = useState([]);
   console.log(category);
 
@@ -24,7 +24,10 @@ const Doctors = () => {
       {doctors.map((doctor) => (
         <div className=" hover:shadow-xl p-4 lg:py-12 rounded-md mb-4 border-[1px]">
           <div className="lg:flex lg:justify-around  lg:items-center ">
-            <img className="lg:w-32" src={doctor?.imageUrl} />
+            <img
+              className=" mx-auto lg:mx-0 lg:w-32 rounded-md"
+              src={doctor?.imageUrl}
+            />
             <div className="text-left">
               <h2 className="">
                 {doctor.firstName} {doctor.lastName}
@@ -35,7 +38,7 @@ const Doctors = () => {
             </div>
             <div className="text-left">
               <div className="mb-4 mt-4 lg:mt-0">
-                <h2 className="font-normal ">Working in</h2>
+                <h2 className="font-normal ">Working at</h2>
                 {doctor.workAt}
               </div>
               <div className="">
@@ -51,9 +54,9 @@ const Doctors = () => {
               <span className="font-normal ">(include. VAT)</span>
               <h2 className="font-normal lg:mt-4">Per Consultation</h2>
             </div>
-            <div>
+            <Link to={`/doctor/${doctor._id}`}>
               <SlArrowRight className="text-4xl text-[#07c0ba] hidden lg:block" />
-            </div>
+            </Link>
           </div>
         </div>
       ))}

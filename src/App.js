@@ -22,6 +22,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import GeneralPhysicians from "./Components/Consultations/GeneralPhysicians";
 import Doctors from "./Components/Doctors/Doctors";
+import Doctor from "./Components/Doctors/Doctor";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
 
         {/* Doctors */}
         <Route path="doctors/category/:category" element={<Doctors />} />
+        <Route path="doctor/:id" element={<Doctor />} />
         {/* purchase */}
         <Route
           path="/purchase/:id"
