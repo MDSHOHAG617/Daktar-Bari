@@ -49,13 +49,13 @@ const Doctor = () => {
               </span>
               <span className="font-normal ">(include. VAT)</span>
             </div>
-            <Link
-              to=""
+            <a
+              href="https://meet.google.com/dfb-rnyf-uva"
               className="flex items-center gap-2  text-white mt-4 bg-[#07C0BA] py-3 px-7  rounded-full"
             >
               <HiOutlineVideoCamera className="text-3xl" />
               <p className="text-lg font-semibold">See Doctor Now</p>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
@@ -82,7 +82,7 @@ const Doctor = () => {
       <hr className="my-6"></hr>
       {/* left-info */}
       <div className="doctor-info lg:flex  lg:w-full">
-        <div className="text-left lg:w-1/2  shadow-md p-6 rounded-md h-full">
+        <div className="text-left lg:w-1/2  shadow-md p-4 rounded-md h-full">
           <h1 className="text-2xl mb-2">
             About {doctor.firstName} {doctor.lastName} - {doctor.specialty}
           </h1>
@@ -90,7 +90,7 @@ const Doctor = () => {
         </div>
         {/* right-info */}
         <div className="lg:w-1/2  lg:ml-8 mt-8 lg:mt-0">
-          <div className="shadow-md rounded-md pb-4">
+          <div className="shadow-md rounded-md p-4">
             <h1 className="text-xl mb-4">Availability</h1>
             <p className="font-normal">Instant Consultation Time</p>
             <p>{doctor.availability}</p>
