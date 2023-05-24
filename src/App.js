@@ -23,6 +23,7 @@ import "react-toastify/dist/ReactToastify.css";
 import GeneralPhysicians from "./Components/Consultations/GeneralPhysicians";
 import Doctors from "./Components/Doctors/Doctors";
 import Doctor from "./Components/Doctors/Doctor";
+import AllUsers from "./Components/Dashboard/AllUsers";
 
 function App() {
   return (
@@ -71,6 +72,14 @@ function App() {
             element={
               <RequireAdmin>
                 <AddMedicine />
+              </RequireAdmin>
+            }
+          ></Route>
+          <Route
+            path="allUsers"
+            element={
+              <RequireAdmin>
+                <AllUsers />
               </RequireAdmin>
             }
           ></Route>

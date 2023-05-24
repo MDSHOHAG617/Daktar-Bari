@@ -13,8 +13,8 @@ const Navbar = () => {
   //signOut
   const logout = () => {
     signOut(auth);
-    navigate("/");
-    // localStorage.removeItem("accessToken");
+    // navigate("/");
+    localStorage.removeItem("accessToken");
   };
   useEffect(() => {
     themeChange(false);

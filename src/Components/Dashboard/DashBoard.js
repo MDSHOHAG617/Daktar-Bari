@@ -28,9 +28,8 @@ const DashBoard = () => {
             {/* <Link to="/dashboard/myProfile">My Profile</Link> */}
             {
               /*admin && */ <>
-                <Link to="/dashboard/allCustomers">All Customers</Link>
+                <Link to="/dashboard/allUsers">All Customers</Link>
                 <Link to="/dashboard/addMedicine">Add Medicine</Link>
-                <Link to="/dashboard/manageProducts">Manage Products</Link>
               </>
             }
           </li>

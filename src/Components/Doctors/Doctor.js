@@ -53,7 +53,7 @@ const Doctor = () => {
               href="https://meet.google.com/dfb-rnyf-uva"
               className="flex items-center gap-2  text-white mt-4 bg-[#07C0BA] py-3 px-7  rounded-full"
             >
-              <HiOutlineVideoCamera className="text-3xl" />
+              <HiOutlineVideoCamera className="text-3xl disable" />
               <p className="text-lg font-semibold">See Doctor Now</p>
             </a>
           </div>
@@ -98,7 +98,7 @@ const Doctor = () => {
           <div className="shadow-md pb-4 rounded-md">
             <h1 className="text-xl my-8 ">At a Glance</h1>
             <div className=" at-a-glance mt-8 grid grid-cols-2">
-              <div>
+              <div className="">
                 <p className="font-normal text-xl mb-1">Consultation Fee</p>
                 <div className="">
                   <span className="text-md font-extrabold text-[#07c0ba]">
