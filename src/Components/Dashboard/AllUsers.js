@@ -12,7 +12,7 @@ const AllUsers = () => {
     }).then((res) => res.json().then((data) => setUsers(data)));
   }, [users]);
   return (
-    <div className="mt-">
+    <div className="mt-4">
       All Users : {users.length}
       <div className="overflow-x-auto">
         <table className="table w-full">

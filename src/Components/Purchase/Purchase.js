@@ -80,10 +80,11 @@ const Purchase = () => {
                     <span class="label-text">Name</span>
                   </label>
                   <input
+                    value={user?.displayName}
                     name="name"
                     type="name"
                     class="input input-bordered"
-                    required
+                    disabled
                   />
                 </div>
                 <div class="form-control">
@@ -91,9 +92,10 @@ const Purchase = () => {
                     <span class="label-text">Email</span>
                   </label>
                   <input
+                    value={user.email}
                     type="email"
                     name="email"
-                    required
+                    disabled
                     class="input input-bordered"
                   />
                   <div class="form-control">

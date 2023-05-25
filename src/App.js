@@ -24,6 +24,7 @@ import GeneralPhysicians from "./Components/Consultations/GeneralPhysicians";
 import Doctors from "./Components/Doctors/Doctors";
 import Doctor from "./Components/Doctors/Doctor";
 import AllUsers from "./Components/Dashboard/AllUsers";
+import Payment from "./Components/Dashboard/Payment";
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
           }
         >
           <Route index element={<MyOrders />}></Route>
+          <Route path="payment/:id" element={<Payment />}></Route>
           {/* <Route path="payment/:id" element={<Payment></Payment>}></Route> */}
           <Route
             path="addMedicine"

@@ -7,7 +7,7 @@ import auth from "../../firebase.init";
 const MyOrders = () => {
   const [orders, setOrders] = useState([]);
   const [user] = useAuthState(auth);
-  console.log(user);
+  console.log(orders);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const MyOrders = () => {
   }, [user]);
 
   return (
-    <div>
+    <div className="mt-4">
       {/* <span className="font-bold p-2">Your orders : {orders.length}</span> */}
       <div class="overflow-x-auto ">
         <table class="table w-full">
@@ -51,7 +51,7 @@ const MyOrders = () => {
                 <th>{index + 1}</th>
                 <td>{order.customerName}</td>
                 <td>{order.customerEmail}</td>
-                <td>{order.tool}</td>
+                <td>{order.medicine}</td>
                 <td>
                   {order.price && !order.paid && (
                     <Link to={`/dashboard/payment/${order._id}`}>
@@ -63,12 +63,11 @@ const MyOrders = () => {
                       <p>
                         <span className=" text-success">Paid</span>
                       </p>
-                      <p>
-                        Transaction id :
-                        <span className=" text-success">
+                      {/* <p>
+                        <span className=" text-success ">
                           {order.transactionId}
                         </span>
-                      </p>
+                      </p> */}
                     </div>
                   )}
                 </td>
