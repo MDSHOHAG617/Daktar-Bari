@@ -7,7 +7,7 @@ import HealthPlans from "./Components/HealthPlans/HealthPlans";
 import ForDoctors from "./Components/Home/ForDoctors";
 import Home from "./Components/Home/Home";
 import Login from "./Components/Shared/Login/Login";
-import Footer from "./Components/Shared/Navbar/Footer";
+import Footer from "./Components/Shared/Footer/Footer.js";
 import Navbar from "./Components/Shared/Navbar/Navbar";
 import SignUp from "./Components/Shared/SignUp/SignUp";
 import RequireAuth from "./Components/Shared/Auth/RequireAuth";
@@ -20,11 +20,12 @@ import MyOrders from "./Components/Dashboard/MyOrders";
 import DoctorRegistration from "./Components/DoctorsRegistration/DoctorsRegistration";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import GeneralPhysicians from "./Components/Consultations/GeneralPhysicians";
 import Doctors from "./Components/Doctors/Doctors";
 import Doctor from "./Components/Doctors/Doctor";
 import AllUsers from "./Components/Dashboard/AllUsers";
 import Payment from "./Components/Dashboard/Payment";
+import ConsultationPayment from "./Components/Consultations/ConsultationPayment";
+import Prescription from "./Components/prescription/Prescription.js";
 
 function App() {
   return (
@@ -33,7 +34,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="consultation" element={<Consultations />} />
-        <Route path="/generalPhysician" element={<GeneralPhysicians />} />
         <Route path="healthPlans" element={<HealthPlans />} />
         <Route path="orderMedicine" element={<Medicine />} />
         <Route path="enterprise" element={<Enterprise />} />
@@ -41,12 +41,17 @@ function App() {
         <Route path="/doctorsRegistration" element={<DoctorRegistration />} />
         <Route path="signUp" element={<SignUp />} />
         <Route path="login" element={<Login />} />
+        <Route path="/prescription" element={<Prescription />} />
         {/* try */}
         {/* <Route path="doctor" element={<Doctors />} /> */}
 
         {/* Doctors */}
         <Route path="doctors/category/:category" element={<Doctors />} />
         <Route path="doctor/:id" element={<Doctor />} />
+        <Route
+          path="consultationPayment/:id"
+          element={<ConsultationPayment />}
+        />
         {/* purchase */}
         <Route
           path="/purchase/:id"

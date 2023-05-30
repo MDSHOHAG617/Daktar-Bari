@@ -55,7 +55,7 @@ const Doctors = () => {
               <h2 className="font-normal lg:mt-4">Per Consultation</h2>
             </div>
             <Link to={`/doctor/${doctor._id}`}>
-              <SlArrowRight className="text-4xl text-[#07c0ba] hidden lg:block" />
+              <SlArrowRight className="text-4xl text-[#07c0ba] mx-auto lg:mx-0" />
             </Link>
           </div>
         </div>

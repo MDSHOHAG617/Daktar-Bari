@@ -6,6 +6,8 @@ import useAdmin from "../../hooks/useAdmin";
 // import useAdmin from "../../hooks/useAdmin";
 import { FaUsers } from "react-icons/fa";
 import { TiShoppingCart } from "react-icons/ti";
+import { GiMedicines } from "react-icons/gi";
+import { MdManageAccounts } from "react-icons/md";
 
 const DashBoard = () => {
   const [user] = useAuthState(auth);
@@ -40,7 +42,20 @@ const DashBoard = () => {
                     All Users
                   </NavLink>
                 )}
-                {admin && <Link to="/dashboard/addMedicine">Add Medicine</Link>}
+                {admin && (
+                  <NavLink to="/dashboard/addMedicine">
+                    {" "}
+                    <GiMedicines className="text-2xl lg:text-3xl " />
+                    Add Medicine
+                  </NavLink>
+                )}
+                {admin && (
+                  <NavLink to="/dashboard/manageMedicine">
+                    {" "}
+                    <MdManageAccounts className="text-2xl lg:text-3xl " />
+                    Manage product
+                  </NavLink>
+                )}
               </>
             }
           </li>

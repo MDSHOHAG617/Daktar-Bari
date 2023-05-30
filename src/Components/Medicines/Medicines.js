@@ -14,23 +14,18 @@ const Medicines = ({ medicine }) => {
   } = medicine;
   return (
     <Link to={`/purchase/${_id}`} className="mx-auto ">
-      <div className=" flex items-center bg-base-100 shadow-md h-full w-96 lg:w-72 rounded-lg">
+      <div className=" flex items-center shadow-md h-full w-96 lg:w-72 rounded-md ">
         <figure>
-          <img className="w-28 p-2" src={img} />
+          <img className="p-4 lg:p-0" src={img} />
         </figure>
-        <div className="card-body">
-          <h2 className="card-title">{name}</h2>
+        <div className="card-body ">
+          <h2 className=" font-normal">{name}</h2>
 
-          <p className="font-normal text-justify">type: </p>
+          {/* <p className="font-normal text-justify">description: {desc} </p> */}
           <p className="font-normal text-justify">
-            best Price: <span className=" text-sm font-extrabold">৳ </span>
-            <span className="text-xl font-bold">{price} </span>{" "}
+            <span className=" text-sm font-extrabold">৳ </span>
+            <span className="text-sm font-normal">{price} </span>{" "}
           </p>
-          {/* <p className="font-normal text-justify">{desc}</p> */}
-          {/* <div className="">Buy</div> */}
-          {/* <Link to={`/purchase/${_id}`} className="btn btn-primary">
-            Purchase
-          </Link> */}
         </div>
       </div>
     </Link>

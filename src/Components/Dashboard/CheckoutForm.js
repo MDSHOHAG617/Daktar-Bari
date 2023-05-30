@@ -14,7 +14,6 @@ const CheckoutForm = ({ payments }) => {
   const { _id, price, customerEmail, customerName } = payments;
 
   useEffect(() => {
-    // fetch("https://toolsware.onrender.com/create-payment-intent", {
     if (price) {
       fetch("http://localhost:5000/create-payment-intent", {
         method: "POST",

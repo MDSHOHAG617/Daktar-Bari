@@ -65,7 +65,7 @@ const Navbar = () => {
               </li>
               {user ? (
                 <li>
-                  <NavLink className="rounded font-semibold" to="/dashboard">
+                  <NavLink className="rounded " to="/dashboard">
                     Dashboard
                   </NavLink>
                 </li>

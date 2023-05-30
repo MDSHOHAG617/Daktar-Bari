@@ -49,13 +49,13 @@ const Doctor = () => {
               </span>
               <span className="font-normal ">(include. VAT)</span>
             </div>
-            <a
-              href="https://meet.google.com/dfb-rnyf-uva"
+            <Link
+              to={`/consultationPayment/${id}`}
               className="flex items-center gap-2  text-white mt-4 bg-[#07C0BA] py-3 px-7  rounded-full"
             >
               <HiOutlineVideoCamera className="text-3xl disable" />
               <p className="text-lg font-semibold">See Doctor Now</p>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

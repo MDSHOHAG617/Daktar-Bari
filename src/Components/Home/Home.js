@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../Shared/Navbar/Footer";
 import AvailableSpecialties from "./AvailableSpecialties";
 import CareAndProtectionPlant from "./CareAndProtectionPlant";
 import CompareAllPackages from "./CompareAllPackages";
