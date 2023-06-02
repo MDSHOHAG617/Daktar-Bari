@@ -22,14 +22,14 @@ const Doctor = () => {
               className=" mx-auto lg:mx-0 lg:w-52 rounded-md"
               src={doctor?.imageUrl}
             />
-            <div className="mt-8 lg:mt-0">
+            <div className="mt-8 lg:mt-0 ">
               <h2 className="text-2xl">
                 {doctor.firstName} {doctor.lastName}
               </h2>
               <h2 className="font-normal">{doctor.specialty}</h2>
               <h2 className="font-normal">Specialties</h2>
               <h2 className="font-semibold">{doctor.title}</h2>
-              <h2 className="">
+              <h2 className="w-9/12">
                 <span className="font-normal">Working at </span>
                 {doctor.workAt}
               </h2>
@@ -40,7 +40,7 @@ const Doctor = () => {
             <h2 className="font-normal">Total Experience</h2>
             {doctor.experience} + Years
           </div> */}
-          <div className="mt-4 lg:mt-0">
+          <div className="mt-4 lg:mt-0 ">
             <h2 className="text-xl lg:mt-4">Consultation Fee</h2>
             <div className=" my-2">
               <span className="text-2xl font-extrabold text-[#07c0ba]">৳</span>{" "}
@@ -50,11 +50,11 @@ const Doctor = () => {
               <span className="font-normal ">(include. VAT)</span>
             </div>
             <Link
-              to={`/consultationPayment/${id}`}
-              className="flex items-center gap-2  text-white mt-4 bg-[#07C0BA] py-3 px-7  rounded-full"
+              to={`/booking/${id}`}
+              className="flex items-center  gap-2  text-white mt-4 bg-[#07C0BA] py-3 px-7  rounded-full justify-center"
             >
               <HiOutlineVideoCamera className="text-3xl disable" />
-              <p className="text-lg font-semibold">See Doctor Now</p>
+              <p className="text-lg font-semibold ">See Doctor Now</p>
             </Link>
           </div>
         </div>

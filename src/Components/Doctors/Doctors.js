@@ -28,15 +28,15 @@ const Doctors = () => {
               className=" mx-auto lg:mx-0 lg:w-32 rounded-md"
               src={doctor?.imageUrl}
             />
-            <div className="text-left">
-              <h2 className="">
+            <div className="text-left lg:w-1/4">
+              <h2 className="mt-4 lg:mt-0">
                 {doctor.firstName} {doctor.lastName}
               </h2>
               <h2 className="font-normal mb-4">{doctor.specialty}</h2>
               <h2 className="font-normal">Specialties</h2>
               <h2 className="font-semibold">{doctor.title}</h2>
             </div>
-            <div className="text-left">
+            <div className="text-left lg:w-1/4">
               <div className="mb-4 mt-4 lg:mt-0">
                 <h2 className="font-normal ">Working at</h2>
                 {doctor.workAt}

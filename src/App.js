@@ -26,6 +26,8 @@ import AllUsers from "./Components/Dashboard/AllUsers";
 import Payment from "./Components/Dashboard/Payment";
 import ConsultationPayment from "./Components/Consultations/ConsultationPayment";
 import Prescription from "./Components/prescription/Prescription.js";
+import Booking from "./Components/Consultations/Booking Appointments/Booking";
+import MyAppointments from "./Components/Dashboard/MyAppointments";
 
 function App() {
   return (
@@ -61,6 +63,15 @@ function App() {
             </RequireAuth>
           }
         />
+        {/* Booking */}
+        <Route
+          path="/booking/:id"
+          element={
+            <RequireAuth>
+              <Booking />
+            </RequireAuth>
+          }
+        />
 
         {/* dashboard */}
         <Route
@@ -72,6 +83,7 @@ function App() {
           }
         >
           <Route index element={<MyOrders />}></Route>
+          <Route path="myAppointments" element={<MyAppointments />}></Route>
           <Route path="payment/:id" element={<Payment />}></Route>
           {/* <Route path="payment/:id" element={<Payment></Payment>}></Route> */}
           <Route
