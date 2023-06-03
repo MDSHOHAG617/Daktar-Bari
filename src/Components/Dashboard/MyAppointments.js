@@ -52,7 +52,7 @@ const MyAppointments = () => {
                 <td>{appointment.category}</td>
                 <td>
                   {appointment.consultationFee && !appointment.paid && (
-                    <Link to={`/dashboard/payment/${appointment._id}`}>
+                    <Link to={`/dashboard/BookingPayments/${appointment._id}`}>
                       <button className="btn btn-xs btn-success">Pay</button>
                     </Link>
                   )}
