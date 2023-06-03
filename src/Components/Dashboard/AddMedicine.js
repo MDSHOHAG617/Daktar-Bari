@@ -41,7 +41,7 @@ const AddMedicine = () => {
       <form onSubmit={handleAddItems}>
         <div class="card flex-shrink-0 w-full max-w-sm lg:max-w-md  shadow-2xl  mx-auto">
           <div class="card-body">
-            <h2 className=" text-xl mb-4">Add a Product</h2>
+            <h2 className=" text-xl mb-4">Add medicine</h2>
             <input
               className="p-2 bg  w-50   bg-sky-100 rounded"
               required

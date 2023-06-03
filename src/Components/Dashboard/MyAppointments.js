@@ -3,6 +3,8 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { Link, useNavigate } from "react-router-dom";
 import { signOut } from "firebase/auth";
+import { HiOutlineVideoCamera } from "react-icons/hi";
+import { FaFilePrescription } from "react-icons/fa";
 
 const MyAppointments = () => {
   const [appointments, setAppointments] = useState([]);
@@ -58,14 +60,16 @@ const MyAppointments = () => {
                   )}
                   {appointment.consultationFee && appointment.paid && (
                     <div>
-                      <p>
-                        <span className=" text-success">Paid</span>
-                      </p>
-                      {/* <p>
-                        <span className=" text-success ">
-                          {order.transactionId}
-                        </span>
-                      </p> */}
+                      <Link to="/prescription" className="">
+                        <FaFilePrescription className="text-3xl" />
+                      </Link>
+                      <a
+                        href="https://meet.google.com/ouj-vjtb-gjx"
+                        className=" flex items-center gap-1 bg-[#07C0BA] rounded-full px-2 py-1 mt-2  text-white w-32"
+                      >
+                        <HiOutlineVideoCamera className="text-  " />
+                        <p className="text-xs font-normal ">See Doctor Now</p>
+                      </a>
                     </div>
                   )}
                 </td>
