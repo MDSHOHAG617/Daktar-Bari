@@ -9,7 +9,8 @@ const CareAndProtectionPlant = () => {
   const [plans, setPlans] = useState([]);
 
   useEffect(() => {
-    fetch("HealthCareAndProtection.json")
+    // fetch("HealthCareAndProtection.json")
+    fetch("http://localhost:5000/healthPlans")
       .then((res) => res.json())
       .then((data) => setPlans(data));
   }, []);
