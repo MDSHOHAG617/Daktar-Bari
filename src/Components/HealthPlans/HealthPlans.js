@@ -22,7 +22,7 @@ const HealthPlans = () => {
 
   return (
     <div className="my-28">
-      <h1 className=" text-2xl m lg:text-5xl text-center ">
+      <h1 className=" text-2xl  lg:text-5xl text-center ">
         Daktar bari Health Care & Protection Plans
       </h1>
       <div className="plans grid gap-6 grid-cols-1 lg:grid-cols-3 mx-16 mb-10 ">

@@ -29,6 +29,9 @@ import Prescription from "./Components/prescription/Prescription.js";
 import Booking from "./Components/Consultations/Booking Appointments/Booking";
 import MyAppointments from "./Components/Dashboard/MyAppointments";
 import BookingPayments from "./Components/Consultations/Booking Appointments/BookingPayments";
+import Subscription from "./Components/HealthPlans/Subscription/Subscription";
+import MySubscription from "./Components/Dashboard/MySubscription";
+import SubscriptionPayments from "./Components/HealthPlans/Subscription/SubscriptionPayments";
 
 function App() {
   return (
@@ -73,6 +76,15 @@ function App() {
             </RequireAuth>
           }
         />
+        {/* Subscribe */}
+        <Route
+          path="/Subscribe/:id"
+          element={
+            <RequireAuth>
+              <Subscription />
+            </RequireAuth>
+          }
+        />
 
         {/* dashboard */}
         <Route
@@ -85,10 +97,15 @@ function App() {
         >
           <Route index element={<MyOrders />}></Route>
           <Route path="myAppointments" element={<MyAppointments />}></Route>
+          <Route path="mySubscription" element={<MySubscription />}></Route>
           <Route path="payment/:id" element={<Payment />}></Route>
           <Route
             path="BookingPayments/:id"
             element={<BookingPayments />}
+          ></Route>
+          <Route
+            path="subscriptionsPayments/:id"
+            element={<SubscriptionPayments />}
           ></Route>
           {/* <Route path="payment/:id" element={<Payment></Payment>}></Route> */}
           <Route

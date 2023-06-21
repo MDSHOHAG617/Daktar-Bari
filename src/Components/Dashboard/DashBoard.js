@@ -9,6 +9,7 @@ import { TiShoppingCart } from "react-icons/ti";
 import { GiMedicines } from "react-icons/gi";
 import { MdManageAccounts } from "react-icons/md";
 import { FaRegCalendarCheck } from "react-icons/fa";
+import { MdOutlineUnsubscribe } from "react-icons/md";
 
 const DashBoard = () => {
   const [user] = useAuthState(auth);
@@ -36,6 +37,12 @@ const DashBoard = () => {
             <NavLink className="font-semibold" to="/dashboard/myAppointments">
               <FaRegCalendarCheck className="text-2xl " />
               My Appointments
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="font-semibold" to="/dashboard/mySubscription">
+              <MdOutlineUnsubscribe className="text-2xl " />
+              My Subscription
             </NavLink>
           </li>
           <li>

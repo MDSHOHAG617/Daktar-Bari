@@ -1,8 +1,11 @@
 import React from "react";
 import { TiTick } from "react-icons/ti";
+import { Link } from "react-router-dom";
 
 const HealthPlansSub = ({ plan }) => {
   const { services } = plan;
+  console.log(plan);
+  console.log(services);
   return (
     <div>
       <div className="plan card-body hover: hover:opacity-80 p-4 rounded-xl relative card shadow-2xl h-full">
@@ -30,9 +33,12 @@ const HealthPlansSub = ({ plan }) => {
             </p>
           ))}
         </div>
-        <button className="btn btn-primary text-white btn-sm float-left  absolute bottom-4 left-4">
-          {plan.button}
-        </button>
+        <Link
+          to={`/Subscribe/${plan._id}`}
+          className="btn btn-primary text-white btn-sm float-left  absolute bottom-4 left-4"
+        >
+          {plan?.button}
+        </Link>
       </div>
     </div>
   );
