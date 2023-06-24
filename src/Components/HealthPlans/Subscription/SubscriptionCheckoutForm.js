@@ -12,7 +12,6 @@ const SubscriptionCheckoutForm = ({ payments }) => {
   const [clientSecret, setClientSecret] = useState("");
 
   const { _id, price, customerEmail, customerName } = payments;
-  console.log(payments);
 
   useEffect(() => {
     if (price) {

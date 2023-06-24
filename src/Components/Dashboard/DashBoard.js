@@ -42,7 +42,7 @@ const DashBoard = () => {
           <li>
             <NavLink className="font-semibold" to="/dashboard/mySubscription">
               <MdOutlineUnsubscribe className="text-2xl " />
-              My Subscription
+              My Subscriptions
             </NavLink>
           </li>
           <li>

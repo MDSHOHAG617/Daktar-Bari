@@ -10,6 +10,7 @@ const stripePromise = loadStripe(
 const SubscriptionPayments = () => {
   const { id } = useParams();
   const [payments, setPayments] = useState([]);
+  // console.log(payments);
   const url = `http://localhost:5000/subscriptions/${id}`;
   useEffect(() => {
     fetch(url, {
@@ -24,18 +25,18 @@ const SubscriptionPayments = () => {
 
   return (
     <div>
-      <h2 className="text-xl my-5">Welcome to Subscription payment</h2>
+      <h2 className="text-xl my-5">Welcome to payment</h2>
       <div class="card w-50 max-w-md bg-base-100 shadow-xl my-8 mx-auto">
         <div class="card-body">
-          <h2 class=" font-normal p-3 rounded-lg mb-3">
-            Pay for : (<span className="font-bold"> {payments.name} </span>)
+          <h2 class="card-title  p-3 rounded-lg mb-3">
+            {" "}
+            Pay for : {payments?.name}
           </h2>
-          <p className="font-mono">
-            Hello,{" "}
-            <span className="text-[#07C0BA]">{payments.customerName}</span>
+          <p className="text-cyan-500 font-mono">
+            Hello, {payments.customerName}
           </p>
-          <p className="text-xl font-mono text-[#07C0BA]">
-            Thank's for your Booking
+          <p className="text-xl font-mono text-lime-500">
+            Thank's for your subscription
           </p>
           <p>
             Please Pay: <span className="font-mono"> {payments.price} Tk</span>
