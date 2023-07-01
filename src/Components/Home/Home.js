@@ -15,6 +15,7 @@ import Ratings from "./Ratings";
 import Services from "./Services";
 import WhenTouseDaktarBari from "./WhenTouseDaktarBari";
 import WhyUseDaktarBari from "./WhyUseDaktarBari";
+import HealthPlans from "../HealthPlans/HealthPlans";
 
 const Home = () => {
   return (
@@ -25,8 +26,9 @@ const Home = () => {
       <GetMedicalHelp />
       <WhenTouseDaktarBari />
       <EasySteps />
-      <HealthCare />
-      <CareAndProtectionPlant />
+      {/* <HealthCare /> */}
+      {/* <CareAndProtectionPlant /> */}
+      <HealthPlans />
       <CompareAllPackages />
       <MainServices />
       <Services />

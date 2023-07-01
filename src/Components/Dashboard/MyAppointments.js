@@ -53,25 +53,29 @@ const MyAppointments = () => {
                 <td>{appointment.customerEmail}</td>
                 <td>{appointment.category}</td>
                 <td>
-                  {appointment.consultationFee && !appointment.paid && (
+                  {appointment.consultationFee && !appointment.paid ? (
                     <Link to={`/dashboard/BookingPayments/${appointment._id}`}>
                       <button className="btn btn-xs btn-success">Pay</button>
                     </Link>
+                  ) : (
+                    <p className="text-success">paid</p>
                   )}
-                  {appointment.consultationFee && appointment.paid && (
-                    <div>
-                      <Link to="/prescription" className="">
-                        <FaFilePrescription className="text-3xl" />
-                      </Link>
-                      <a
-                        href="https://meet.google.com/ouj-vjtb-gjx"
-                        className=" flex items-center gap-1 bg-[#07C0BA] rounded-full px-2 py-1 mt-2  text-white w-32"
-                      >
-                        <HiOutlineVideoCamera className="text-  " />
-                        <p className="text-xs font-normal ">See Doctor Now</p>
-                      </a>
-                    </div>
-                  )}
+                  {appointment.consultationFee &&
+                    appointment.paid &&
+                    appointment.currentDate === appointment.expireDate && (
+                      <div>
+                        <Link to="/prescription" className="">
+                          <FaFilePrescription className="text-3xl" />
+                        </Link>
+                        <a
+                          href="https://meet.google.com/ouj-vjtb-gjx"
+                          className=" flex items-center gap-1 bg-[#07C0BA] rounded-full px-2 py-1 mt-2  text-white w-32"
+                        >
+                          <HiOutlineVideoCamera className="text-  " />
+                          <p className="text-xs font-normal ">See Doctor Now</p>
+                        </a>
+                      </div>
+                    )}
                 </td>
               </tr>
             ))}

@@ -13,7 +13,9 @@ const Subscription = () => {
   let month = date.getMonth() + 1;
   let year = date.getFullYear();
   let currentDate = `${day}/${month}/${year}`;
+  let expireDate = `${day + 1}/${month}/${year}`;
   //   console.log(currentDate); // "17-6-2022"
+  console.log(expireDate); // "17-6-2022"
 
   const navigate = useNavigate();
   const [user, loading, error] = useAuthState(auth);
@@ -40,6 +42,7 @@ const Subscription = () => {
       name,
       gender,
       date,
+      expireDate,
       age,
       currentDate,
     };

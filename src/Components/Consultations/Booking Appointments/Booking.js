@@ -11,7 +11,8 @@ const Booking = () => {
   let month = date.getMonth() + 1;
   let year = date.getFullYear();
   let currentDate = `${day}/${month}/${year}`;
-  //   console.log(currentDate); // "17-6-2022"
+  let expireDate = `${day}/${month}/${year}`;
+  console.log(expireDate); // "17-6-2022"
 
   const navigate = useNavigate();
   const [user, loading, error] = useAuthState(auth);
@@ -52,6 +53,7 @@ const Booking = () => {
       age,
       price,
       currentDate,
+      expireDate,
     };
     fetch("http://localhost:5000/booking", {
       method: "POST",
