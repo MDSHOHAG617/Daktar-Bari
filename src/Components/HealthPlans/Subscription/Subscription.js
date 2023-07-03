@@ -13,7 +13,8 @@ const Subscription = () => {
   let month = date.getMonth() + 1;
   let year = date.getFullYear();
   let currentDate = `${day}/${month}/${year}`;
-  let expireDate = `${day + 1}/${month}/${year}`;
+  let endDate = `${day}/${month + 1}/${year}`;
+  let expireDate = `${day}/${month + 1}/${year}`;
   //   console.log(currentDate); // "17-6-2022"
   console.log(expireDate); // "17-6-2022"
 
@@ -45,6 +46,8 @@ const Subscription = () => {
       expireDate,
       age,
       currentDate,
+      expireDate,
+      endDate,
     };
     fetch("http://localhost:5000/subscriptions", {
       method: "POST",

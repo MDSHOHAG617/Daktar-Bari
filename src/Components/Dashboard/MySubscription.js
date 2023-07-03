@@ -53,12 +53,14 @@ const MySubscription = () => {
                 <td>{subscription.customerEmail}</td>
                 <td>{subscription.name}</td>
                 <td>
-                  {subscription.price && !subscription.paid && (
+                  {subscription.price && !subscription.paid ? (
                     <Link
                       to={`/dashboard/subscriptionsPayments/${subscription._id}`}
                     >
                       <button className="btn btn-xs btn-success">Pay</button>
                     </Link>
+                  ) : (
+                    <p className="text-success">Paid</p>
                   )}
                   {subscription.price && subscription.paid && (
                     <div>
