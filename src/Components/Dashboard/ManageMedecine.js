@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from "react";
 import DeleteConfirmMOdal from "./DeleteConfirmMOdal";
 import OrdersRow from "./OrderRow";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
+import Loading from "../Loading/Loading";
 
 const ManageMedicine = () => {
+  const [user, loading] = useAuthState(auth);
   const [orders, setOrders] = useState([]);
+  // console.log(orders);
 
   const [deletingProducts, setDeletingProducts] = useState(null);
 
@@ -19,21 +24,25 @@ const ManageMedicine = () => {
         setOrders(data);
       });
   }, []);
+  if (loading) {
+    return <Loading />;
+  }
   return (
     <div>
       {/* manage orders : {orders.length} */}
-      <div class="overflow-x-auto">
+      <div class="overflow-x-auto mt-0 lg:mt-2 ">
         <table class="table w-full">
           <thead>
             <tr>
               <th>NO</th>
-              <th>Avatar</th>
-              <th>Product name</th>
+              <th>Medicine</th>
+              <th>Medicine name</th>
+              <th>Added by</th>
               <th>Available Quantity</th>
               <th>Action</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="font-normal">
             {orders.map((order, index) => (
               <OrdersRow
                 key={order._id}

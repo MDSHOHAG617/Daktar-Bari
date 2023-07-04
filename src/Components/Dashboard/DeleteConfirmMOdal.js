@@ -24,23 +24,23 @@ const DeleteConfirmMOdal = ({ deletingProducts, setDeletingProducts }) => {
       <input type="checkbox" id="delete-confirm-modal" class="modal-toggle" />
       <div class="modal  modal-middle">
         <div class="modal-box">
-          <h3 class="font-bold  ">
+          <h3 class="font-semibold  ">
             Are you sure you want to delete?{" "}
-            <span className="text-[#07C0BA]">{name}</span>
+            <span className="text-primary">{name}</span>
           </h3>
-          <p class="py-3 px-16 font-mono text-red-400">
+          <p class="py-3 text-sm font-mono text-error">
             Once if you delete the medicine it won't be able to restore!
           </p>
           <div class="modal-action">
             <button
               onClick={() => handleDelete()}
-              className=" btn btn-sm bg-[#f70000] border-0 text-white hover:bg-[#f70000]"
+              className=" btn btn-sm  bg-error hover:bg-error border-0 text-white "
             >
               Confirm Delete
             </button>
             <label
               for="delete-confirm-modal"
-              class="btn hover:bg-[#07C0BA]  btn-sm bg-[#07C0BA] text-white border-0"
+              class="btn hover:bg-primary btn-sm bg-primary text-white border-0"
             >
               Cancel
             </label>

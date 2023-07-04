@@ -3,11 +3,12 @@ import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
+import Loading from "../Loading/Loading";
 
 const MyOrders = () => {
+  const [user, loading] = useAuthState(auth);
   const [orders, setOrders] = useState([]);
-  const [user] = useAuthState(auth);
-  console.log(orders);
+  // console.log(orders);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -30,6 +31,9 @@ const MyOrders = () => {
         .then((data) => setOrders(data));
     }
   }, [user]);
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
     <div className="mt-4">
@@ -45,7 +49,7 @@ const MyOrders = () => {
               <th>Payment</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="font-normal">
             {orders.map((order, index) => (
               <tr key={order._id}>
                 <th>{index + 1}</th>
@@ -55,13 +59,15 @@ const MyOrders = () => {
                 <td>
                   {order.price && !order.paid && (
                     <Link to={`/dashboard/payment/${order._id}`}>
-                      <button className="btn btn-xs btn-success">Pay</button>
+                      <button className="btn btn-xs text-white btn-primary">
+                        Pay
+                      </button>
                     </Link>
                   )}
                   {order.price && order.paid && (
                     <div>
                       <p>
-                        <span className=" text-success">Paid</span>
+                        <span className=" text-primary">Paid</span>
                       </p>
                       {/* <p>
                         <span className=" text-success ">

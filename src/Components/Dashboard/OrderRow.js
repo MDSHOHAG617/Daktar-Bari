@@ -8,11 +8,13 @@ const OrdersRow = ({ order, index, setDeletingProducts }) => {
     <tr>
       <th>{index + 1}</th>
       <td>
-        <div class=" avatar sm:w-12 lg:w-20 rounded">
-          <img src={img} alt="" />
+        <div class=" avatar w-20  rounded">
+          <img className="" src={img} alt="" />
         </div>
       </td>
       <td>{name}</td>
+
+      <td>{email}</td>
       <td>{price}</td>
       <td>
         <label
@@ -20,7 +22,7 @@ const OrdersRow = ({ order, index, setDeletingProducts }) => {
           for="delete-confirm-modal"
         >
           <img
-            className="w-8"
+            className="w-5"
             src="https://cdn-icons-png.flaticon.com/512/6861/6861362.png"
             alt=""
           />

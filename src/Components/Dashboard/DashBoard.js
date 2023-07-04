@@ -56,16 +56,7 @@ const DashBoard = () => {
                     All Users
                   </NavLink>
                 )}
-                {admin && (
-                  <NavLink
-                    className="font-semibold"
-                    to="/dashboard/addMedicine"
-                  >
-                    {" "}
-                    <GiMedicines className="text-2xl font-normal" />
-                    Add Medicine
-                  </NavLink>
-                )}
+
                 {admin && (
                   <NavLink
                     className="font-semibold"
@@ -74,6 +65,16 @@ const DashBoard = () => {
                     {" "}
                     <MdManageAccounts className="text-2xl lg:text-3xl " />
                     Manage Medicine
+                  </NavLink>
+                )}
+                {admin && (
+                  <NavLink
+                    className="font-semibold"
+                    to="/dashboard/addMedicine"
+                  >
+                    {" "}
+                    <GiMedicines className="text-2xl font-normal" />
+                    Add Medicine
                   </NavLink>
                 )}
               </>

@@ -43,14 +43,14 @@ const AddMedicine = () => {
           <div class="card-body">
             <h2 className=" text-xl mb-4">Add medicine</h2>
             <input
-              className="p-2 bg  w-50   bg-sky-100 rounded"
+              className="text-xs w-50 font-normal input input-sm input-bordered rounded"
               required
               type="email"
               placeholder="Insert your email"
               name="email"
             />
             <input
-              className="p-2 bg  w-50   bg-sky-100 rounded"
+              className="text-xs w-50 font-normal input input-sm input-bordered rounded"
               required
               type="url"
               placeholder="Insert Product img url"
@@ -58,44 +58,44 @@ const AddMedicine = () => {
             />
 
             <input
-              className="p-2 bg-sky-100 rounded  w-50"
+              className="text-xs w-50 font-normal input input-sm input-bordered rounded"
               type="text"
               required
               placeholder="Insert Product Name"
               name="name"
             />
             <input
-              className="p-2 bg-sky-100 rounded w-50"
+              className="text-xs w-50 font-normal input input-sm input-bordered rounded"
               type="number"
               required
               placeholder="Insert Price"
               name="price"
             />
             <input
-              className="p-2 bg-sky-100 rounded  w-50"
+              className="text-xs w-50 font-normal input input-sm input-bordered rounded"
               type="number"
               required
               placeholder="Insert Min. Order quantity"
               name="Quantity"
             />
             <input
-              className="p-2 bg-sky-100 rounded w-50"
+              className="text-xs w-50 font-normal input input-sm input-bordered rounded"
               type="number"
               required
               placeholder="Insert available_quantity"
               name="supplier"
             />
             <input
-              className="p-2 bg-sky-100 rounded w-50"
+              className="text-xs w-50 font-normal input input-sm input-bordered rounded"
               type="text"
               required
               placeholder="Product description"
               name="description"
             />
             <input
-              className="bg-success btn text-white border-none mt-3"
+              className="btn btn-primary text-white border-none mt-3"
               type="submit"
-              value="Add Product"
+              value="Submit"
             />
           </div>
         </div>

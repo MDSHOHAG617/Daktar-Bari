@@ -5,10 +5,11 @@ import { Link, useNavigate } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { HiOutlineVideoCamera } from "react-icons/hi";
 import { FaFilePrescription } from "react-icons/fa";
+import Loading from "../Loading/Loading";
 
 const MyAppointments = () => {
   const [appointments, setAppointments] = useState([]);
-  const [user] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
   console.log(appointments);
   const navigate = useNavigate();
   useEffect(() => {
@@ -31,9 +32,12 @@ const MyAppointments = () => {
         .then((data) => setAppointments(data));
     }
   }, [user]);
+
+  if (loading) {
+    return <Loading />;
+  }
   return (
     <div className="mt-4">
-      My Appointments
       <div class="overflow-x-auto ">
         <table class="table w-full">
           <thead>
@@ -45,7 +49,7 @@ const MyAppointments = () => {
               <th>Payment</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="font-normal">
             {appointments.map((appointment, index) => (
               <tr key={appointment._id}>
                 <th>{index + 1}</th>
@@ -53,23 +57,23 @@ const MyAppointments = () => {
                 <td>{appointment.customerEmail}</td>
                 <td>{appointment.category}</td>
                 <td>
-                  {appointment.consultationFee && !appointment.paid ? (
+                  {appointment.consultationFee && !appointment.paid && (
                     <Link to={`/dashboard/BookingPayments/${appointment._id}`}>
-                      <button className="btn btn-xs btn-success">Pay</button>
+                      <button className="btn btn-xs btn-primary text-white">
+                        Pay
+                      </button>
                     </Link>
-                  ) : (
-                    <p className="text-success">paid</p>
                   )}
                   {appointment.consultationFee && appointment.paid && (
                     <div>
                       <Link to="/prescription" className="">
-                        <FaFilePrescription className="text-3xl" />
+                        <FaFilePrescription className="text-2xl" />
                       </Link>
                       <a
                         href="https://meet.google.com/ouj-vjtb-gjx"
-                        className=" flex items-center gap-1 bg-[#07C0BA] rounded-full px-2 py-1 mt-2  text-white w-32"
+                        className=" flex items-center gap-1 bg-primary rounded-full px-2 py-[3px] mt-1  text-white w-32"
                       >
-                        <HiOutlineVideoCamera className="text-  " />
+                        <HiOutlineVideoCamera className=" " />
                         <p className="text-xs font-normal ">See Doctor Now</p>
                       </a>
                     </div>
