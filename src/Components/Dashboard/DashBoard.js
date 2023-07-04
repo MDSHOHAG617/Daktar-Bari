@@ -73,7 +73,7 @@ const DashBoard = () => {
                   >
                     {" "}
                     <MdManageAccounts className="text-2xl lg:text-3xl " />
-                    Manage product
+                    Manage Medicine
                   </NavLink>
                 )}
               </>

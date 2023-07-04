@@ -32,6 +32,7 @@ import BookingPayments from "./Components/Consultations/Booking Appointments/Boo
 import Subscription from "./Components/HealthPlans/Subscription/Subscription";
 import MySubscription from "./Components/Dashboard/MySubscription";
 import SubscriptionPayments from "./Components/HealthPlans/Subscription/SubscriptionPayments";
+import ManageMedicine from "./Components/Dashboard/ManageMedecine";
 
 function App() {
   return (
@@ -124,14 +125,14 @@ function App() {
               </RequireAdmin>
             }
           ></Route>
-          {/* <Route
-            path="manageProducts"
+          <Route
+            path="ManageMedicine"
             element={
               <RequireAdmin>
-                <ManageProducts></ManageProducts>
+                <ManageMedicine></ManageMedicine>
               </RequireAdmin>
             }
-          ></Route> */}
+          ></Route>
           {/* <Route
             path="allCustomers"
             element={
