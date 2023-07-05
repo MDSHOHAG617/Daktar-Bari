@@ -74,11 +74,11 @@ const Subscription = () => {
       <h1 className="mb-8 ">
         {" "}
         Subscription for :{" "}
-        <span className="font-semibold">{subscription.name}</span>
+        <span className="font-semibold text-primary">{subscription.name}</span>
       </h1>
       <div class=" mb-28 ">
-        <div class=" grid grid-cols-1 lg:grid-cols-2 items-center">
-          <div className="card flex-shrink-0 w-full max-w-sm  mx-auto text-left">
+        <div class=" grid grid-cols-1 lg:grid-cols-2 items-center ">
+          <div className="card flex-shrink-0 w-full max-w-sm  mx-auto text-left shadow-2xl rounded-md p-2">
             <figure className="">
               <img className="w-8/12" src={subscription?.img} alt="" />
             </figure>
@@ -104,7 +104,7 @@ const Subscription = () => {
             </div>
           </div>
           <form onSubmit={handleBooking}>
-            <div class="card flex-shrink-0 w-full max-w-lg  mx-auto ">
+            <div class="card flex-shrink-0 w-full max-w-lg  mx-auto  rounded-md p-2 shadow-2xl">
               <div class="card-body ">
                 <div class="form-control">
                   <label class="label">
@@ -198,7 +198,7 @@ const Subscription = () => {
                 </div>
                 <div class="form-control ">
                   <button class="btn text-white bg-[#07C0BA] border-none hover:bg-[#07C0BA]">
-                    place the Booking
+                    place the Subscription
                   </button>
                 </div>
               </div>

@@ -81,12 +81,12 @@ const Booking = () => {
       <h1 className="mb-8 ">
         {" "}
         Appointments for :{" "}
-        <span className="font-semibold">Video Consultation</span> (
+        <span className="font-semibold text-primary">Video Consultation</span> (
         {bookings.firstName} {bookings.lastName})
       </h1>
       <div class=" mb-28 ">
-        <div class=" grid grid-cols-1 lg:grid-cols-2 ">
-          <div className="card flex-shrink-0 w-full max-w-sm  mx-auto text-left">
+        <div class=" grid grid-cols-1 lg:grid-cols-2 items-center">
+          <div className="card flex-shrink-0 w-full max-w-sm  mx-auto text-left shadow-2xl rounded-md p-2">
             <figure className="">
               <img src={bookings?.imageUrl} className="  rounded-md" alt="" />
             </figure>
@@ -105,7 +105,7 @@ const Booking = () => {
             </div>
           </div>
           <form onSubmit={handleBooking}>
-            <div class="card flex-shrink-0 w-full max-w-lg  mx-auto ">
+            <div class="card flex-shrink-0 w-full max-w-lg  mx-auto shadow-2xl rounded-md p-2">
               <div class="card-body ">
                 <div class="form-control">
                   <label class="label">

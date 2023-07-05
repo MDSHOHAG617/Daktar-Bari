@@ -56,10 +56,14 @@ const Purchase = () => {
   return (
     <div>
       <div class=" my-28 ">
+        <h1 className="mb-8 font-normal">
+          Place the order for :
+          <span className="font-semibold text-primary "> {medicine.name} </span>
+        </h1>
         <div class=" grid  lg:grid-cols-2   ">
-          <div className="card flex-shrink-0 w-full max-w-sm  mx-auto">
+          <div className="card flex-shrink-0 w-full max-w-sm  mx-auto shadow-2xl py-2 rounded-md">
             <figure className=" ">
-              <img src={img} className="rounded-xl w-52" alt="" />
+              <img src={img} className="rounded-xl w-10/12" alt="" />
             </figure>
             <div className="card-body items-center text-center">
               <h2 className="card-title">{name}</h2>
@@ -73,7 +77,7 @@ const Purchase = () => {
             </div>
           </div>
           <form onSubmit={handleOrder}>
-            <div class="card flex-shrink-0 w-full max-w-sm  mx-auto ">
+            <div class="card flex-shrink-0 w-full max-w-sm  mx-auto shadow-2xl rounded-md">
               <div class="card-body ">
                 <div class="form-control">
                   <label class="label">
@@ -124,7 +128,9 @@ const Purchase = () => {
                   />
                 </div>
                 <div class="form-control mt-6">
-                  <button class="btn text-white ">place the order</button>
+                  <button class="btn btn-primary text-white ">
+                    place the order
+                  </button>
                 </div>
               </div>
             </div>
