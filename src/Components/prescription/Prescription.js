@@ -12,16 +12,16 @@ const Prescription = () => {
   const [user, loading] = useAuthState(auth);
   const [loader, setLoader] = useState(false);
   const [prescription, setPrescription] = useState({});
-  console.log(prescription);
+  // console.log(prescription);
   useEffect(() => {
     fetch("http://localhost:5000/prescription")
       .then((res) => res.json())
       .then((data) => setPrescription(data));
-  }, [user]);
+  }, []);
 
-  if (loading) {
-    return <Loading />;
-  }
+  // if (loading) {
+  //   return <Loading />;
+  // }
 
   const downloadPDF = () => {
     const capture = document.querySelector(".actual-receipt");
@@ -53,32 +53,34 @@ const Prescription = () => {
             <div className="text-left">
               <p className="font-semibold text-lg">
                 Patient Name:{" "}
-                <span className="  font-normal">{prescription[0].ptName}</span>
+                <span className="  font-normal">{prescription[0]?.ptName}</span>
               </p>
               <p className="font-semibold text-lg mt-2">
                 Age: {""}
-                <span className=" font-normal">{prescription[0].ptAge}</span>
+                <span className=" font-normal">{prescription[0]?.ptAge}</span>
               </p>
               <p className="font-semibold text-lg mt-2">
                 Gender: {""}
-                <span className=" font-normal">{prescription[0].ptGender}</span>
+                <span className=" font-normal">
+                  {prescription[0]?.ptGender}
+                </span>
               </p>
               <p className="font-semibold text-lg mt-2">
                 Address: {""}
                 <span className=" font-normal">
-                  {prescription[0].ptAddress}
+                  {prescription[0]?.ptAddress}
                 </span>
               </p>
               <p className="font-semibold text-lg mt-2">
                 Date: {""}
-                <span className=" font-normal">{prescription[0].date}</span>
+                <span className=" font-normal">{prescription[0]?.date}</span>
               </p>
             </div>
             <div className="text-right">
               <h2 className="text-lg">
-                {prescription[0].drName}
+                {prescription[0]?.drName}
                 <span className="font-normal text-xs ">
-                  {prescription[0].drSpecialty}
+                  {prescription[0]?.drSpecialty}
                 </span>
               </h2>
               <p className="font-normal text-lg">
@@ -97,12 +99,12 @@ const Prescription = () => {
           <div className="text-left mt-4 ml-16">
             <div>
               <h1>
-                {prescription[0].medicineType}{" "}
+                {prescription[0]?.medicineType}{" "}
                 <span className="font-normal">
-                  {prescription[0].MedicineName}
+                  {prescription[0]?.MedicineName}
                 </span>{" "}
                 <span className="font-normal ml-4">
-                  {prescription[0].medicineRoutine}
+                  {prescription[0]?.medicineRoutine}
                 </span>
               </h1>
             </div>
@@ -122,7 +124,7 @@ const Prescription = () => {
           <div className="mt-[700px]">
             <p className="font-semibold">
               Doctor's Signature:{" "}
-              <span className=" font-normal">{prescription[0].drName}</span>{" "}
+              <span className=" font-normal">{prescription[0]?.drName}</span>{" "}
             </p>
           </div>
         </div>
