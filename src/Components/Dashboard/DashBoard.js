@@ -7,6 +7,7 @@ import useAdmin from "../../hooks/useAdmin";
 import { FaUsers } from "react-icons/fa";
 import { TiShoppingCart } from "react-icons/ti";
 import { GiMedicines } from "react-icons/gi";
+import { FaFilePrescription } from "react-icons/fa";
 import { MdManageAccounts } from "react-icons/md";
 import { FaRegCalendarCheck } from "react-icons/fa";
 import { MdOutlineUnsubscribe } from "react-icons/md";
@@ -75,6 +76,16 @@ const DashBoard = () => {
                     {" "}
                     <GiMedicines className="text-2xl font-normal" />
                     Add Medicine
+                  </NavLink>
+                )}
+                {admin && (
+                  <NavLink
+                    className="font-semibold"
+                    to="/dashboard/addPrescription"
+                  >
+                    {" "}
+                    <FaFilePrescription className="text-2xl font-normal" />
+                    Add Prescription
                   </NavLink>
                 )}
               </>

@@ -25,7 +25,7 @@ import Doctor from "./Components/Doctors/Doctor";
 import AllUsers from "./Components/Dashboard/AllUsers";
 import Payment from "./Components/Dashboard/Payment";
 import ConsultationPayment from "./Components/Consultations/ConsultationPayment";
-import Prescription from "./Components/prescription/Prescription.js";
+import Prescription from "./Components/Prescription/Prescription.js";
 import Booking from "./Components/Consultations/Booking Appointments/Booking";
 import MyAppointments from "./Components/Dashboard/MyAppointments";
 import BookingPayments from "./Components/Consultations/Booking Appointments/BookingPayments";
@@ -33,6 +33,7 @@ import Subscription from "./Components/HealthPlans/Subscription/Subscription";
 import MySubscription from "./Components/Dashboard/MySubscription";
 import SubscriptionPayments from "./Components/HealthPlans/Subscription/SubscriptionPayments";
 import ManageMedicine from "./Components/Dashboard/ManageMedecine";
+import AddPrescription from "./Components/Dashboard/AddPrescription";
 
 function App() {
   return (
@@ -114,6 +115,14 @@ function App() {
             element={
               <RequireAdmin>
                 <AddMedicine />
+              </RequireAdmin>
+            }
+          ></Route>
+          <Route
+            path="addPrescription"
+            element={
+              <RequireAdmin>
+                <AddPrescription />
               </RequireAdmin>
             }
           ></Route>
