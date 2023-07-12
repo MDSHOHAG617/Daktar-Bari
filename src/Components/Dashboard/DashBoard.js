@@ -6,11 +6,12 @@ import useAdmin from "../../hooks/useAdmin";
 // import useAdmin from "../../hooks/useAdmin";
 import { FaUsers } from "react-icons/fa";
 import { TiShoppingCart } from "react-icons/ti";
-import { GiMedicines } from "react-icons/gi";
-import { FaFilePrescription } from "react-icons/fa";
+import { RiMedicineBottleFill } from "react-icons/ri";
+import { FaPrescription } from "react-icons/fa";
 import { MdManageAccounts } from "react-icons/md";
 import { FaRegCalendarCheck } from "react-icons/fa";
-import { MdOutlineUnsubscribe } from "react-icons/md";
+import { MdSubscriptions } from "react-icons/md";
+import { BsPrescription } from "react-icons/bs";
 
 const DashBoard = () => {
   const [user] = useAuthState(auth);
@@ -42,8 +43,14 @@ const DashBoard = () => {
           </li>
           <li>
             <NavLink className="font-semibold" to="/dashboard/mySubscription">
-              <MdOutlineUnsubscribe className="text-2xl " />
+              <MdSubscriptions className="text-2xl " />
               My Subscriptions
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="font-semibold" to="/dashboard/myPrescription">
+              <BsPrescription className="text-2xl " />
+              My Prescriptions
             </NavLink>
           </li>
           <li>
@@ -74,7 +81,7 @@ const DashBoard = () => {
                     to="/dashboard/addMedicine"
                   >
                     {" "}
-                    <GiMedicines className="text-2xl font-normal" />
+                    <RiMedicineBottleFill className="text-2xl font-normal" />
                     Add Medicine
                   </NavLink>
                 )}
@@ -84,7 +91,7 @@ const DashBoard = () => {
                     to="/dashboard/addPrescription"
                   >
                     {" "}
-                    <FaFilePrescription className="text-2xl font-normal" />
+                    <FaPrescription className="text-2xl font-normal" />
                     Add Prescription
                   </NavLink>
                 )}

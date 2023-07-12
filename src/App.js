@@ -34,6 +34,7 @@ import MySubscription from "./Components/Dashboard/MySubscription";
 import SubscriptionPayments from "./Components/HealthPlans/Subscription/SubscriptionPayments";
 import ManageMedicine from "./Components/Dashboard/ManageMedecine";
 import AddPrescription from "./Components/Dashboard/AddPrescription";
+import MyPrescription from "./Components/Dashboard/MyPrescription";
 
 function App() {
   return (
@@ -49,7 +50,7 @@ function App() {
         <Route path="/doctorsRegistration" element={<DoctorRegistration />} />
         <Route path="signUp" element={<SignUp />} />
         <Route path="login" element={<Login />} />
-        <Route path="/prescription" element={<Prescription />} />
+        <Route path="prescription/:id" element={<Prescription />} />
         {/* try */}
         {/* <Route path="doctor" element={<Doctors />} /> */}
 
@@ -100,6 +101,7 @@ function App() {
           <Route index element={<MyOrders />}></Route>
           <Route path="myAppointments" element={<MyAppointments />}></Route>
           <Route path="mySubscription" element={<MySubscription />}></Route>
+          <Route path="myPrescription" element={<MyPrescription />}></Route>
           <Route path="payment/:id" element={<Payment />}></Route>
           <Route
             path="BookingPayments/:id"

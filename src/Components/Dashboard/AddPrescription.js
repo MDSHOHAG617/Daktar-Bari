@@ -2,6 +2,12 @@ import React from "react";
 import { toast } from "react-toastify";
 
 const AddPrescription = () => {
+  // date
+  const date = new Date();
+  let day = date.getDate();
+  let month = date.getMonth() + 1;
+  let year = date.getFullYear();
+  let currentDate = `${day}/${month}/${year}`;
   const handleAddItems = (event) => {
     event.preventDefault();
     const ptEmail = event.target.ptEmail.value;
@@ -10,9 +16,10 @@ const AddPrescription = () => {
     const ptAge = event.target.ptAge.value;
     const ptGender = event.target.ptGender.value;
     const ptAddress = event.target.ptAddress.value;
-    const date = event.target.date.value;
+    const date = currentDate;
     const drName = event.target.drName.value;
     const drSpecialty = event.target.drSpecialty.value;
+    const drSpecialtyOn = event.target.drSpecialtyOn.value;
     const medicineType = event.target.medicineType.value;
     const MedicineName = event.target.MedicineName.value;
     const medicineDesc = event.target.medicineDesc.value;
@@ -28,6 +35,7 @@ const AddPrescription = () => {
       date,
       drName,
       drSpecialty,
+      drSpecialtyOn,
       medicineType,
       MedicineName,
       medicineDesc,
@@ -100,9 +108,10 @@ const AddPrescription = () => {
               />
               <input
                 className="text-xs w-50 font-normal input input-sm input-bordered rounded"
-                type="date"
                 required
+                disabled
                 name="date"
+                value={currentDate}
               />
               <input
                 className="text-xs w-50 font-normal input input-sm input-bordered rounded"
@@ -117,6 +126,13 @@ const AddPrescription = () => {
                 required
                 placeholder="Insert Dr. specialty"
                 name="drSpecialty"
+              />
+              <input
+                className="text-xs w-50 font-normal input input-sm input-bordered rounded"
+                type="text"
+                required
+                placeholder="Dr. Specialty on : Skin/ Dermatology"
+                name="drSpecialtyOn"
               />
               <div className="flex justify-around gap-2  font-semibold">
                 <div>
