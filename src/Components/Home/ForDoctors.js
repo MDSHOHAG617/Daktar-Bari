@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import forDoctors from "../../images/forDoctors.png";
 
 const ForDoctors = () => {
   return (
     <div>
       {" "}
-      <div className="my-32 px-16 lg:flex items-center  gap-32">
+      <div className="my-32 px-16 lg:flex justify-around items-center  gap-32">
         <div className="banner-left">
           {" "}
           <h1 className="font-bold text-2xl lg:text-5xl lg:text-left">
@@ -16,7 +17,7 @@ const ForDoctors = () => {
           </h2>
           <div className="lg:text-left ">
             <p className="font-normal text-lg font-semibold lg:text-left lg:w-[470px]">
-              Join DocTime network and create your virtual chamber provide
+              Join Daktar-bari network and create your virtual chamber provide
               medical consultancy via video call and expand the reach of your
               service.{" "}
             </p>
@@ -32,17 +33,12 @@ const ForDoctors = () => {
           </div>
         </div>
         <div className="banner-right">
-          <img
-            className="hidden lg:block"
-            src="https://www.pngarts.com/files/3/Female-Doctor-Transparent-Images.png"
-            alt="Signup"
-          />
+          <img className="hidden lg:block" src={forDoctors} alt="Signup" />
         </div>
       </div>
       <div>
-        {" "}
         {/* benefits of joining   */}
-        <div className="flex px-16 items-center mb-20">
+        {/* <div className="flex px-16 items-center mb-20">
           <div className="left-joining text-left font-normal text-lg font-semibold lg:text-left text-justify pr-8">
             <p>
               Doctors can join the platform using our simple on boarding
@@ -56,7 +52,7 @@ const ForDoctors = () => {
 
             <p>
               You will be working independently, making autonomous medical
-              decisions, and supported by our DocTime technical team who are
+              decisions, and supported by our Daktar-bari technical team who are
               here to assist both patient and yourself when you’re on session or
               outside sessions.
             </p>
@@ -114,7 +110,7 @@ const ForDoctors = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

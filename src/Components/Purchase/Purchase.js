@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import auth from "../../firebase.init";
 
 const Purchase = () => {
+  const navigate = useNavigate();
   const [user, loading, error] = useAuthState(auth);
   const { id } = useParams();
   const [medicine, setMedicine] = useState({});
@@ -45,6 +46,7 @@ const Purchase = () => {
       .then((data) => {
         console.log(data);
         toast.success("Order Succeed");
+        navigate("/dashboard/");
       });
   };
 

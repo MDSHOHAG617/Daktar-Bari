@@ -12,7 +12,7 @@ const DownloadApps = () => {
       {/* Google Play */}
       <div className="lg:flex  justify-center items-center mt-8 mb-20">
         <Link
-          to="/orderMadicine"
+          to=""
           className="flex justify-btween items-center bg-primary p-2 w-48 rounded-xl  mx-auto lg:mx-3 mb-2 lg:mb-0"
         >
           <span>
@@ -25,7 +25,7 @@ const DownloadApps = () => {
         </Link>
         {/* App store  */}
         <Link
-          to="/orderMadicine"
+          to=""
           className="flex justify-center items-center bg-primary p-2 w-48 rounded-xl mx-auto lg:mx-3 mb-2 lg:mb-0"
         >
           <span>

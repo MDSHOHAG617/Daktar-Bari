@@ -67,9 +67,9 @@ const MySubscription = () => {
                   )}
                   {subscription.price && subscription.paid && (
                     <div>
-                      <Link to="/prescription" className="">
+                      {/* <Link to="/prescription" className="">
                         <FaFilePrescription className="text-2xl" />
-                      </Link>
+                      </Link> */}
                       <a
                         href="https://meet.google.com/ouj-vjtb-gjx"
                         className=" flex items-center gap-1 bg-primary rounded-full px-2 py-[3px] mt-1  text-white w-32"

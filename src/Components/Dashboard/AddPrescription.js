@@ -20,10 +20,26 @@ const AddPrescription = () => {
     const drName = event.target.drName.value;
     const drSpecialty = event.target.drSpecialty.value;
     const drSpecialtyOn = event.target.drSpecialtyOn.value;
+    // medicine
     const medicineType = event.target.medicineType.value;
     const MedicineName = event.target.MedicineName.value;
     const medicineDesc = event.target.medicineDesc.value;
     const medicineRoutine = event.target.medicineRoutine.value;
+    const medicineType1 = event.target.medicineType1.value;
+    const MedicineName1 = event.target.MedicineName1.value;
+    const medicineDesc1 = event.target.medicineDesc1.value;
+    const medicineRoutine1 = event.target.medicineRoutine1.value;
+    const medicineType2 = event.target.medicineType2.value;
+    const MedicineName2 = event.target.MedicineName2.value;
+    const medicineDesc2 = event.target.medicineDesc2.value;
+    const medicineRoutine2 = event.target.medicineRoutine2.value;
+    const medicineType3 = event.target.medicineType3.value;
+    const MedicineName3 = event.target.MedicineName3.value;
+    const medicineDesc3 = event.target.medicineDesc3.value;
+    const medicineRoutine3 = event.target.medicineRoutine3.value;
+    // diagnosis
+    const diagnosis = event.target.diagnosis.value;
+    const diagnosis1 = event.target.diagnosis1.value;
 
     const prescription = {
       ptEmail,
@@ -40,6 +56,20 @@ const AddPrescription = () => {
       MedicineName,
       medicineDesc,
       medicineRoutine,
+      medicineType1,
+      MedicineName1,
+      medicineDesc1,
+      medicineRoutine1,
+      medicineType2,
+      MedicineName2,
+      medicineDesc2,
+      medicineRoutine2,
+      medicineType3,
+      MedicineName3,
+      medicineDesc3,
+      medicineRoutine3,
+      diagnosis,
+      diagnosis1,
     };
 
     fetch("http://localhost:5000/prescription", {
@@ -60,7 +90,7 @@ const AddPrescription = () => {
       {" "}
       <div className="my-16">
         <form onSubmit={handleAddItems}>
-          <div class="card flex-shrink-0 w-full max-w-sm lg:max-w-md  shadow-2xl  mx-auto">
+          <div class="card px-8 lg:px-40    mx-auto">
             <div class="card-body">
               <h2 className=" text-xl mb-4">Add Prescription</h2>
               <input
@@ -70,7 +100,6 @@ const AddPrescription = () => {
                 placeholder="Insert patient email"
                 name="ptEmail"
               />
-
               <input
                 className="text-xs w-50 font-normal input input-sm input-bordered rounded"
                 type="name"
@@ -133,52 +162,151 @@ const AddPrescription = () => {
                 required
                 placeholder="Dr. Specialty on : Skin/ Dermatology"
                 name="drSpecialtyOn"
-              />
-              <div className="flex justify-around gap-2  font-semibold">
-                <div>
-                  {" "}
-                  <label className="text-xs ">Medicine type</label>
-                  <input
-                    className="text-xs   font-normal input input-sm input-bordered rounded"
-                    type="text"
-                    required
-                    placeholder="tab/cap/syp"
-                    name="medicineType"
-                  />
-                </div>
-                <div>
-                  {" "}
-                  <label className="text-xs ">Medicine name</label>
-                  <input
-                    className="text-xs font-normal input input-sm input-bordered rounded"
-                    type="text"
-                    required
-                    placeholder="Insert medicine name"
-                    name="MedicineName"
-                  />
-                </div>
-              </div>
-              <div className="flex justify-around gap-2  font-semibold">
-                <div>
-                  <input
-                    className="text-xs   font-normal input input-sm input-bordered rounded"
-                    type="text"
-                    required
-                    placeholder="10mg / 500mg "
-                    name="medicineDesc"
-                  />
-                </div>
-                <div>
-                  <input
-                    className="text-xs font-normal input input-sm input-bordered rounded"
-                    type="text"
-                    required
-                    placeholder="Routine: 1 + 0 + 1"
-                    name="medicineRoutine"
-                  />
-                </div>
-              </div>
+              />{" "}
+              <p className="text-xs text-left ">Medicine </p>
+              <div className="lg:flex justify-around gap-2  font-semibold">
+                <input
+                  className="text-xs   font-normal input input-sm input-bordered rounded"
+                  type="text"
+                  required
+                  placeholder="tab/cap/syp"
+                  name="medicineType"
+                />
+                <input
+                  className="text-xs font-normal input input-sm input-bordered rounded"
+                  type="text"
+                  required
+                  placeholder="Insert medicine name"
+                  name="MedicineName"
+                />
 
+                <input
+                  className="text-xs   font-normal input input-sm input-bordered rounded"
+                  type="text"
+                  required
+                  placeholder="10mg / 500mg "
+                  name="medicineDesc"
+                />
+                <input
+                  className="text-xs font-normal input input-sm input-bordered rounded"
+                  type="text"
+                  required
+                  placeholder="Routine: 1 + 0 + 1"
+                  name="medicineRoutine"
+                />
+              </div>
+              <div className="lg:flex justify-around gap-2  font-semibold">
+                <input
+                  className="text-xs   font-normal input input-sm input-bordered rounded"
+                  type="text"
+                  required
+                  placeholder="tab/cap/syp"
+                  name="medicineType1"
+                />
+                <input
+                  className="text-xs font-normal input input-sm input-bordered rounded"
+                  type="text"
+                  required
+                  placeholder="Insert medicine name"
+                  name="MedicineName1"
+                />
+
+                <input
+                  className="text-xs   font-normal input input-sm input-bordered rounded"
+                  type="text"
+                  required
+                  placeholder="10mg / 500mg "
+                  name="medicineDesc1"
+                />
+                <input
+                  className="text-xs font-normal input input-sm input-bordered rounded"
+                  type="text"
+                  required
+                  placeholder="Routine: 1 + 0 + 1"
+                  name="medicineRoutine1"
+                />
+              </div>
+              <div className="lg:flex justify-around gap-2  font-semibold">
+                <input
+                  className="text-xs   font-normal input input-sm input-bordered rounded"
+                  type="text"
+                  required
+                  placeholder="tab/cap/syp"
+                  name="medicineType2"
+                />
+                <input
+                  className="text-xs font-normal input input-sm input-bordered rounded"
+                  type="text"
+                  required
+                  placeholder="Insert medicine name"
+                  name="MedicineName2"
+                />
+
+                <input
+                  className="text-xs   font-normal input input-sm input-bordered rounded"
+                  type="text"
+                  required
+                  placeholder="10mg / 500mg "
+                  name="medicineDesc2"
+                />
+                <input
+                  className="text-xs font-normal input input-sm input-bordered rounded"
+                  type="text"
+                  required
+                  placeholder="Routine: 1 + 0 + 1"
+                  name="medicineRoutine2"
+                />
+              </div>
+              <div className="lg:flex justify-around gap-2  font-semibold">
+                <input
+                  className="text-xs   font-normal input input-sm input-bordered rounded"
+                  type="text"
+                  required
+                  placeholder="tab/cap/syp"
+                  name="medicineType3"
+                />
+                <input
+                  className="text-xs font-normal input input-sm input-bordered rounded"
+                  type="text"
+                  required
+                  placeholder="Insert medicine name"
+                  name="MedicineName3"
+                />
+
+                <input
+                  className="text-xs   font-normal input input-sm input-bordered rounded"
+                  type="text"
+                  required
+                  placeholder="10mg / 500mg "
+                  name="medicineDesc3"
+                />
+                <input
+                  className="text-xs font-normal input input-sm input-bordered rounded"
+                  type="text"
+                  required
+                  placeholder="Routine: 1 + 0 + 1"
+                  name="medicineRoutine3"
+                />
+              </div>
+              {/* diagnosis */}
+              <p className="text-xs text-left ">Diagnosis </p>
+              <div className="flex justify-around gap-2  font-semibold">
+                <input
+                  className="text-xs  w-1/2 font-normal input input-sm input-bordered rounded"
+                  type="text"
+                  required
+                  placeholder="Insert test 1"
+                  name="diagnosis"
+                />
+
+                <input
+                  className="text-xs w-1/2  font-normal input input-sm input-bordered rounded"
+                  type="text"
+                  required
+                  placeholder="Insert test 2"
+                  name="diagnosis1"
+                />
+              </div>
               <input
                 className="btn btn-primary text-white border-none mt-3"
                 type="submit"

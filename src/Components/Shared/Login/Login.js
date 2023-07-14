@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { FcGoogle } from "react-icons/fc";
 import {
   useSignInWithEmailAndPassword,
   useSignInWithGoogle,
@@ -8,7 +9,8 @@ import { useForm } from "react-hook-form";
 // import Loading from "../Shared/Loading";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 
-import mobilelogin from "../../../images/mobilelogin.svg";
+import mobileLogin from "../../../images/mobilelogin.svg";
+import pcLogin from "../../../images/pc-login.svg";
 import useToken from "../../../hooks/useToken";
 import Loading from "../../Loading/Loading";
 
@@ -59,9 +61,10 @@ const Login = () => {
     <div className="hero min-h-screen my-10">
       <div className="hero-content flex-col lg:flex-row">
         <div className="">
-          <img src={mobilelogin} className="w-10/12" />
+          <img src={mobileLogin} className="w-10/12 block lg:hidden mx-auto" />
+          <img src={pcLogin} className="w-10/12 hidden lg:block" />
         </div>
-        <div className="card w-96 ">
+        <div className="card w-96 shadow-xl">
           <div className="card-body">
             <h2 className="text-center text-2xl font-bold">Login</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
@@ -150,7 +153,8 @@ const Login = () => {
               onClick={() => signInWithGoogle()}
               className="btn btn-outline hover:bg-primary hover:text-white"
             >
-              Continue with Google
+              Continue with
+              <FcGoogle className="text-2xl ml-2" />
             </button>
           </div>
         </div>

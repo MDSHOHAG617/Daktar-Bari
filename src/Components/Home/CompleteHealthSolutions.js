@@ -54,7 +54,7 @@ const CompleteHealthSolutions = () => {
           </div>
         </Link>
         <Link
-          to="/diagnostics"
+          to=""
           className="card shadow-2xl mx-auto hover:border hover:opacity-75 h-full w-full transition ease-in-out delay-100  hover:-translate-y-5 hover:scale-100  duration-100 "
         >
           <div className="card-body">
@@ -71,7 +71,7 @@ const CompleteHealthSolutions = () => {
           </div>
         </Link>
         <Link
-          to="orderMadicine"
+          to="OrderMedicine"
           className="card shadow-2xl mx-auto hover:border hover:opacity-60 h-full w-full transition ease-in-out delay-100  hover:-translate-y-5 hover:scale-100  duration-100  "
         >
           <div className="card-body">

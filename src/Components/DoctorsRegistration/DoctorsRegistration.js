@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FcGoogle } from "react-icons/fc";
 import {
   useCreateUserWithEmailAndPassword,
   useSignInWithGoogle,
@@ -9,6 +10,7 @@ import { Link, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import useToken from "../../hooks/useToken";
 import Loading from "../Loading/Loading";
+import drReg from "../../images/drReg.jpg";
 import { toast } from "react-toastify";
 const Doctors = () => {
   // specialties
@@ -114,13 +116,10 @@ const Doctors = () => {
     <div className=" my-20">
       <div className=" lg:flex  ">
         <div className="hidden lg:block w-7/12">
-          <img
-            src="https://www.thoughtwire.com/wp-content/uploads/2019/07/ThoughtWire-Smart-Hospital-02-1536x1024.jpg"
-            className=" "
-          />
+          <img src={drReg} className=" " />
         </div>
 
-        <div className="lg:w-5/12 px-4 lg:px-6 mt-8">
+        <div className="lg:w-5/12 px-4 lg:px-6 mt-8  ">
           <h2 className="text-center text-2xl font-bold mb-6">
             Doctor Registration
           </h2>
@@ -499,7 +498,7 @@ const Doctors = () => {
             <div>
               {" "}
               <input
-                className="btn w-full max-w-xs text-white"
+                className="btn btn-primary w-full max-w-xs text-white"
                 type="submit"
                 value="Sign Up"
               />
@@ -517,9 +516,10 @@ const Doctors = () => {
           <div className="divider">OR</div>
           <button
             onClick={() => signInWithGoogle()}
-            className="btn btn-outline"
+            className="btn btn-outline hover:bg-primary mb-8"
           >
-            Continue with Google
+            Continue with
+            <FcGoogle className="text-2xl ml-2 " />
           </button>
         </div>
       </div>

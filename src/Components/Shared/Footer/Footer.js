@@ -22,7 +22,7 @@ const Footer = () => {
           <img className="w-64 mb-4" src={logo} />
           <p className="flex items-center font-semibold ">
             <MdAddCall className="text-2xl"></MdAddCall>
-            <span className="ml-4 text-xl">09612345678</span>
+            <span className="ml-4 text-xl">+880 1629753681</span>
           </p>
           <p className="flex items-center font-semibold ">
             <TfiEmail className="text-2xl"></TfiEmail>

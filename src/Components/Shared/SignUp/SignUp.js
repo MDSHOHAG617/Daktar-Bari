@@ -1,4 +1,5 @@
 import React from "react";
+import { FcGoogle } from "react-icons/fc";
 import {
   useCreateUserWithEmailAndPassword,
   useSignInWithGoogle,
@@ -9,7 +10,8 @@ import { useForm } from "react-hook-form";
 // import Loading from "../Shared/Loading";
 import { Link, useNavigate } from "react-router-dom";
 // import useToken from "../../hooks/useToken";
-import mobilelogin from "../../../images/mobilelogin.svg";
+import mobileLogin from "../../../images/mobilelogin.svg";
+import pcLogin from "../../../images/pc-login.svg";
 import useToken from "../../../hooks/useToken";
 import Loading from "../../Loading/Loading";
 
@@ -58,10 +60,12 @@ const SignUp = () => {
     <div className="hero min-h-screen my-10">
       <div className="hero-content flex-col lg:flex-row">
         <div className="">
-          <img src={mobilelogin} className="w-10/12 " />
+          {" "}
+          <img src={mobileLogin} className="w-10/12 block lg:hidden mx-auto" />
+          <img src={pcLogin} className="w-10/12 hidden lg:block" />
         </div>
 
-        <div className="card w-96  shadow- ">
+        <div className="card w-96  shadow-xl ">
           <div className="card-body">
             <h2 className="text-center text-2xl font-bold">Sign Up</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
@@ -156,7 +160,7 @@ const SignUp = () => {
 
               {signInError}
               <input
-                className="btn w-full max-w-xs text-white"
+                className="btn btn-primary w-full max-w-xs text-white"
                 type="submit"
                 value="Sign Up"
               />
@@ -172,9 +176,10 @@ const SignUp = () => {
             <div className="divider">OR</div>
             <button
               onClick={() => signInWithGoogle()}
-              className="btn btn-outline"
+              className="btn btn-outline hover:bg-primary"
             >
-              Continue with Google
+              Continue with
+              <FcGoogle className="text-2xl ml-2" />
             </button>
           </div>
         </div>

@@ -60,9 +60,9 @@ const Navbar = () => {
               {/* <li>
                 <NavLink to="/diagnostics">Home Diagnostics</NavLink>
               </li> */}
-              <li>
+              {/* <li>
                 <NavLink to="/enterprise">Enterprise</NavLink>
-              </li>
+              </li> */}
               {user ? (
                 <li>
                   <NavLink className="rounded " to="/dashboard">
@@ -105,11 +105,11 @@ const Navbar = () => {
                 Home Diagnostics
               </NavLink>
             </li> */}
-            <li>
+            {/* <li>
               <NavLink className="rounded font-semibold" to="/enterprise">
                 Enterprise
               </NavLink>
-            </li>
+            </li> */}
             {user ? (
               <li>
                 <NavLink className="rounded font-semibold" to="/dashboard">
