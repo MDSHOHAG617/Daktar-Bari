@@ -8,6 +8,83 @@ import { FaFilePrescription } from "react-icons/fa";
 import Loading from "../Loading/Loading";
 
 const MyAppointments = () => {
+  // Try start
+  const [timeLeft, setTimeLeft] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const targetDateForOneDayStoredStored = localStorage.getItem(
+      "targetDateForOneDayStored"
+    );
+    let targetDateForOneDayStored;
+
+    if (targetDateForOneDayStoredStored) {
+      targetDateForOneDayStored = parseInt(targetDateForOneDayStoredStored, 10);
+    } else {
+      targetDateForOneDayStored =
+        new Date().getTime() + 1 * 24 * 60 * 60 * 1000; // 1 days in the future
+      localStorage.setItem(
+        "targetDateForOneDayStored",
+        targetDateForOneDayStored
+      );
+    }
+
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const remainingTime = targetDateForOneDayStored - now;
+
+      if (remainingTime <= 0) {
+        clearInterval(interval);
+        setIsVisible(false);
+        localStorage.removeItem("targetDateForOneDayStored");
+      } else {
+        const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor(
+          (remainingTime % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+        setTimeLeft(
+          <div className="grid grid-flow-col gap-1 text-center auto-cols-max">
+            <div className="flex flex-col px-2 py-1 bg-primary rounded-md text-white">
+              <span className="countdown font-bold  text-md ">
+                <span style={{ "--value": `${days}` }}></span>
+              </span>
+              <span className="font-mono text-[10px]">day</span>
+            </div>
+            <div className="flex flex-col px-2 py-1 bg-primary rounded-md text-white">
+              <span className="countdown font-bold text-md">
+                <span style={{ "--value": `${hours}` }}></span>
+              </span>
+              <span className="font-mono text-[10px]">hrs</span>
+            </div>
+            <div className="flex flex-col px-2 py-1 bg-primary rounded-md text-white">
+              <span className="countdown font-bold text-md">
+                <span style={{ "--value": `${minutes}` }}></span>
+              </span>
+              <span className="font-mono text-xs">min</span>
+            </div>
+            <div className="flex flex-col px-2 py-1 bg-primary rounded-md text-white">
+              <span className="countdown font-bold text-md ">
+                <span style={{ "--value": `${seconds}` }}></span>
+              </span>
+              <span className="font-mono text-xs">sec</span>
+            </div>
+          </div>
+        );
+      }
+    }, 1000);
+
+    // console.log(timeLeft);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+  // Try end
   const [appointments, setAppointments] = useState([]);
   const [user, loading] = useAuthState(auth);
   console.log(appointments);
@@ -47,6 +124,7 @@ const MyAppointments = () => {
               <th>Email</th>
               <th>Appointment on</th>
               <th>Payment</th>
+              <th>See Dr. within time</th>
             </tr>
           </thead>
           <tbody className="font-normal">
@@ -64,20 +142,32 @@ const MyAppointments = () => {
                       </button>
                     </Link>
                   )}
-                  {appointment.consultationFee && appointment.paid && (
-                    <div>
-                      {/* <Link to="/prescription" className="">
+                  {appointment.consultationFee &&
+                    appointment.paid &&
+                    isVisible && (
+                      <div>
+                        {/* <Link to="/prescription" className="">
                         <FaFilePrescription className="text-2xl" />
                       </Link> */}
-                      <a
-                        href="https://meet.google.com/ouj-vjtb-gjx"
-                        className=" flex items-center gap-1 bg-primary rounded-full px-2 py-[3px] mt-1  text-white w-32"
-                      >
-                        <HiOutlineVideoCamera className=" " />
-                        <p className="text-xs font-normal ">See Doctor Now</p>
-                      </a>
-                    </div>
-                  )}
+                        <a
+                          href="https://meet.google.com/ouj-vjtb-gjx"
+                          className=" flex items-center gap-1 bg-primary rounded-full px-2 py-[3px] mt-1  text-white w-32"
+                        >
+                          <HiOutlineVideoCamera className=" " />
+                          <p className="text-xs font-normal ">See Doctor Now</p>
+                        </a>
+                      </div>
+                    )}
+                </td>
+                <td>
+                  {" "}
+                  {appointment.consultationFee &&
+                    appointment.paid &&
+                    isVisible && (
+                      <div>
+                        <button>{timeLeft}</button>
+                      </div>
+                    )}
                 </td>
               </tr>
             ))}

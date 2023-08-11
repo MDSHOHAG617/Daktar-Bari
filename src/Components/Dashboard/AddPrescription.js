@@ -88,7 +88,7 @@ const AddPrescription = () => {
   return (
     <div>
       {" "}
-      <div className="my-16">
+      <div className="">
         <form onSubmit={handleAddItems}>
           <div class="card px-8 lg:px-40    mx-auto">
             <div class="card-body">
