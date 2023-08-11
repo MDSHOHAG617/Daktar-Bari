@@ -12,6 +12,7 @@ import { MdManageAccounts } from "react-icons/md";
 import { FaRegCalendarCheck } from "react-icons/fa";
 import { MdSubscriptions } from "react-icons/md";
 import { BsPrescription } from "react-icons/bs";
+import myProfile from "../../images/myProfile.svg";
 
 const DashBoard = () => {
   const [user] = useAuthState(auth);
@@ -30,7 +31,16 @@ const DashBoard = () => {
         <ul class="menu p-4 overflow-y-auto w-60 shadow-xl text-base-content  backdrop-blur-md">
           {/* <!-- Sidebar content here --> */}
           <li>
-            <NavLink className="font-semibold" to="/dashboard/">
+            <Link className="font-semibold" to="/dashboard/">
+              <div className="avatar mx-auto">
+                <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <img className="" src={user.photoURL} />
+                </div>
+              </div>
+            </Link>
+          </li>
+          <li>
+            <NavLink className="font-semibold" to="/dashboard/myOrders">
               <TiShoppingCart className="text-2xl  " />
               My Orders
             </NavLink>

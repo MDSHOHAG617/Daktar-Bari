@@ -35,6 +35,7 @@ import SubscriptionPayments from "./Components/HealthPlans/Subscription/Subscrip
 import ManageMedicine from "./Components/Dashboard/ManageMedecine";
 import AddPrescription from "./Components/Dashboard/AddPrescription";
 import MyPrescription from "./Components/Dashboard/MyPrescription";
+import MyProfile from "./Components/Dashboard/MyProfile";
 
 function App() {
   return (
@@ -98,7 +99,8 @@ function App() {
             </RequireAuth>
           }
         >
-          <Route index element={<MyOrders />}></Route>
+          <Route index element={<MyProfile />}></Route>
+          <Route path="myOrders" element={<MyOrders />}></Route>
           <Route path="myAppointments" element={<MyAppointments />}></Route>
           <Route path="mySubscription" element={<MySubscription />}></Route>
           <Route path="myPrescription" element={<MyPrescription />}></Route>
