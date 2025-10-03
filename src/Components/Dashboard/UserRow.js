@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 
 const UserRow = ({ user }) => {
   // console.log(user);
-  const { _id, email, role, doctorRole } = user;
+  const { _id, email, role } = user;
   // making admin
   const makeAdmin = () => {
     fetch(`http://localhost:5000/user/admin/${email}`, {
@@ -27,28 +27,28 @@ const UserRow = ({ user }) => {
       });
   };
 
-  // making doctor
-  const makeDoctor = () => {
-    fetch(`http://localhost:5000/user/doctor/${email}`, {
-      method: "PUT",
-      headers: {
-        authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-      },
-    })
-      .then((res) => {
-        if (res.status === 403) {
-          toast.error("Failed to make an doctor");
-        }
-        return res.json();
-      })
-      .then((data) => {
-        // console.log(data);
-        if (data.modifiedCount > 0) {
-          alert("Are you sure? ");
-          toast.success("Successfully made an doctor");
-        }
-      });
-  };
+  // // making doctor
+  // const makeDoctor = () => {
+  //   fetch(`http://localhost:5000/user/doctor/${email}`, {
+  //     method: "PUT",
+  //     headers: {
+  //       authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+  //     },
+  //   })
+  //     .then((res) => {
+  //       if (res.status === 403) {
+  //         toast.error("Failed to make an doctor");
+  //       }
+  //       return res.json();
+  //     })
+  //     .then((data) => {
+  //       // console.log(data);
+  //       if (data.modifiedCount > 0) {
+  //         alert("Are you sure? ");
+  //         toast.success("Successfully made an doctor");
+  //       }
+  //     });
+  // };
   //   console.log(user);
   return (
     <tr>
@@ -64,7 +64,7 @@ const UserRow = ({ user }) => {
           <p className="text-primary">Already Admin </p>
         )}
       </td>
-      <td>
+      {/* <td>
         {doctorRole !== "doctor" ? (
           <button
             onClick={makeDoctor}
@@ -75,7 +75,7 @@ const UserRow = ({ user }) => {
         ) : (
           <p className="text-primary">Already Doctor </p>
         )}
-      </td>
+      </td> */}
     </tr>
   );
 };

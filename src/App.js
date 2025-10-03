@@ -36,7 +36,7 @@ import ManageMedicine from "./Components/Dashboard/ManageMedecine";
 import AddPrescription from "./Components/Dashboard/AddPrescription";
 import MyPrescription from "./Components/Dashboard/MyPrescription";
 import MyProfile from "./Components/Dashboard/MyProfile";
-import RequireDoctor from "./Components/Shared/Auth/RequireDoctor";
+// import RequireDoctor from "./Components/Shared/Auth/RequireDoctor";
 
 function App() {
   return (
@@ -126,9 +126,9 @@ function App() {
           <Route
             path="addPrescription"
             element={
-              <RequireDoctor>
+              <RequireAdmin>
                 <AddPrescription />
-              </RequireDoctor>
+              </RequireAdmin>
             }
           ></Route>
           <Route

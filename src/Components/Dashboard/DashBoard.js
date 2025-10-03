@@ -13,12 +13,12 @@ import { FaRegCalendarCheck } from "react-icons/fa";
 import { MdSubscriptions } from "react-icons/md";
 import { BsPrescription } from "react-icons/bs";
 import myProfile from "../../images/myProfile.svg";
-import useDoctor from "../../hooks/useDoctor";
+// import useDoctor from "../../hooks/useDoctor";
 
 const DashBoard = () => {
   const [user] = useAuthState(auth);
   const [admin] = useAdmin(user);
-  const [doctor] = useDoctor(user);
+  // const [doctor] = useDoctor(user);
   return (
     <div class="drawer drawer-mobile my-20 ">
       <input id="dashBoard-sidebar" type="checkbox" class="drawer-toggle" />
@@ -97,7 +97,7 @@ const DashBoard = () => {
                     Add Medicine
                   </NavLink>
                 )}
-                {doctor && (
+                {admin && (
                   <NavLink
                     className="font-semibold"
                     to="/dashboard/addPrescription"

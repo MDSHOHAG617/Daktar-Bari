@@ -21,88 +21,88 @@ const MyProfile = () => {
   const [prescriptions, setPrescriptions] = useState([]);
   const [orders, setOrders] = useState([]);
   console.log(user);
-  useEffect(() => {
-    if (user) {
-      fetch(`http://localhost:5000/order?customerEmail=${user.email}`, {
-        method: "GET",
-        headers: {
-          authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-        },
-      })
-        .then((res) => {
-          //   console.log("res", res);
-          if (res.status === 401 || res.status === 403) {
-            signOut(auth);
-            localStorage.removeItem("accessToken");
-            Navigate("/");
-          }
-          return res.json();
-        })
-        .then((data) => setOrders(data));
-    }
-    //   my Appoinments
+  // useEffect(() => {
+  //   if (user) {
+  //     fetch(`http://localhost:5000/order?customerEmail=${user.email}`, {
+  //       method: "GET",
+  //       headers: {
+  //         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+  //       },
+  //     })
+  //       .then((res) => {
+  //         //   console.log("res", res);
+  //         if (res.status === 401 || res.status === 403) {
+  //           signOut(auth);
+  //           localStorage.removeItem("accessToken");
+  //           Navigate("/");
+  //         }
+  //         return res.json();
+  //       })
+  //       .then((data) => setOrders(data));
+  //   }
+  //   //   my Appoinments
 
-    if (user) {
-      fetch(`http://localhost:5000/booking?customerEmail=${user.email}`, {
-        method: "GET",
-        headers: {
-          authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-        },
-      })
-        .then((res) => {
-          //   console.log("res", res);
-          if (res.status === 401 || res.status === 403) {
-            signOut(auth);
-            localStorage.removeItem("accessToken");
-          }
-          return res.json();
-        })
-        .then((data) => setAppointments(data));
-    }
-    //   my subscriptions
-    if (user) {
-      fetch(`http://localhost:5000/subscriptions?customerEmail=${user.email}`, {
-        method: "GET",
-        headers: {
-          authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-        },
-      })
-        .then((res) => {
-          //   console.log("res", res);
-          if (res.status === 401 || res.status === 403) {
-            signOut(auth);
-            localStorage.removeItem("accessToken");
-          }
-          return res.json();
-        })
-        .then((data) => setSubscription(data));
-    }
-    //   my prescriptions
-    if (user) {
-      fetch(`http://localhost:5000/prescription?customerEmail=${user.email}`, {
-        method: "GET",
-        headers: {
-          authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-        },
-      })
-        .then((res) => {
-          //   console.log("res", res);
-          if (res.status === 401 || res.status === 403) {
-            signOut(auth);
-            localStorage.removeItem("accessToken");
-          }
-          return res.json();
-        })
-        .then((data) => setPrescriptions(data));
-    }
-  }, [user]);
+  //   if (user) {
+  //     fetch(`http://localhost:5000/booking?customerEmail=${user.email}`, {
+  //       method: "GET",
+  //       headers: {
+  //         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+  //       },
+  //     })
+  //       .then((res) => {
+  //         //   console.log("res", res);
+  //         if (res.status === 401 || res.status === 403) {
+  //           signOut(auth);
+  //           localStorage.removeItem("accessToken");
+  //         }
+  //         return res.json();
+  //       })
+  //       .then((data) => setAppointments(data));
+  //   }
+  //   //   my subscriptions
+  //   if (user) {
+  //     fetch(`http://localhost:5000/subscriptions?customerEmail=${user.email}`, {
+  //       method: "GET",
+  //       headers: {
+  //         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+  //       },
+  //     })
+  //       .then((res) => {
+  //         //   console.log("res", res);
+  //         if (res.status === 401 || res.status === 403) {
+  //           signOut(auth);
+  //           localStorage.removeItem("accessToken");
+  //         }
+  //         return res.json();
+  //       })
+  //       .then((data) => setSubscription(data));
+  //   }
+  //   //   my prescriptions
+  //   if (user) {
+  //     fetch(`http://localhost:5000/prescription?customerEmail=${user.email}`, {
+  //       method: "GET",
+  //       headers: {
+  //         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+  //       },
+  //     })
+  //       .then((res) => {
+  //         //   console.log("res", res);
+  //         if (res.status === 401 || res.status === 403) {
+  //           signOut(auth);
+  //           localStorage.removeItem("accessToken");
+  //         }
+  //         return res.json();
+  //       })
+  //       .then((data) => setPrescriptions(data));
+  //   }
+  // }, [user]);
   if (loading) {
     return <Loading />;
   }
 
   return (
     <div className="mt-8">
-      <div className="grid grid-cols-2 lg:grid-cols-3 mx-16 gap-4 height-full">
+      {/* <div className="grid grid-cols-2 lg:grid-cols-3 mx-16 gap-4 height-full">
         <Link className="bg-primary p-4 text-white lg:text-xl font-normal rounded-md">
           <CgProfile className="mx-auto text-4xl lg:text-7xl" />
           {user.displayName}{" "}
@@ -151,7 +151,7 @@ const MyProfile = () => {
           <FaSignInAlt className="mx-auto text-4xl lg:text-7xl" />
           {user.metadata.lastSignInTime}
         </Link>
-      </div>
+      </div> */}
       <p></p>
     </div>
   );

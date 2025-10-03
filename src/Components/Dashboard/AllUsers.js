@@ -30,7 +30,7 @@ const AllUsers = () => {
               <th>id</th>
               <th>Email</th>
               <th> Admin</th>
-              <th> Doctor</th>
+              {/* <th> Doctor</th> */}
             </tr>
           </thead>
           <tbody className="font-normal">
