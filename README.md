@@ -59,7 +59,8 @@ The platform offers dynamic dashboards tailored to specific user roles:
 ## 🌐 Technology Stack Overview
 
 - **Front-End Framework**: React.js  
-- **Authentication**: Google Firebase  
+- **Authentication**: Google Firebase 
+- **Authentication**: JWT   
 - **Payment Gateway (Demo)**: Stripe  
 - **Role-Based Access Control**: Implemented via interface logic  
 - **Backend APIs / Storage**: (Not shown, but can be assumed to support REST/Firestore/Firebase Functions)
