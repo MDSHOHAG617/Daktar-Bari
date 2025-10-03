@@ -1,71 +1,78 @@
-# Getting Started with Create React App
+# 🏥 Daktar Bari – Telemedicine Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Daktar Bari** is a comprehensive and user-centric telemedicine web platform designed to provide 24/7 access to essential healthcare services. The application facilitates virtual healthcare consultations, digital prescription management, e-pharmacy services, and the subscription of healthcare and protection plans. It caters to patients, doctors, and administrators through a robust, role-based dashboard management system.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🔍 Core Features and Functional Modules
 
-### `npm start`
+### 1. Live Video Consultation
+- Enables registered users to book and conduct real-time video consultations with qualified healthcare professionals.
+- Offers options to schedule future appointments based on doctor availability.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. Digital Health Plans & Protection Packages
+Users can subscribe to affordable family and individual healthcare packages that include:
+- Unlimited virtual consultations with experienced general practitioners and gynecologists.
+- Substantial discounts on diagnostic tests.
+- Cashback offers and insurance coverage (select plans).
+  
+**Examples of available plans:**
+- WhizeeHealth Family Care
+- WhizeeHealth Special Care
+- WhizeeHealth Premium Care
+- WhizeeHealth Care Plus
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 3. Online Medicine Ordering
+- Allows patients to browse through a curated pharmaceutical catalog and place orders from the platform.
+- Medicines are delivered promptly, with expected delivery times as low as **1 hour**.
 
-### `npm test`
+### 4. Diagnostic Services at Home
+- Patients can request home diagnostic tests with sample collection and report delivery within 24 hours.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 5. Secure Authentication via Firebase
+- User authentication and login functionality is powered by **Google Firebase**, supporting:
+  - Email/Password login
+  - Google single sign-on (SSO)
 
-### `npm run build`
+### 6. Doctor Registration & Prescription Upload
+- Verified physicians can register on the platform by submitting credentials, specialties, and availability.
+- Doctors can upload digital prescriptions directly to the patient's profile.
+- Patients can conveniently **download prescriptions** in real time after their consultations.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 7. Stripe Payment Integration (Demo)
+- A fully functional **Stripe-powered** demo payment system is integrated to process:
+  - Medicine purchases
+  - Subscription plan payments
+  - Appointment fees
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 8. Role-Based Dashboard System
+The platform offers dynamic dashboards tailored to specific user roles:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| User Type     | Dashboard Options                                                                 |
+|---------------|------------------------------------------------------------------------------------|
+| **Patients**  | View/manage their appointments, orders, subscriptions, and download prescriptions |
+| **Doctors**   | Upload prescriptions, manage patient appointments, and set availability           |
+| **Administrators** | Manage users (view/make admin), add/update medicines, monitor system-wide activity |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🌐 Technology Stack Overview
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Front-End Framework**: React.js  
+- **Authentication**: Google Firebase  
+- **Payment Gateway (Demo)**: Stripe  
+- **Role-Based Access Control**: Implemented via interface logic  
+- **Backend APIs / Storage**: (Not shown, but can be assumed to support REST/Firestore/Firebase Functions)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🎯 Objective
 
-## Learn More
+The goal of Daktar Bari is to bring accessible, affordable, and scalable healthcare services to users anytime, anywhere, while also empowering medical practitioners with user-friendly digital tools to serve patients efficiently.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+It is particularly useful for:
+- Urban and rural populations needing remote healthcare access.
+- Doctors looking to extend their services through teleconsultation.
+- Patients looking for convenience in managing medicines and health plans from home.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Daktar-Bari
+---
