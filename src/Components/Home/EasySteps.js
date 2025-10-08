@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { MdOutlineScreenSearchDesktop } from "react-icons/md";
-import { MdOutlineVideoCameraFront } from "react-icons/md";
+import { FaFilePrescription } from "react-icons/fa";
+
 import { FaHandHoldingMedical } from "react-icons/fa";
 // import nilima from "../../images/nilima.png";s
+import ladydoctor from "../../images/ladydoctor.png"
 
 const EasySteps = () => {
   return (
@@ -26,8 +28,8 @@ const EasySteps = () => {
           <div className="display ">
             <div className="artboard artboard-demo phone-1 ">
               <img
-                className="w-72 lg:w-full"
-                src="https://getconciergepad.com/wp-content/uploads/2020/03/Female-Doctor-Transparent-Background-PNG.png"
+                className="lg:w-full"
+                src={ladydoctor}
               />
             </div>
           </div>
@@ -61,7 +63,8 @@ const EasySteps = () => {
               <div className="items-center flex items-center ">
                 <span className="text-2xl lg:text-4xl ml-8 mr-6 bg-base-200 rounded p-3 lg:p-4 hover:bg-primary mt-4 lg:mt-0">
                   {" "}
-                  <MdOutlineVideoCameraFront />
+                  <FaFilePrescription />
+ 
                 </span>
                 <div className="hidden lg:block">
                   {" "}

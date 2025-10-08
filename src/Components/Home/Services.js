@@ -1,13 +1,21 @@
 import React from "react";
+import { FaUserDoctor,FaVideo,FaPrescription,FaStripeS,FaSuitcaseMedical          } from "react-icons/fa6";
+import { BiSupport } from "react-icons/bi";
+import { CiDeliveryTruck } from "react-icons/ci";
+import { IoAlarmOutline } from "react-icons/io5";
+import { RiServiceLine } from "react-icons/ri";
+import { FaBriefcaseMedical } from "react-icons/fa";
+
+
+import { FaHistory } from "react-icons/fa";
 
 const Services = () => {
   return (
     <div className="mx-16 mt-32 services grid grid-cols-1 lg:grid-cols-3 gap-10">
       <div className="flex items-start service">
-        <img
-          className="w-16 mr-6"
-          src="https://doctime.com.bd/images/feature/verified__doctors.svg"
-        />
+      
+           <FaUserDoctor style={{ color: '#07C0BA' }} className=" text-8xl mr-6 "/> 
+          
         <div className="text-left ">
           <h1 className="text-xl mb-3">Verified doctors</h1>
           <p className="text-md font-normal ">
@@ -17,10 +25,7 @@ const Services = () => {
         </div>
       </div>
       <div className="flex items-start service">
-        <img
-          className="w-16 mr-6 "
-          src="https://doctime.com.bd/images/feature/instant__video__consultation.svg"
-        />
+         <FaVideo style={{ color: '#07C0BA' }} className=" text-8xl mr-6 "/> 
         <div className="text-left ">
           <h1 className="text-xl mb-3">Instant video consultation</h1>
           <p className="text-md font-normal ">
@@ -30,10 +35,7 @@ const Services = () => {
         </div>
       </div>
       <div className="flex items-start service">
-        <img
-          className="w-16  mr-6"
-          src="https://doctime.com.bd/images/feature/Instant_electronics_prescription.svg"
-        />
+       <FaPrescription style={{ color: '#07C0BA' }} className=" text-8xl mr-6 "/> 
         <div className="text-left ">
           <h1 className="text-xl mb-3">Instant electronics prescription</h1>
           <p className="text-md font-normal ">
@@ -44,10 +46,7 @@ const Services = () => {
         </div>
       </div>
       <div className="flex items-start service">
-        <img
-          className="w-16  mr-6"
-          src="https://doctime.com.bd/images/feature/easy__payment.svg"
-        />
+         <FaStripeS      style={{ color: '#07C0BA' }} className=" text-8xl mr-6 "/> 
         <div className="text-left ">
           <h1 className="text-xl mb-3">Easy payment options</h1>
           <p className="text-md font-normal ">
@@ -58,24 +57,18 @@ const Services = () => {
         </div>
       </div>
       <div className="flex items-start service">
-        <img
-          className="w-16 mr-6 "
-          src="https://doctime.com.bd/images/feature/better__consultation__quality.svg"
-        />
+        <FaSuitcaseMedical  style={{ color: '#07C0BA' }} className=" text-8xl mr-6  "/> 
         <div className="text-left">
           <h1 className="text-xl mb-3">Better consultation quality</h1>
           <p className="text-md font-normal ">
-            Our doctors are committed to provide the best service by spending
-            enough time required for the consultation. We constantly improve our
-            service from the rating and feedback provided by patients.
+           Our doctors ensure quality care by giving each patient the time they need and improving through feedback.
+
+
           </p>
         </div>
       </div>
       <div className="flex items-start service">
-        <img
-          className="w-16 mr-6 "
-          src="https://doctime.com.bd/images/feature/health__history.svg"
-        />
+        <FaHistory       style={{ color: '#07C0BA' }} className=" text-8xl mr-6 "/> 
         <div className="text-left">
           <h1 className="text-xl mb-3">Health history</h1>
           <p className="text-md font-normal ">
@@ -85,10 +78,7 @@ const Services = () => {
         </div>
       </div>
       <div className="flex items-start service">
-        <img
-          className="w-16 mr-6 "
-          src="https://doctime.com.bd/images/feature/super__fast__support.svg"
-        />
+         <BiSupport        style={{ color: '#07C0BA' }} className=" text-9xl mr-6 "/> 
         <div className="text-left">
           <h1 className="text-xl mb-3">Super fast support</h1>
           <p className="text-md font-normal ">
@@ -98,10 +88,7 @@ const Services = () => {
         </div>
       </div>
       <div className="flex items-start service">
-        <img
-          className="w-16 mr-6 "
-          src="https://doctime.com.bd/images/feature/medicine__delivered.svg"
-        />
+        <CiDeliveryTruck         style={{ color: '#07C0BA' }} className=" text-9xl mr-6 "/> 
         <div className="text-left">
           <h1 className="text-xl mb-3">Medicine delivered to your doorstep</h1>
           <p className="text-md font-normal ">
@@ -111,10 +98,7 @@ const Services = () => {
         </div>
       </div>
       <div className="flex items-start service">
-        <img
-          className="w-16 mr-6 "
-          src="https://doctime.com.bd/images/feature/mobile__reminder.svg"
-        />
+       <IoAlarmOutline        style={{ color: '#07C0BA' }} className=" text-9xl mr-6 "/> 
         <div className="text-left">
           <h1 className="text-xl mb-3">Medicine reminder</h1>
           <p className="text-md font-normal ">

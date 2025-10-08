@@ -16,10 +16,12 @@ import Services from "./Services";
 import WhenTouseDaktarBari from "./WhenTouseDaktarBari";
 import WhyUseDaktarBari from "./WhyUseDaktarBari";
 import HealthPlans from "../HealthPlans/HealthPlans";
+import AIChat from "../../Components/Home/AIChat";
 
 const Home = () => {
   return (
     <div>
+      <AIChat />
       <CompleteHealthSolutions />
       <DownloadApps />
       <WhyUseDaktarBari />
