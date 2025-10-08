@@ -187,15 +187,9 @@ const Ratings = () => {
           <img src="https://Daktar bari.com.bd/landing/home/video__thumbnail__image.webp" />
         </Link> */}
 
+          
         <div>
-          <iframe
-            className="rounded-xl mx-auto w-10/12 h-[200px] lg:w-[550px] lg:h-[300px] "
-            src="https://www.youtube.com/embed/0grJjVjy5-0"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <iframe className="rounded-xl mx-auto w-10/12 h-[200px] lg:w-[550px] lg:h-[300px] " width="560" height="315" src="https://www.youtube.com/embed/yarl3lf_HZ8?si=f9-veN_9XoB2kOE-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
     </div>
