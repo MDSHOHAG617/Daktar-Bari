@@ -11,7 +11,7 @@ import { FaFilePrescription } from "react-icons/fa";
 import { FaPrescription } from "react-icons/fa";
 import { FaDiagnoses } from "react-icons/fa";
 
-const Prescription = () => {
+const Prescriptions = () => {
   const { id } = useParams();
   // console.log(id);
   const [user, loading] = useAuthState(auth);
@@ -226,4 +226,4 @@ const Prescription = () => {
   );
 };
 
-export default Prescription;
+export default Prescriptions;

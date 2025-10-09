@@ -25,7 +25,7 @@ import Doctor from "./Components/Doctors/Doctor";
 import AllUsers from "./Components/Dashboard/AllUsers";
 import Payment from "./Components/Dashboard/Payment";
 import ConsultationPayment from "./Components/Consultations/ConsultationPayment";
-import Prescription from "./Components/Prescription/Prescription.js";
+import Prescriptions from "./Components/Prescription/Prescriptions.js";
 import Booking from "./Components/Consultations/Booking Appointments/Booking";
 import MyAppointments from "./Components/Dashboard/MyAppointments";
 import BookingPayments from "./Components/Consultations/Booking Appointments/BookingPayments";
@@ -52,7 +52,7 @@ function App() {
         <Route path="/doctorsRegistration" element={<DoctorRegistration />} />
         <Route path="signUp" element={<SignUp />} />
         <Route path="login" element={<Login />} />
-        <Route path="prescription/:id" element={<Prescription />} />
+        <Route path="prescription/:id" element={<Prescriptions />} />
         {/* try */}
         {/* <Route path="doctor" element={<Doctors />} /> */}
 
