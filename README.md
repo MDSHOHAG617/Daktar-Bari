@@ -1,4 +1,6 @@
-# 🏥 Daktar Bari – Telemedicine Web Application with FastAid AI assistent
+# 🏥 Daktar Bari – Telemedicine Web Application with FastAid AI Assistent
+
+The site is live here: [Daktar Bari](https://daktar-bari.onrender.com/)
 
 **Daktar Bari** is a comprehensive and user-centric telemedicine web platform designed to provide 24/7 access to essential healthcare services with a **FastAid AI assistent**. The application facilitates virtual healthcare consultations, digital prescription management, e-pharmacy services, and the subscription of healthcare and protection plans. It caters to patients, doctors, and administrators through a robust, role-based dashboard management system.
 
