@@ -8,7 +8,7 @@ const Consultations = () => {
   const [user, loading] = useAuthState(auth);
   const [specialties, setSpecialties] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/specialty")
+    fetch("https://daktar-bari-server.onrender.com/specialty")
       // fetch("Specialty.json")
       .then((res) => res.json())
       .then((data) => setSpecialties(data));

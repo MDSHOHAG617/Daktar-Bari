@@ -9,7 +9,7 @@ const Doctors = () => {
   console.log(category);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/doctor/category/${category}`)
+    fetch(`https://daktar-bari-server.onrender.com/doctor/category/${category}`)
       .then((res) => res.json())
       .then((data) => setDoctors(data));
   }, [category]);

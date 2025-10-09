@@ -87,7 +87,7 @@ const MySubscription = () => {
   const navigate = useNavigate();
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/subscriptions?customerEmail=${user.email}`, {
+      fetch(`https://daktar-bari-server.onrender.com/subscriptions?customerEmail=${user.email}`, {
         method: "GET",
         headers: {
           authorization: `Bearer ${localStorage.getItem("accessToken")}`,

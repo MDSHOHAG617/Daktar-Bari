@@ -10,7 +10,7 @@ const stripePromise = loadStripe(
 const Payment = () => {
   const { id } = useParams();
   const [payments, setPayments] = useState([]);
-  const url = `http://localhost:5000/order/${id}`;
+  const url = `https://daktar-bari-server.onrender.com/order/${id}`;
   useEffect(() => {
     fetch(url, {
       method: "GET",

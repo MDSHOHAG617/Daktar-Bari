@@ -35,7 +35,7 @@ const Purchase = () => {
       price,
     };
 
-    fetch("http://localhost:5000/order", {
+    fetch("https://daktar-bari-server.onrender.com/order", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -51,7 +51,7 @@ const Purchase = () => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:5000/medicine/${id}`)
+    fetch(`https://daktar-bari-server.onrender.com/medicine/${id}`)
       .then((res) => res.json())
       .then((data) => setMedicine(data));
   }, [id]);

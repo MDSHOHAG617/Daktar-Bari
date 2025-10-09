@@ -11,7 +11,7 @@ const SubscriptionPayments = () => {
   const { id } = useParams();
   const [payments, setPayments] = useState([]);
   // console.log(payments);
-  const url = `http://localhost:5000/subscriptions/${id}`;
+  const url = `https://daktar-bari-server.onrender.com/subscriptions/${id}`;
   useEffect(() => {
     fetch(url, {
       method: "GET",

@@ -13,7 +13,7 @@ const ManageMedicine = () => {
   const [deletingProducts, setDeletingProducts] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/medicine", {
+    fetch("https://daktar-bari-server.onrender.com/medicine", {
       headers: {
         "content-type": "application/json",
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

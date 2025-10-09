@@ -10,7 +10,7 @@ const CareAndProtectionPlant = () => {
 
   useEffect(() => {
     // fetch("HealthCareAndProtection.json")
-    fetch("http://localhost:5000/healthPlans")
+    fetch("https://daktar-bari-server.onrender.com/healthPlans")
       .then((res) => res.json())
       .then((data) => setPlans(data));
   }, []);

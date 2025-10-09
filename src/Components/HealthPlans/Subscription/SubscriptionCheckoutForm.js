@@ -15,7 +15,7 @@ const SubscriptionCheckoutForm = ({ payments }) => {
 
   useEffect(() => {
     if (price) {
-      fetch("http://localhost:5000/create-payment-intent", {
+      fetch("https://daktar-bari-server.onrender.com/create-payment-intent", {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -76,7 +76,7 @@ const SubscriptionCheckoutForm = ({ payments }) => {
         order: _id,
         transactionId: paymentIntent.id,
       };
-      fetch(`http://localhost:5000/subscriptions/${_id}`, {
+      fetch(`https://daktar-bari-server.onrender.com/subscriptions/${_id}`, {
         method: "PATCH",
         headers: {
           "content-type": "application/json",

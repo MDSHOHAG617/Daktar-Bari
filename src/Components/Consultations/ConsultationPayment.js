@@ -16,7 +16,7 @@ const ConsultationPayment = () => {
   const { id } = useParams();
   const [user, loading, error] = useAuthState(auth);
   const [payments, setPayments] = useState([]);
-  const url = `http://localhost:5000/doctor/${id}`;
+  const url = `https://daktar-bari-server.onrender.com/doctor/${id}`;
   useEffect(() => {
     fetch(url, {
       method: "GET",

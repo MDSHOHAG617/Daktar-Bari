@@ -49,7 +49,7 @@ const Subscription = () => {
       expireDate,
       endDate,
     };
-    fetch("http://localhost:5000/subscriptions", {
+    fetch("https://daktar-bari-server.onrender.com/subscriptions", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -65,7 +65,7 @@ const Subscription = () => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:5000/healthPlans/${id}`)
+    fetch(`https://daktar-bari-server.onrender.com/healthPlans/${id}`)
       .then((res) => res.json())
       .then((data) => setSubscription(data));
   }, [id]);

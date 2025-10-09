@@ -13,7 +13,7 @@ const Medicine = () => {
 
   const [medicines, setMedicine] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/medicine")
+    fetch("https://daktar-bari-server.onrender.com/medicine")
       .then((res) => res.json())
       .then((data) => setMedicine(data));
   }, []);

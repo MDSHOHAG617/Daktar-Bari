@@ -16,7 +16,7 @@ const Doctors = () => {
   // specialties
   const [specialties, setSpecialties] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/specialty")
+    fetch("https://daktar-bari-server.onrender.com/specialty")
       .then((res) => res.json())
       .then((data) => setSpecialties(data));
   }, []);
@@ -98,7 +98,7 @@ const Doctors = () => {
       password,
     };
 
-    fetch("http://localhost:5000/doctor", {
+    fetch("https://daktar-bari-server.onrender.com/doctor", {
       method: "POST",
       headers: {
         "content-type": "application/json",

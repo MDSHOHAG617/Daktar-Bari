@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 
 const DeleteConfirmMOdal = ({ deletingProducts, setDeletingProducts }) => {
   const handleDelete = () => {
-    fetch(`http://localhost:5000/medicine/${email}`, {
+    fetch(`https://daktar-bari-server.onrender.com/medicine/${email}`, {
       method: "DELETE",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

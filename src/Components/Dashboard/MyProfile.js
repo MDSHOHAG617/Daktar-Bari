@@ -23,7 +23,7 @@ const MyProfile = () => {
   console.log(user);
   // useEffect(() => {
   //   if (user) {
-  //     fetch(`http://localhost:5000/order?customerEmail=${user.email}`, {
+  //     fetch(`https://daktar-bari-server.onrender.com/order?customerEmail=${user.email}`, {
   //       method: "GET",
   //       headers: {
   //         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -43,7 +43,7 @@ const MyProfile = () => {
   //   //   my Appoinments
 
   //   if (user) {
-  //     fetch(`http://localhost:5000/booking?customerEmail=${user.email}`, {
+  //     fetch(`https://daktar-bari-server.onrender.com/booking?customerEmail=${user.email}`, {
   //       method: "GET",
   //       headers: {
   //         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -61,7 +61,7 @@ const MyProfile = () => {
   //   }
   //   //   my subscriptions
   //   if (user) {
-  //     fetch(`http://localhost:5000/subscriptions?customerEmail=${user.email}`, {
+  //     fetch(`https://daktar-bari-server.onrender.com/subscriptions?customerEmail=${user.email}`, {
   //       method: "GET",
   //       headers: {
   //         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -79,7 +79,7 @@ const MyProfile = () => {
   //   }
   //   //   my prescriptions
   //   if (user) {
-  //     fetch(`http://localhost:5000/prescription?customerEmail=${user.email}`, {
+  //     fetch(`https://daktar-bari-server.onrender.com/prescription?customerEmail=${user.email}`, {
   //       method: "GET",
   //       headers: {
   //         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

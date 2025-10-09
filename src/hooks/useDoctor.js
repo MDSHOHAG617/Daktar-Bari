@@ -6,7 +6,7 @@
 //   useEffect(() => {
 //     const email = user?.email;
 //     if (email) {
-//       fetch(`http://localhost:5000/doctor/${email}`, {
+//       fetch(`https://daktar-bari-server.onrender.com/doctor/${email}`, {
 //         method: "GET",
 //         headers: {
 //           "content-type": "application/json",

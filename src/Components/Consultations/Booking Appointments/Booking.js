@@ -55,7 +55,7 @@ const Booking = () => {
       currentDate,
       expireDate,
     };
-    fetch("http://localhost:5000/booking", {
+    fetch("https://daktar-bari-server.onrender.com/booking", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -71,7 +71,7 @@ const Booking = () => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:5000/doctor/${id}`)
+    fetch(`https://daktar-bari-server.onrender.com/doctor/${id}`)
       .then((res) => res.json())
       .then((data) => setBookings(data));
   }, [id]);

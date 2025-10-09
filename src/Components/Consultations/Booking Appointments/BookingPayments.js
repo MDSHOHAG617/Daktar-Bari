@@ -10,7 +10,7 @@ const stripePromise = loadStripe(
 const BookingPayments = () => {
   const { id } = useParams();
   const [payments, setPayments] = useState([]);
-  const url = `http://localhost:5000/booking/${id}`;
+  const url = `https://daktar-bari-server.onrender.com/booking/${id}`;
   useEffect(() => {
     fetch(url, {
       method: "GET",

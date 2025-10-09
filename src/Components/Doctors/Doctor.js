@@ -8,7 +8,7 @@ const Doctor = () => {
 
   const [doctor, setDoctor] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/doctor/${id}`)
+    fetch(`https://daktar-bari-server.onrender.com/doctor/${id}`)
       .then((res) => res.json())
       .then((data) => setDoctor(data));
   }, [id]);

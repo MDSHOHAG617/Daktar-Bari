@@ -6,7 +6,7 @@ const UserRow = ({ user }) => {
   const { _id, email, role } = user;
   // making admin
   const makeAdmin = () => {
-    fetch(`http://localhost:5000/user/admin/${email}`, {
+    fetch(`https://daktar-bari-server.onrender.com/user/admin/${email}`, {
       method: "PUT",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -29,7 +29,7 @@ const UserRow = ({ user }) => {
 
   // // making doctor
   // const makeDoctor = () => {
-  //   fetch(`http://localhost:5000/user/doctor/${email}`, {
+  //   fetch(`https://daktar-bari-server.onrender.com/user/doctor/${email}`, {
   //     method: "PUT",
   //     headers: {
   //       authorization: `Bearer ${localStorage.getItem("accessToken")}`,

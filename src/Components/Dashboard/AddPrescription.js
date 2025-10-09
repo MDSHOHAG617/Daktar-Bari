@@ -72,7 +72,7 @@ const AddPrescription = () => {
       diagnosis1,
     };
 
-    fetch("http://localhost:5000/prescription", {
+    fetch("https://daktar-bari-server.onrender.com/prescription", {
       method: "POST",
       headers: {
         "content-type": "application/json",

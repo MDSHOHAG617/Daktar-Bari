@@ -12,7 +12,7 @@ const MyPrescription = () => {
   const navigate = useNavigate();
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/prescription?customerEmail=${user.email}`, {
+      fetch(`https://daktar-bari-server.onrender.com/prescription?customerEmail=${user.email}`, {
         method: "GET",
         headers: {
           authorization: `Bearer ${localStorage.getItem("accessToken")}`,

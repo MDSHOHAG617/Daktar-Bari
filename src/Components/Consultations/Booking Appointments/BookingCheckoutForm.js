@@ -16,7 +16,7 @@ const BookingCheckoutForm = ({ payments }) => {
 
   useEffect(() => {
     if (price) {
-      fetch("http://localhost:5000/create-payment-intent", {
+      fetch("https://daktar-bari-server.onrender.com/create-payment-intent", {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -77,7 +77,7 @@ const BookingCheckoutForm = ({ payments }) => {
         order: _id,
         transactionId: paymentIntent.id,
       };
-      fetch(`http://localhost:5000/booking/${_id}`, {
+      fetch(`https://daktar-bari-server.onrender.com/booking/${_id}`, {
         method: "PATCH",
         headers: {
           "content-type": "application/json",

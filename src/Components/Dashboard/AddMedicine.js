@@ -23,7 +23,7 @@ const AddMedicine = () => {
       desc,
     };
 
-    fetch("http://localhost:5000/medicine", {
+    fetch("https://daktar-bari-server.onrender.com/medicine", {
       method: "POST",
       headers: {
         "content-type": "application/json",

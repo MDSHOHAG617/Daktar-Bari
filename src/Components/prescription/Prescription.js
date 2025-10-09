@@ -19,7 +19,7 @@ const Prescription = () => {
   const [prescription, setPrescription] = useState({});
   console.log(prescription);
   useEffect(() => {
-    fetch(`http://localhost:5000/prescription/${id}`)
+    fetch(`https://daktar-bari-server.onrender.com/prescription/${id}`)
       .then((res) => res.json())
       .then((data) => setPrescription(data));
   }, [id]);
